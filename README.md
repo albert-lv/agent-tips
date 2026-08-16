@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-08-15）
+### 今日更新（2026-08-16）
 
-- 🔥 [Claude Code `!` 前缀 + Cursor Yolo 模式](2026/08/2026-08-15-agent-tips.md) — 让 Agent 自己执行命令，批量重构时告别确认疲劳
+- 🔥 [Claude Code `@` 精准引用 + Cursor 行内编辑](2026/08/2026-08-16-agent-tips.md) — 精准投喂上下文，Agent 不瞎猜、不改错
 
 **想看今天的内容？直接点上面 👆**
 
@@ -54,7 +54,8 @@
 
 **最新内容**（倒序）：
 
-- 🔥 [08-15 — Claude Code `!` 前缀 + Cursor Yolo 模式](2026/08/2026-08-15-agent-tips.md)（放权执行 / 批量重构免确认）
+- 🔥 [08-16 — Claude Code `@` 精准引用 + Cursor 行内编辑](2026/08/2026-08-16-agent-tips.md)（精准投喂 / 局部编辑不瞎改）
+- [08-15 — Claude Code `!` 前缀 + Cursor Yolo 模式](2026/08/2026-08-15-agent-tips.md)（放权执行 / 批量重构免确认）
 - [08-14 — 防失忆与少废话](2026/08/2026-08-14-agent-tips.md)（`summarize` 小抄 / `.cursorrules` 员工手册）
 - [08-13 — Claude Code `/search` + Windsurf Cascade 总结](2026/08/2026-08-13-agent-tips.md)（搜完直接改 / 让需求浮现）
 - [08-12 — Claude Code `/compact` 上下文压缩](2026/08/2026-08-12-agent-tips.md)（防 context limit / 保留核心结论）
