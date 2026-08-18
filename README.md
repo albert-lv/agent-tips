@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-08-17）
+### 今日更新（2026-08-18）
 
-- 🔥 [Claude Code `Claude.md` + Plan First 模式](2026/08/2026-08-17-agent-tips.md) — 项目规范自动加载，先想清楚再动手
+- 🔥 [Agent 的「Git 搭档」模式——审 diff + 写 commit + 提交前质检](2026/08/2026-08-18-agent-tips.md) — 让 AI 当你的 Code Reviewer + 提交助手
 
 **想看今天的内容？直接点上面 👆**
 
@@ -54,7 +54,8 @@
 
 **最新内容**（倒序）：
 
-- 🔥 [08-17 — Claude Code `Claude.md` + Plan First 模式](2026/08/2026-08-17-agent-tips.md)（项目规范自动加载 / 先规划后执行）
+- 🔥 [08-18 — Agent 的「Git 搭档」模式](2026/08/2026-08-18-agent-tips.md)（审 diff / 写 commit / 提交前质检）
+- [08-17 — Claude Code `Claude.md` + Plan First 模式](2026/08/2026-08-17-agent-tips.md)（项目规范自动加载 / 先规划后执行）
 - [08-16 — Claude Code `@` 精准引用 + Cursor 行内编辑](2026/08/2026-08-16-agent-tips.md)（精准投喂 / 局部编辑不瞎改）
 - [08-15 — Claude Code `!` 前缀 + Cursor Yolo 模式](2026/08/2026-08-15-agent-tips.md)（放权执行 / 批量重构免确认）
 - [08-14 — 防失忆与少废话](2026/08/2026-08-14-agent-tips.md)（`summarize` 小抄 / `.cursorrules` 员工手册）
