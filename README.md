@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-09-02）
+### 今日更新（2026-09-03）
 
-- 🔥 [Agent 的「上下文 Budgeting」—— 别让 token 偷偷溜走](2026/09/2026-09-02-agent-tips.md) — Claude Code `/cost` 命令 / Cursor `.cursorrules` 家规 / 上下文压缩潜规则
+- 🔥 [Agent 的「代码考古学」—— 祖传代码别硬啃，让 AI 当导游](2026/09/2026-09-03-agent-tips.md) — Claude Code 调用链追踪 / Cursor 生命周期模式 / 风险地图
 
 **想看今天的内容？直接点上面 👆**
 
@@ -41,7 +41,8 @@
 
 **最新内容**（倒序）：
 
-- 🔥 [09-02 — Agent 的「上下文 Budgeting」—— 别让 token 偷偷溜走](2026/09/2026-09-02-agent-tips.md)（Claude Code `/cost` 命令 / Cursor `.cursorrules` 家规 / 上下文压缩潜规则）
+- 🔥 [09-03 — Agent 的「代码考古学」—— 祖传代码别硬啃，让 AI 当导游](2026/09/2026-09-03-agent-tips.md)（Claude Code 调用链追踪 / Cursor 生命周期模式 / 风险地图）
+- [09-02 — Agent 的「上下文 Budgeting」—— 别让 token 偷偷溜走](2026/09/2026-09-02-agent-tips.md)（Claude Code `/cost` 命令 / Cursor `.cursorrules` 家规 / 上下文压缩潜规则）
 - [09-01 — 给 AI 一张 checklist，长任务不再烂尾——Agent 的「进度条」技巧](2026/09/2026-09-01-agent-tips.md)（外置记忆防失忆 / 跨工具通用 / 让 Agent 自己打勾汇报）
 - [08-31 — 在项目里埋一张"AI 使用说明书"—— .cursorrules / CLAUDE.md 让 Agent 自动记住你的规范](2026/08/2026-08-31-agent-tips.md)（省去 80% 重复沟通 / 项目级提示词 / 一次写好长期受益）
 - [08-30 — Agent 上下文管理：从"金鱼脑"到"最强大脑"—— Claude Code CLAUDE.md + Cursor .cursorrules 人格切换](2026/08/2026-08-30-agent-tips.md)（项目规范 DNA 化 / 多项目多人格 / 一劳永逸的上下文投资）
