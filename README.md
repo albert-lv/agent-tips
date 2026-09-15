@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-09-14）
+### 今日更新（2026-09-15）
 
-- 🔥 [Agent 的「先想后做」—— 让 AI 出方案再动手，命中率翻倍](2026/09/2026-09-14-agent-tips.md) — Claude Code `/plan` 模式 / Windsurf Cascade Memory / 从"被 agent 带着跑"变成"你带着 agent 跑"
+- 🔥 [把你最常用的 prompt 封装成「专属命令」](2026/09/2026-09-15-agent-tips.md) — Claude Code `.claude/commands/` / 一次写好永久复用 / 重复杂活让 Agent 写「一次性脚本」
 
 **想看今天的内容？直接点上面 👆**
 
@@ -41,7 +41,8 @@
 
 **最新内容**（倒序）：
 
-- 🔥 [09-14 — Agent 的「先想后做」—— 让 AI 出方案再动手，命中率翻倍](2026/09/2026-09-14-agent-tips.md)（Claude Code `/plan` 模式 / Windsurf Cascade Memory / 从"被 agent 带着跑"变成"你带着 agent 跑"）
+- 🔥 [09-15 — 把你最常用的 prompt 封装成「专属命令」](2026/09/2026-09-15-agent-tips.md)（Claude Code `.claude/commands/` / 一次写好永久复用 / 重复杂活让 Agent 写「一次性脚本」）
+- [09-14 — Agent 的「先想后做」—— 让 AI 出方案再动手，命中率翻倍](2026/09/2026-09-14-agent-tips.md)（Claude Code `/plan` 模式 / Windsurf Cascade Memory / 从"被 agent 带着跑"变成"你带着 agent 跑"）
 - [09-13 — Agent 的「看图说话」—— 扔张截图给 AI，让它直接干活](2026/09/2026-09-13-agent-tips.md)（多模态输入 / 报错截图 / 设计稿还原 / 架构图转代码）
 - [09-12 — Agent 的「批量手术」—— 一次性改 10 个文件，不翻车](2026/09/2026-09-12-agent-tips.md)（Claude Code 多文件编辑 / Cursor Composer / 安全三件套 / 迁移手术）
 - [09-11 — Claude Code 的 MCP——给 Agent 插上「外挂手」](2026/09/2026-09-11-agent-tips.md)（MCP 协议 / 数据库直连 / 工具生态 / 一句话搞定）
