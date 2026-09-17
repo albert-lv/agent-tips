@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-09-16）
+### 今日更新（2026-09-17）
 
-- 🔥 [两个 Claude Code 会话，终于会「私聊」了](2026/09/2026-09-16-agent-tips.md) — 跨会话消息 / ListAgents + SendMessage / 告别人肉传话 + /cost 给 prompt cache 把脉
+- 🔥 [Claude Code 无头模式——把 Agent 塞进 CI 里打工](2026/09/2026-09-17-agent-tips.md) — `claude -p` 非交互跑批 / `--max-turns` 防烧 token / `--resume` + `--fork-session` 时空三件套
 
 **想看今天的内容？直接点上面 👆**
 
@@ -41,7 +41,8 @@
 
 **最新内容**（倒序）：
 
-- 🔥 [09-16 — 两个 Claude Code 会话，终于会「私聊」了](2026/09/2026-09-16-agent-tips.md)（跨会话消息 / ListAgents + SendMessage / 可执行交接 + /cost prompt cache 诊断）
+- 🔥 [09-17 — Claude Code 无头模式——把 Agent 塞进 CI 里打工](2026/09/2026-09-17-agent-tips.md)（`claude -p` 无头跑批 / `--max-turns` 防钻牛角尖 / `--resume` + `--fork-session` 时空三件套）
+- [09-16 — 两个 Claude Code 会话，终于会「私聊」了](2026/09/2026-09-16-agent-tips.md)（跨会话消息 / ListAgents + SendMessage / 可执行交接 + /cost prompt cache 诊断）
 - [09-15 — 把你最常用的 prompt 封装成「专属命令」](2026/09/2026-09-15-agent-tips.md)（Claude Code `.claude/commands/` / 一次写好永久复用 / 重复杂活让 Agent 写「一次性脚本」）
 - [09-14 — Agent 的「先想后做」—— 让 AI 出方案再动手，命中率翻倍](2026/09/2026-09-14-agent-tips.md)（Claude Code `/plan` 模式 / Windsurf Cascade Memory / 从"被 agent 带着跑"变成"你带着 agent 跑"）
 - [09-13 — Agent 的「看图说话」—— 扔张截图给 AI，让它直接干活](2026/09/2026-09-13-agent-tips.md)（多模态输入 / 报错截图 / 设计稿还原 / 架构图转代码）
