@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-09-18）
+### 今日更新（2026-09-19）
 
-- 🔥 [Claude Code 子代理——给 Agent 配「侦察兵」，主上下文不再被过程垃圾塞爆](2026/09/2026-09-18-agent-tips.md) — Task 工具开分身 / `.claude/agents/` 编制化 / settings.json 权限系统告别点批准
+- 🔥 [Claude Code Hooks——给 Agent 装上「自动挡 + 副刹车」](2026/09/2026-09-19-agent-tips.md) — PostToolUse 自动格式化 / PreToolUse 拦截危险命令 / 改完自动跑测试 + 内置 WebSearch / WebFetch 治 API 幻觉
 
 **想看今天的内容？直接点上面 👆**
 
@@ -41,7 +41,8 @@
 
 **最新内容**（倒序）：
 
-- 🔥 [09-18 — Claude Code 子代理——给 Agent 配「侦察兵」，主上下文不再被过程垃圾塞爆](2026/09/2026-09-18-agent-tips.md)（独立上下文干脏活 / `.claude/agents/` 自定义分身 / settings.json allow+deny 权限系统）
+- 🔥 [09-19 — Claude Code Hooks——给 Agent 装上「自动挡 + 副刹车」](2026/09/2026-09-19-agent-tips.md)（PostToolUse 自动格式化 / PreToolUse 危险命令拦截 / 编辑后自动跑测试 / WebSearch+WebFetch 治 API 幻觉）
+- [09-18 — Claude Code 子代理——给 Agent 配「侦察兵」，主上下文不再被过程垃圾塞爆](2026/09/2026-09-18-agent-tips.md)（独立上下文干脏活 / `.claude/agents/` 自定义分身 / settings.json allow+deny 权限系统）
 - [09-17 — Claude Code 无头模式——把 Agent 塞进 CI 里打工](2026/09/2026-09-17-agent-tips.md)（`claude -p` 无头跑批 / `--max-turns` 防钻牛角尖 / `--resume` + `--fork-session` 时空三件套）
 - [09-16 — 两个 Claude Code 会话，终于会「私聊」了](2026/09/2026-09-16-agent-tips.md)（跨会话消息 / ListAgents + SendMessage / 可执行交接 + /cost prompt cache 诊断）
 - [09-15 — 把你最常用的 prompt 封装成「专属命令」](2026/09/2026-09-15-agent-tips.md)（Claude Code `.claude/commands/` / 一次写好永久复用 / 重复杂活让 Agent 写「一次性脚本」）
