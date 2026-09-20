@@ -1,6 +1,6 @@
 # 🤖 Agent Tips — 每天一个技巧，把 AI 工具用出花来
 
-[![Daily Update](https://img.shields.io/badge/🔥%20每日更新-已连续%2050+%20天-success)](https://github.com/albert-lv/agent-tips/commits/main)
+[![Daily Update](https://img.shields.io/badge/🔥%20每日更新-已连续%2080+%20天-success)](https://github.com/albert-lv/agent-tips/commits/main)
 [![Last Commit](https://img.shields.io/github/last-commit/albert-lv/agent-tips/main?label=上次更新)](https://github.com/albert-lv/agent-tips/commits/main)
 [![Topics](https://img.shields.io/badge/覆盖-Claude%20Code%20%7C%20Kimi%20Code%20%7C%20Cursor%20%7C%20Windsurf-orange)]()
 
@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-09-19）
+### 今日更新（2026-09-20）
 
-- 🔥 [Claude Code Hooks——给 Agent 装上「自动挡 + 副刹车」](2026/09/2026-09-19-agent-tips.md) — PostToolUse 自动格式化 / PreToolUse 拦截危险命令 / 改完自动跑测试 + 内置 WebSearch / WebFetch 治 API 幻觉
+- 🔥 [Agent Skills——把你重复教 100 遍的 SOP，写成 Agent 的「肌肉记忆」](2026/09/2026-09-20-agent-tips.md) — SKILL.md 渐进式披露 / `disable-model-invocation` 防擅自发版 / Kimi Code 2.0 终端渲染 Mermaid 图 + `/desktop`
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / diff 聊天术 / checklist 驱动 / 长任务管理）
+├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
 ├── 07/   # 七月技巧（项目人设文件 / 上下文管理 / 防失忆）
 └── 06/   # 六月技巧（开篇期，基础用法沉淀）
@@ -41,7 +41,8 @@
 
 **最新内容**（倒序）：
 
-- 🔥 [09-19 — Claude Code Hooks——给 Agent 装上「自动挡 + 副刹车」](2026/09/2026-09-19-agent-tips.md)（PostToolUse 自动格式化 / PreToolUse 危险命令拦截 / 编辑后自动跑测试 / WebSearch+WebFetch 治 API 幻觉）
+- 🔥 [09-20 — Agent Skills——把你重复教 100 遍的 SOP，写成 Agent 的「肌肉记忆」](2026/09/2026-09-20-agent-tips.md)（SKILL.md 渐进式披露 / `disable-model-invocation` 只许人类触发 / Kimi Code 2.0 Mermaid 终端渲染 + `/desktop`）
+- [09-19 — Claude Code Hooks——给 Agent 装上「自动挡 + 副刹车」](2026/09/2026-09-19-agent-tips.md)（PostToolUse 自动格式化 / PreToolUse 危险命令拦截 / 编辑后自动跑测试 / WebSearch+WebFetch 治 API 幻觉）
 - [09-18 — Claude Code 子代理——给 Agent 配「侦察兵」，主上下文不再被过程垃圾塞爆](2026/09/2026-09-18-agent-tips.md)（独立上下文干脏活 / `.claude/agents/` 自定义分身 / settings.json allow+deny 权限系统）
 - [09-17 — Claude Code 无头模式——把 Agent 塞进 CI 里打工](2026/09/2026-09-17-agent-tips.md)（`claude -p` 无头跑批 / `--max-turns` 防钻牛角尖 / `--resume` + `--fork-session` 时空三件套）
 - [09-16 — 两个 Claude Code 会话，终于会「私聊」了](2026/09/2026-09-16-agent-tips.md)（跨会话消息 / ListAgents + SendMessage / 可执行交接 + /cost prompt cache 诊断）
@@ -152,7 +153,7 @@ cat 2026/08/2026-08-15-agent-tips.md
 
 ## 📊 更新记录
 
-**已连续更新 50+ 天**，每日 08:42 自动推送。
+**已连续更新 80+ 天**，每日 08:42 自动推送。
 
 详细历史见 [commit 记录](https://github.com/albert-lv/agent-tips/commits/main)。
 
