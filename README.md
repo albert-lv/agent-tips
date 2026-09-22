@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-09-21）
+### 今日更新（2026-09-22）
 
-- 🔥 [Agent 的「平行宇宙」—— 两个 AI 同时开工，再也不互相踩脚](2026/09/2026-09-21-agent-tips.md) — `git worktree` 多开隔离 / Claude Code 后台 Agent 自动 worktree / Kimi Code `/btw` 侧边小灶不打断主线
+- 🔥 [Agent 的「夜班模式」—— 你下班了，它在云端继续干活](2026/09/2026-09-22-agent-tips.md) — Cursor Background Agent 云端跑活自动开 PR / claude-code-action 自动审稿 / `claude -p` + cron 穷人版夜班
 
 **想看今天的内容？直接点上面 👆**
 
@@ -41,6 +41,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [09-22 — Agent 的「夜班模式」—— 你下班了，它在云端继续干活](2026/09/2026-09-22-agent-tips.md)（Cursor Background Agent 云端开 PR / claude-code-action 自动审稿 / `claude -p` + cron 穷人版夜班）
 - 🔥 [09-21 — Agent 的「平行宇宙」—— 两个 AI 同时开工，再也不互相踩脚](2026/09/2026-09-21-agent-tips.md)（`git worktree add` 多开隔离 / 后台 Agent 自动 worktree / `/btw` 侧边聊天只读 subagent / 题外话走支线）
 - [09-20 — Agent Skills——把你重复教 100 遍的 SOP，写成 Agent 的「肌肉记忆」](2026/09/2026-09-20-agent-tips.md)（SKILL.md 渐进式披露 / `disable-model-invocation` 只许人类触发 / Kimi Code 2.0 Mermaid 终端渲染 + `/desktop`）
 - [09-19 — Claude Code Hooks——给 Agent 装上「自动挡 + 副刹车」](2026/09/2026-09-19-agent-tips.md)（PostToolUse 自动格式化 / PreToolUse 危险命令拦截 / 编辑后自动跑测试 / WebSearch+WebFetch 治 API 幻觉）
