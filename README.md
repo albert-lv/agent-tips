@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-09-22）
+### 今日更新（2026-09-23）
 
-- 🔥 [Agent 的「夜班模式」—— 你下班了，它在云端继续干活](2026/09/2026-09-22-agent-tips.md) — Cursor Background Agent 云端跑活自动开 PR / claude-code-action 自动审稿 / `claude -p` + cron 穷人版夜班
+- 🔥 [该省省，该花花 —— Agent 的「模型编队」，杂活别再麻烦教授了](2026/09/2026-09-23-agent-tips.md) — Claude Code `ANTHROPIC_SMALL_FAST_MODEL` + 子代理 `model:` 字段 / Kimi Code `[secondary_model]` 模型池默认开启 + `Ctrl-O` 折叠工具输出 / 架构硬仗别省该花花
 
 **想看今天的内容？直接点上面 👆**
 
@@ -41,6 +41,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [09-23 — 该省省，该花花 —— Agent 的「模型编队」，杂活别再麻烦教授了](2026/09/2026-09-23-agent-tips.md)（Claude Code `ANTHROPIC_SMALL_FAST_MODEL` 辅助任务用快模型 / 子代理 `model:` 字段脏活外包 / Kimi Code `[secondary_model]` 模型池默认开启 / `Ctrl-O` 折叠输出 / 架构硬仗别省）
 - 🔥 [09-22 — Agent 的「夜班模式」—— 你下班了，它在云端继续干活](2026/09/2026-09-22-agent-tips.md)（Cursor Background Agent 云端开 PR / claude-code-action 自动审稿 / `claude -p` + cron 穷人版夜班）
 - 🔥 [09-21 — Agent 的「平行宇宙」—— 两个 AI 同时开工，再也不互相踩脚](2026/09/2026-09-21-agent-tips.md)（`git worktree add` 多开隔离 / 后台 Agent 自动 worktree / `/btw` 侧边聊天只读 subagent / 题外话走支线）
 - [09-20 — Agent Skills——把你重复教 100 遍的 SOP，写成 Agent 的「肌肉记忆」](2026/09/2026-09-20-agent-tips.md)（SKILL.md 渐进式披露 / `disable-model-invocation` 只许人类触发 / Kimi Code 2.0 Mermaid 终端渲染 + `/desktop`）
