@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-09-24）
+### 今日更新（2026-09-25）
 
-- 🔥 [Agent 的「交叉评审」—— 让 AI 当自己的质检员，bug 无所遁形](2026/09/2026-09-24-agent-tips.md) — Claude Code 毒舌审查员子代理 / 跨模型交叉验证（Claude × Kimi 互审）/ Cursor Composer 生成 Chat 审查
+- 🔥 [写 20 行 Python，给 Agent 造一只「自定义外挂」](2026/09/2026-09-25-agent-tips.md) —— FastMCP 一个函数变工具 / docstring 就是说明书 / 一个 server 插进 Claude Code、Cursor、Windsurf
 
 **想看今天的内容？直接点上面 👆**
 
@@ -41,7 +41,8 @@
 
 **最新内容**（倒序）：
 
-- 🔥 [09-24 — Agent 的「交叉评审」—— 让 AI 当自己的质检员，bug 无所遁形](2026/09/2026-09-24-agent-tips.md)（毒舌审查员子代理 / 写 Sonnet 审 Opus 分层 / Claude × Kimi 跨模型互审 / Cursor Composer→Chat「第一次看 diff」咒语）
+- 🔥 [09-25 — 写 20 行 Python，给 Agent 造一只「自定义外挂」](2026/09/2026-09-25-agent-tips.md)（FastMCP 一个函数变工具 / docstring 说明书 / 一个 server 多处复用 / 读写分离 + Hooks 双保险）
+- [09-24 — Agent 的「交叉评审」—— 让 AI 当自己的质检员，bug 无所遁形](2026/09/2026-09-24-agent-tips.md)（毒舌审查员子代理 / 写 Sonnet 审 Opus 分层 / Claude × Kimi 跨模型互审 / Cursor Composer→Chat「第一次看 diff」咒语）
 - 🔥 [09-23 — 该省省，该花花 —— Agent 的「模型编队」，杂活别再麻烦教授了](2026/09/2026-09-23-agent-tips.md)（Claude Code `ANTHROPIC_SMALL_FAST_MODEL` 辅助任务用快模型 / 子代理 `model:` 字段脏活外包 / Kimi Code `[secondary_model]` 模型池默认开启 / `Ctrl-O` 折叠输出 / 架构硬仗别省）
 - 🔥 [09-22 — Agent 的「夜班模式」—— 你下班了，它在云端继续干活](2026/09/2026-09-22-agent-tips.md)（Cursor Background Agent 云端开 PR / claude-code-action 自动审稿 / `claude -p` + cron 穷人版夜班）
 - 🔥 [09-21 — Agent 的「平行宇宙」—— 两个 AI 同时开工，再也不互相踩脚](2026/09/2026-09-21-agent-tips.md)（`git worktree add` 多开隔离 / 后台 Agent 自动 worktree / `/btw` 侧边聊天只读 subagent / 题外话走支线）
