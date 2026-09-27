@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-09-26）
+### 今日更新（2026-09-27）
 
-- 🔥 [Agent 的「方向盘」—— 跑偏了别急着刹车重开，扶着方向继续开](2026/09/2026-09-26-agent-tips.md) —— Esc 打断 ≠ 重来 / 消息队列提前指坑 / steering 打断等待 / 题外话走 `/btw` 支线
+- 🔥 [Agent 的「行车记录仪」—— 改了啥、花了啥、卡在哪，都要有回放可看](2026/09/2026-09-27-agent-tips.md) —— Claude Code `/diff` 实时面板 / `/skill-doctor` skill 成本审计 / Kimi Code `/check-kimi-code-docs` 不出终端查文档 / `/copy` 一键复制
 
 **想看今天的内容？直接点上面 👆**
 
@@ -41,6 +41,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [09-27 — Agent 的「行车记录仪」—— 改了啥、花了啥、卡在哪，都要有回放可看](2026/09/2026-09-27-agent-tips.md)（Claude Code `/diff` 实时面板边看边审 / `/skill-doctor` 清理零调用 skill / Kimi Code `/check-kimi-code-docs` 带出处不出终端 / `/copy` 一键复制长回复）
 - 🔥 [09-26 — Agent 的「方向盘」—— 跑偏了别急着刹车重开，扶着方向继续开](2026/09/2026-09-26-agent-tips.md)（Esc 打断≠重来 / 消息队列提前指坑 / Kimi steering 打断等待 / 题外话走 `/btw` 支线）
 - 🔥 [09-25 — 写 20 行 Python，给 Agent 造一只「自定义外挂」](2026/09/2026-09-25-agent-tips.md)（FastMCP 一个函数变工具 / docstring 说明书 / 一个 server 多处复用 / 读写分离 + Hooks 双保险）
 - [09-24 — Agent 的「交叉评审」—— 让 AI 当自己的质检员，bug 无所遁形](2026/09/2026-09-24-agent-tips.md)（毒舌审查员子代理 / 写 Sonnet 审 Opus 分层 / Claude × Kimi 跨模型互审 / Cursor Composer→Chat「第一次看 diff」咒语）
