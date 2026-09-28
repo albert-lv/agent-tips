@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-09-27）
+### 今日更新（2026-09-28）
 
-- 🔥 [Agent 的「行车记录仪」—— 改了啥、花了啥、卡在哪，都要有回放可看](2026/09/2026-09-27-agent-tips.md) —— Claude Code `/diff` 实时面板 / `/skill-doctor` skill 成本审计 / Kimi Code `/check-kimi-code-docs` 不出终端查文档 / `/copy` 一键复制
+- 🔥 [Agent 的「读档键」+「圈改模式」—— 翻车后，别写小作文](2026/09/2026-09-28-agent-tips.md) —— Kimi Code Desktop 截图标注画个圈就改 / 目标模式暂停恢复 / Claude Code 连按两下 Esc 秒回存档点 / 「Summarize up to here」带摘要重走
 
 **想看今天的内容？直接点上面 👆**
 
@@ -41,6 +41,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [09-28 — Agent 的「读档键」+「圈改模式」—— 翻车后，别写小作文](2026/09/2026-09-28-agent-tips.md)（Kimi Code Desktop 截图标注 / 划词评论 / 目标模式暂停恢复取消 / Claude Code 连按两下 Esc 回滚存档点 / Summarize up to here 带摘要重走）
 - 🔥 [09-27 — Agent 的「行车记录仪」—— 改了啥、花了啥、卡在哪，都要有回放可看](2026/09/2026-09-27-agent-tips.md)（Claude Code `/diff` 实时面板边看边审 / `/skill-doctor` 清理零调用 skill / Kimi Code `/check-kimi-code-docs` 带出处不出终端 / `/copy` 一键复制长回复）
 - 🔥 [09-26 — Agent 的「方向盘」—— 跑偏了别急着刹车重开，扶着方向继续开](2026/09/2026-09-26-agent-tips.md)（Esc 打断≠重来 / 消息队列提前指坑 / Kimi steering 打断等待 / 题外话走 `/btw` 支线）
 - 🔥 [09-25 — 写 20 行 Python，给 Agent 造一只「自定义外挂」](2026/09/2026-09-25-agent-tips.md)（FastMCP 一个函数变工具 / docstring 说明书 / 一个 server 多处复用 / 读写分离 + Hooks 双保险）
