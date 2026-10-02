@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-01）
+### 今日更新（2026-10-02）
 
-- 🔥 [Agent 的「换装间」+「笔记本」：输出风格一键切换，经验自动沉淀](2026/10/2026-10-01-agent-tips.md) —— `/output-style` 换输出皮肤（Concise 省 token / 团队风格文件）/ `/memory` 会话内改记忆 + 收尾「复盘咒语」让 Agent 越用越聪明
+- 🔥 [IDE「心电感应」+ Windsurf「三层脑」：报错自动直达，记忆别再用混](2026/10/2026-10-02-agent-tips.md) —— Claude Code IDE 集成：诊断共享不用复制报错 / 选中即上下文 / diff 在编辑器里审；Windsurf Rules=家规（进 git）/ Memories=便签（本地自动生成）/ Workflows=菜谱（斜杠命令）
 
 **想看今天的内容？直接点上面 👆**
 
@@ -42,6 +42,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [10-02 — Agent 的「心电感应」+「三层脑」：编辑器报错自动直达，Windsurf 记忆别再用混](2026/10/2026-10-02-agent-tips.md)（Claude Code IDE 集成：diagnostics 共享免复制粘贴 / 选中即上下文 / GUI diff 审阅 / `@terminal:` 引用终端；Windsurf 三层记忆决策表：Rules=家规进 git / Memories=本地便签免费 / Workflows=斜杠菜谱）
 - 🔥 [10-01 — Agent 的「换装间」+「笔记本」：输出风格一键切换，经验自动沉淀](2026/10/2026-10-01-agent-tips.md)（`/output-style` 换输出皮肤 / `.claude/output-styles/` 团队风格文件 / `/memory` 会话内改 CLAUDE.md / 收尾复盘咒语形成自学习闭环）
 - 🔥 [09-30 — 停机权交给谁：让 Agent 自己知道「什么时候该停」](2026/09/2026-09-30-agent-tips.md)（`/goal` 可验证终态 + 独立 evaluator 复核 / 六种自治工具选型：feature→goal，迁移→workflow，红线→Stop hook）
 - 🔥 [09-29 — 纠错的两笔账：改写花一次钱，叠写每轮都收税](2026/09/2026-09-29-agent-tips.md)（Claude Code 按 `↑` 编辑消息替换误解对话 / 「只改这段，其他别动」拒绝全文重生成 / 纠三遍的错写进 CLAUDE.md）
