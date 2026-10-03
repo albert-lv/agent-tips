@@ -1,6 +1,6 @@
 # 🤖 Agent Tips — 每天一个技巧，把 AI 工具用出花来
 
-[![Daily Update](https://img.shields.io/badge/🔥%20每日更新-已连续%2080+%20天-success)](https://github.com/albert-lv/agent-tips/commits/main)
+[![Daily Update](https://img.shields.io/badge/🔥%20每日更新-已连续%20120+%20天-success)](https://github.com/albert-lv/agent-tips/commits/main)
 [![Last Commit](https://img.shields.io/github/last-commit/albert-lv/agent-tips/main?label=上次更新)](https://github.com/albert-lv/agent-tips/commits/main)
 [![Topics](https://img.shields.io/badge/覆盖-Claude%20Code%20%7C%20Kimi%20Code%20%7C%20Cursor%20%7C%20Windsurf-orange)]()
 
@@ -16,14 +16,14 @@
 
 | 特性 | 说明 |
 |---|---|
-| 🔄 **每日更新** | 每天早上 08:42 自动推送，**已连续更新 50+ 天** |
+| 🔄 **每日更新** | 每天早上 08:42 自动推送，**已连续更新 120+ 天** |
 | 🛠️ **多工具覆盖** | Claude Code、Kimi Code、Cursor、Windsurf、GitHub Copilot Chat 等 |
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-02）
+### 今日更新（2026-10-03）
 
-- 🔥 [IDE「心电感应」+ Windsurf「三层脑」：报错自动直达，记忆别再用混](2026/10/2026-10-02-agent-tips.md) —— Claude Code IDE 集成：诊断共享不用复制报错 / 选中即上下文 / diff 在编辑器里审；Windsurf Rules=家规（进 git）/ Memories=便签（本地自动生成）/ Workflows=菜谱（斜杠命令）
+- 🔥 [给仓库请个「安全员」：提交前 `/security-review`，PR 自动过安检](2026/10/2026-10-03-agent-tips.md) —— Claude Code 9 月底内置安全审查命令：本地跑 `/security-review` 先划信任边界再要 source→sink 证据链 / 修完复查最终 diff；CI 版 claude-code-action 让每个 PR 自动带结构化体检报告 + 线程里 `@claude` 追问修复方案；⚠️ 未加固提示注入，fork 的 PR 只人工批准后扫描
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 10/   # 十月技巧（输出风格 / 记忆沉淀闭环）
+├── 10/   # 十月技巧（安全审查 / 输出风格 / 记忆沉淀闭环）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
 ├── 07/   # 七月技巧（项目人设文件 / 上下文管理 / 防失忆）
@@ -41,6 +41,8 @@
 ```
 
 **最新内容**（倒序）：
+
+- 🔥 [10-03 — 给仓库请个「安全员」：提交前 `/security-review`，PR 自动过安检](2026/10/2026-10-03-agent-tips.md)（本地 commit 前跑 `/security-review` + 先划信任边界 / 每条发现要 source→sink 证据链，修完再扫一遍防「修一半」 / claude-code-action 让每个 PR 自动带结构化安全体检 + 线程 `@claude` 追问修复方案 / ⚠️ Action 未加固提示注入：fork PR 只人工批准后扫描；顺手一提：没写 CLAUDE.md 的仓库现在认 AGENTS.md）
 
 - 🔥 [10-02 — Agent 的「心电感应」+「三层脑」：编辑器报错自动直达，Windsurf 记忆别再用混](2026/10/2026-10-02-agent-tips.md)（Claude Code IDE 集成：diagnostics 共享免复制粘贴 / 选中即上下文 / GUI diff 审阅 / `@terminal:` 引用终端；Windsurf 三层记忆决策表：Rules=家规进 git / Memories=本地便签免费 / Workflows=斜杠菜谱）
 - 🔥 [10-01 — Agent 的「换装间」+「笔记本」：输出风格一键切换，经验自动沉淀](2026/10/2026-10-01-agent-tips.md)（`/output-style` 换输出皮肤 / `.claude/output-styles/` 团队风格文件 / `/memory` 会话内改 CLAUDE.md / 收尾复盘咒语形成自学习闭环）
