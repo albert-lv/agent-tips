@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-04）
+### 今日更新（2026-10-05）
 
-- 🔥 [Agent 的「风筝线」：人出门了，活还能牵着走](2026/10/2026-10-04-agent-tips.md) —— Kimi Code 远程控制 9 月转正：`kimi rc` 打印二维码，手机登录同账号即可看进度、批权限、继续指挥 / 任务始终在本机跑，关浏览器不停、关终端才断，链接别乱发 / 微信里打不开就「在浏览器中打开」；Claude Code 2.1.282 解除子代理后台命令 1 小时宵禁，长任务不再被掐头
+- 🔥 [Agent 的「搬家术」+「裸奔排障法」：换工具不心虚，出 bug 不抓瞎](2026/10/2026-10-05-agent-tips.md) —— Kimi Code `/import-from-cc-codex` 一条命令把 Claude Code/Codex 的指令、Skills、MCP 配置搬过来 / 家规只维护一份，两边互相 import 同步；Claude Code `--safe-mode`（`CLAUDE_CODE_SAFE_MODE=1`）一键禁用 CLAUDE.md、plugins、skills、hooks、MCP，二分法揪出作妖配置 / 顺手：`/cd <path>` 切目录不打断 prompt cache
 
 **想看今天的内容？直接点上面 👆**
 
@@ -42,6 +42,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [10-05 — Agent 的「搬家术」+「裸奔排障法」：换工具不心虚，出 bug 不抓瞎](2026/10/2026-10-05-agent-tips.md)（Kimi Code `/import-from-cc-codex` 勾选式搬家：指令/Skills/MCP 一键从 Claude Code、Codex 迁入 / 家规一份多处同步，不当人肉配置同步器；Claude Code `--safe-mode` 裸奔排障：禁用全部自定义项二分定位元凶 / 顺手 `/cd <path>` 切目录保 cache）
 - 🔥 [10-04 — Agent 的「风筝线」：人出门了，活还能牵着走](2026/10/2026-10-04-agent-tips.md)（Kimi Code 远程控制：`kimi rc` 扫码即用 / 看进度、批权限、远程指挥 / ⚠️ 链接=遥控器别乱发、关浏览器不停任务、关终端才断 / Claude Code 2.1.282 拆子代理后台 1 小时宵禁，长任务跑到自然结束）
 - 🔥 [10-03 — 给仓库请个「安全员」：提交前 `/security-review`，PR 自动过安检](2026/10/2026-10-03-agent-tips.md)（本地 commit 前跑 `/security-review` + 先划信任边界 / 每条发现要 source→sink 证据链，修完再扫一遍防「修一半」 / claude-code-action 让每个 PR 自动带结构化安全体检 + 线程 `@claude` 追问修复方案 / ⚠️ Action 未加固提示注入：fork PR 只人工批准后扫描；顺手一提：没写 CLAUDE.md 的仓库现在认 AGENTS.md）
 
