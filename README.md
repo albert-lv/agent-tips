@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-06）
+### 今日更新（2026-10-07）
 
-- 🔥 [Agent 的「体检日」：家规可能写给过时模型了，让 Claude 自查 + 雇个「背后灵」帮你挑刺](2026/10/2026-10-06-agent-tips.md) —— `/doctor prompt-audit` 审计 CLAUDE.md/Skills/Agents/命令里写给旧模型的提示词写法，模型大版本升级后跑一次年检 / 内置 Mod「You should know」：旁路小 Agent 全程盯着，专挑你和 Claude 都漏掉的边界与风险（`/plugin enable cc-plugin-you-should-know@builtin`）
+- 🔥 [Agent 的「试驾员」：嘴上说「已完成」不算数，让它自己上路点一圈](2026/10/2026-10-07-agent-tips.md) —— Playwright MCP 一行命令给 Agent 发车钥匙：自己开浏览器走注册流程、当场看 console 报错、顺手沉淀成可复跑的测试 / 插件市场「人才市场」直接提车：`/plugin` 逛官方 + 社区市场，装前看 Context cost 和 Will install 清单
 
 **想看今天的内容？直接点上面 👆**
 
@@ -42,6 +42,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [10-07 — Agent 的「试驾员」：嘴上说「已完成」不算数，让它自己上路点一圈](2026/10/2026-10-07-agent-tips.md)（`claude mcp add playwright -- npx @playwright/mcp@latest` 给 Agent 发车钥匙：自己开浏览器走流程、当场看 console、accessibility tree 读页便宜又准、顺手沉淀可复跑测试 / 插件市场提车：`/plugin` 逛官方+社区市场，装前看 Context cost + Will install 清单）
 - 🔥 [10-06 — Agent 的「体检日」：家规可能写给过时模型了，让 Claude 自查 + 雇个「背后灵」帮你挑刺](2026/10/2026-10-06-agent-tips.md)（`/doctor prompt-audit`（别名 `/checkup prompt-audit`）揪出写给旧模型的提示词写法，配置债务静默累积、模型大版本后必跑 / 内置 Mod「You should know」：旁路 Agent 全程盯对话，自动举「你们可能漏了」之手的第三视角 / ⚠️ 目前仅官方 API 直连 + telemetry 会话可用）
 - 🔥 [10-05 — Agent 的「搬家术」+「裸奔排障法」：换工具不心虚，出 bug 不抓瞎](2026/10/2026-10-05-agent-tips.md)（Kimi Code `/import-from-cc-codex` 勾选式搬家：指令/Skills/MCP 一键从 Claude Code、Codex 迁入 / 家规一份多处同步，不当人肉配置同步器；Claude Code `--safe-mode` 裸奔排障：禁用全部自定义项二分定位元凶 / 顺手 `/cd <path>` 切目录保 cache）
 - 🔥 [10-04 — Agent 的「风筝线」：人出门了，活还能牵着走](2026/10/2026-10-04-agent-tips.md)（Kimi Code 远程控制：`kimi rc` 扫码即用 / 看进度、批权限、远程指挥 / ⚠️ 链接=遥控器别乱发、关浏览器不停任务、关终端才断 / Claude Code 2.1.282 拆子代理后台 1 小时宵禁，长任务跑到自然结束）
