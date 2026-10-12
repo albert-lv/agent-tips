@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-11）
+### 今日更新（2026-10-12）
 
-- 🔥 [Agent 的「保鲜术」：压缩来了别慌，怕丢的先存盘](2026/10/2026-10-11-agent-tips.md) —— 长会话突然「失忆」重试老坑？那是 compaction 把「失败记录」当冗余丢了 / 别等自动压：阶段干完手动 `/compact` 存一档，带焦点更稳：`/compact focus on X`、Kimi Code `/compact 保留XXX相关讨论` / 铁律三条：磁盘文件压缩后不丢、负面知识必丢当场落盘、漂移了就重申硬约束
+- 🔥 [Agent 的「指挥部」：一个指挥官带一队小兵，活儿自己认领](2026/10/2026-10-12-agent-tips.md) —— 一个人干五个人的活不叫努力 / Claude Code Agent Teams：`settings.json` 开 `AGENT_TEAMS`，队长巡场 `Shift+Down`、队员共享任务清单还能互发消息 / Kimi Code Tower：`/tower on` + `/tower <目标>`，多 Agent 共维护 1 个 repo 不打架 / 口诀：任务独立才并行，依赖就排队；队员 3~5 个封顶，怕烧钱别乱开
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜）
+├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
 ├── 07/   # 七月技巧（项目人设文件 / 上下文管理 / 防失忆）
@@ -41,6 +41,8 @@
 ```
 
 **最新内容**（倒序）：
+
+- 🔥 [10-12 — Agent 的「指挥部」：一个指挥官带一队小兵，活儿自己认领](2026/10/2026-10-12-agent-tips.md)（Claude Code Agent Teams：`settings.json` 开 `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS`，队长 `Shift+Down` 巡场、Enter 进 transcript 纠偏，队员共享任务清单互发消息 / Kimi Code Tower：`KIMI_CODE_EXPERIMENTAL_TOWER=1` → `/tower on` → `/tower <目标>`，多 Agent 同 repo 不打架，配 `subagent_fork` 对话快照交接 + 子 Agent 模型池杂活外包 / 心法：任务独立才并行、依赖就排队；3~5 个队员封顶，只认结果的活用 subagent 别动指挥部）
 
 - 🔥 [10-11 — Agent 的「保鲜术」：压缩来了别慌，怕丢的先存盘](2026/10/2026-10-11-agent-tips.md)（`context` 仪表盘 + 状态栏用量条：auto-compact 约 83% 触发、缓冲仅 33K，可用空间比想象少 / 自然断点手动 `/compact` = 游戏存档点，质量远超被逼压；`/autocompact 500k` 可调触发线 / 带焦点压缩两家都支持：`/compact focus on the auth bug fix`、Kimi Code「保留与数据库迁移相关的讨论」；CLAUDE.md 写 Compact Instructions 一劳永逸 / 三条铁律：磁盘文件压缩后重注入、负面知识「此路不通」必丢当场落盘、漂移就重申硬约束）
 
