@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-12）
+### 今日更新（2026-10-13）
 
-- 🔥 [Agent 的「指挥部」：一个指挥官带一队小兵，活儿自己认领](2026/10/2026-10-12-agent-tips.md) —— 一个人干五个人的活不叫努力 / Claude Code Agent Teams：`settings.json` 开 `AGENT_TEAMS`，队长巡场 `Shift+Down`、队员共享任务清单还能互发消息 / Kimi Code Tower：`/tower on` + `/tower <目标>`，多 Agent 共维护 1 个 repo 不打架 / 口诀：任务独立才并行，依赖就排队；队员 3~5 个封顶，怕烧钱别乱开
+- 🔥 [Agent 的「图纸会审」：动磁盘之前，先把方案给我看看](2026/10/2026-10-13-agent-tips.md) —— 说干就干然后 +900/-300 大翻车不是能力问题是流程问题 / Claude Code Plan Mode：Shift+Tab ×2 进只读勘察期，方案不满意 Ctrl+G 进编辑器改，批准才自动切出施工；高危仓库 settings.json 设 defaultMode=plan，省钱上 `--model opusplan` / Kimi Code Plan Mode：Shift-Tab 或 `/plan on`，方案落盘 `~/.kimi/plans/`，多方案审批时直接点选锁死，Yolo 也不豁免签字 / 口诀：一句话能说清期望的 diff 就别规划，说不清就先规划
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部）
+├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
 ├── 07/   # 七月技巧（项目人设文件 / 上下文管理 / 防失忆）
@@ -41,6 +41,8 @@
 ```
 
 **最新内容**（倒序）：
+
+- 🔥 [10-13 — Agent 的「图纸会审」：动磁盘之前，先把方案给我看看](2026/10/2026-10-13-agent-tips.md)（Claude Code Plan Mode：Shift+Tab ×2 / `/plan` / `--permission-mode plan` 进只读勘察期——能读文件跑只读命令但一个字节写不了，方案 Ctrl+G 外部编辑器修改、批准自动切出施工；高危仓库 `defaultMode: "plan"` 常驻；`--model opusplan` 贵脑出图快手施工 / Kimi Code Plan Mode：Shift-Tab 或 `/plan on`，方案落盘 `~/.kimi/plans/`（规划期唯一可写文件），2~3 候选方案审批时 options 点选锁死，被拒改稿再提交不丢上下文，旧图纸 `/plan clear`；Yolo 不豁免方案审批、Afk 才全自动 / 口诀：一句话能说清期望 diff 就不规划，说不清就先规划；方案存成 Markdown 防会话蒸发）
 
 - 🔥 [10-12 — Agent 的「指挥部」：一个指挥官带一队小兵，活儿自己认领](2026/10/2026-10-12-agent-tips.md)（Claude Code Agent Teams：`settings.json` 开 `CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS`，队长 `Shift+Down` 巡场、Enter 进 transcript 纠偏，队员共享任务清单互发消息 / Kimi Code Tower：`KIMI_CODE_EXPERIMENTAL_TOWER=1` → `/tower on` → `/tower <目标>`，多 Agent 同 repo 不打架，配 `subagent_fork` 对话快照交接 + 子 Agent 模型池杂活外包 / 心法：任务独立才并行、依赖就排队；3~5 个队员封顶，只认结果的活用 subagent 别动指挥部）
 
