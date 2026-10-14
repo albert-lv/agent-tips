@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-13）
+### 今日更新（2026-10-14）
 
-- 🔥 [Agent 的「图纸会审」：动磁盘之前，先把方案给我看看](2026/10/2026-10-13-agent-tips.md) —— 说干就干然后 +900/-300 大翻车不是能力问题是流程问题 / Claude Code Plan Mode：Shift+Tab ×2 进只读勘察期，方案不满意 Ctrl+G 进编辑器改，批准才自动切出施工；高危仓库 settings.json 设 defaultMode=plan，省钱上 `--model opusplan` / Kimi Code Plan Mode：Shift-Tab 或 `/plan on`，方案落盘 `~/.kimi/plans/`，多方案审批时直接点选锁死，Yolo 也不豁免签字 / 口诀：一句话能说清期望的 diff 就别规划，说不清就先规划
+- 🔥 [Agent 的「车库整理日」：外挂越装越多，Context 房租谁来付](2026/10/2026-10-14-agent-tips.md) —— 装 MCP 一时爽，每次会话先交 1~2 万 token「月租」还没干活就负重越野 / Claude Code：`/mcp` 面板 @mention 单个 server 启停，`claude mcp add --scope project` 按项目租房别全款买 user，`/plugin` Installed 置顶关注+收藏折叠禁用，`/doctor` 查多 scope 冲突 / Kimi Code：`/plugins` 四页签一键瘦身，更新徽章 Enter 直装，信任徽章 official/curated/third-party 防翻车，`/reload` 当前会话生效 / 心法：用到才开、就近租房、定期盘点
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审）
+├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
 ├── 07/   # 七月技巧（项目人设文件 / 上下文管理 / 防失忆）
@@ -41,6 +41,8 @@
 ```
 
 **最新内容**（倒序）：
+
+- 🔥 [10-14 — Agent 的「车库整理日」：外挂越装越多，Context 房租谁来付](2026/10/2026-10-14-agent-tips.md)（每个 MCP server 的工具描述 ≈ 500~2000 token，装 10 个 ≈ 每次会话固定 1~2 万「月租」 / Claude Code：`/mcp` @mention 单个启停 server；`claude mcp add --scope project` 按项目租房、user scope 只留到处都用的；`/plugin` Installed 置顶需关注+收藏的、折叠禁用的，按 `f` 收藏；`/doctor` 查同一 server 多 scope 不同 endpoint / Kimi Code：`/plugins` 面板 Installed/Official/Third-party/Custom 四页签，切换移除管 MCP 一键瘦身；更新徽章 Enter 直装；信任徽章 kimi-official/curated/third-party 装前确认来源；`/reload` 插件变更当前会话生效 / 三条整理原则：用到才开、就近租房、定期盘点）
 
 - 🔥 [10-13 — Agent 的「图纸会审」：动磁盘之前，先把方案给我看看](2026/10/2026-10-13-agent-tips.md)（Claude Code Plan Mode：Shift+Tab ×2 / `/plan` / `--permission-mode plan` 进只读勘察期——能读文件跑只读命令但一个字节写不了，方案 Ctrl+G 外部编辑器修改、批准自动切出施工；高危仓库 `defaultMode: "plan"` 常驻；`--model opusplan` 贵脑出图快手施工 / Kimi Code Plan Mode：Shift-Tab 或 `/plan on`，方案落盘 `~/.kimi/plans/`（规划期唯一可写文件），2~3 候选方案审批时 options 点选锁死，被拒改稿再提交不丢上下文，旧图纸 `/plan clear`；Yolo 不豁免方案审批、Afk 才全自动 / 口诀：一句话能说清期望 diff 就不规划，说不清就先规划；方案存成 Markdown 防会话蒸发）
 
