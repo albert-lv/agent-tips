@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-14）
+### 今日更新（2026-10-15）
 
-- 🔥 [Agent 的「车库整理日」：外挂越装越多，Context 房租谁来付](2026/10/2026-10-14-agent-tips.md) —— 装 MCP 一时爽，每次会话先交 1~2 万 token「月租」还没干活就负重越野 / Claude Code：`/mcp` 面板 @mention 单个 server 启停，`claude mcp add --scope project` 按项目租房别全款买 user，`/plugin` Installed 置顶关注+收藏折叠禁用，`/doctor` 查多 scope 冲突 / Kimi Code：`/plugins` 四页签一键瘦身，更新徽章 Enter 直装，信任徽章 official/curated/third-party 防翻车，`/reload` 当前会话生效 / 心法：用到才开、就近租房、定期盘点
+- 🔥 [Agent 的「统一家规」：AGENTS.md 从方言到普通话，一份管住全队](2026/10/2026-10-15-agent-tips.md) —— 别再给每个工具手写一遍家规了 / AGENTS.md 已是 Linux Foundation 正式标准，30+ 工具原生认：Codex、Cursor、Copilot、Windsurf、Kimi Code、Gemini CLI、Cline、Aider…… / Claude Code v2.1.277 起认 AGENTS.md（没 CLAUDE.md 时），两份并存只读 CLAUDE.md → symlink 或 @import 解 / 三坑：@import 跨文件引用出了 Claude Code 就是废字、长度 500~2000 token 是甜区、monorepo 用嵌套 AGENTS.md 就近生效 / 个人偏好走 override 文件不进团队家规
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理）
+├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理 / 统一家规）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
 ├── 07/   # 七月技巧（项目人设文件 / 上下文管理 / 防失忆）
@@ -41,6 +41,8 @@
 ```
 
 **最新内容**（倒序）：
+
+- 🔥 [10-15 — Agent 的「统一家规」：AGENTS.md 从方言到普通话，一份管住全队](2026/10/2026-10-15-agent-tips.md)（AGENTS.md 已是 Linux Foundation 正式标准、30+ 工具原生认 / Claude Code v2.1.277 起认但没 CLAUDE.md 时才读 → symlink 或 @import 统一 / 三坑：@import 跨文件引用只有 Claude Code 认、长度 500~2000 token、monorepo 嵌套 AGENTS.md 就近原则 / Codex `AGENTS.override.md` + Claude Code `CLAUDE.local.md`：团队家规进 git、个人偏好走 override）
 
 - 🔥 [10-14 — Agent 的「车库整理日」：外挂越装越多，Context 房租谁来付](2026/10/2026-10-14-agent-tips.md)（每个 MCP server 的工具描述 ≈ 500~2000 token，装 10 个 ≈ 每次会话固定 1~2 万「月租」 / Claude Code：`/mcp` @mention 单个启停 server；`claude mcp add --scope project` 按项目租房、user scope 只留到处都用的；`/plugin` Installed 置顶需关注+收藏的、折叠禁用的，按 `f` 收藏；`/doctor` 查同一 server 多 scope 不同 endpoint / Kimi Code：`/plugins` 面板 Installed/Official/Third-party/Custom 四页签，切换移除管 MCP 一键瘦身；更新徽章 Enter 直装；信任徽章 kimi-official/curated/third-party 装前确认来源；`/reload` 插件变更当前会话生效 / 三条整理原则：用到才开、就近租房、定期盘点）
 
