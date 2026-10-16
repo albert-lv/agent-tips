@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-15）
+### 今日更新（2026-10-16）
 
-- 🔥 [Agent 的「统一家规」：AGENTS.md 从方言到普通话，一份管住全队](2026/10/2026-10-15-agent-tips.md) —— 别再给每个工具手写一遍家规了 / AGENTS.md 已是 Linux Foundation 正式标准，30+ 工具原生认：Codex、Cursor、Copilot、Windsurf、Kimi Code、Gemini CLI、Cline、Aider…… / Claude Code v2.1.277 起认 AGENTS.md（没 CLAUDE.md 时），两份并存只读 CLAUDE.md → symlink 或 @import 解 / 三坑：@import 跨文件引用出了 Claude Code 就是废字、长度 500~2000 token 是甜区、monorepo 用嵌套 AGENTS.md 就近生效 / 个人偏好走 override 文件不进团队家规
+- 🔥 [Agent 的「出师表」：教会一次，一辈子不忘](2026/10/2026-10-16-agent-tips.md) —— 别再白教了 / Claude Code：CLAUDE.md 加 `Compact Instructions` 区块给压缩器立长期规矩，手动自动压缩都按章办事，比一次性 focus 一劳永逸 / Cursor：教会约定趁上下文热乎立刻 `/create-rule` 当场立法存进 `.cursor/rules/*.mdc`，凉了就只能考古 / 铁律：同一件事说两遍就是家规，写文件别留在聊天里赌它记性 / 彩蛋：让 Agent 扫自己的聊天记录 JSONL 自动提案新规则（rules 存通用规范、skills 存可复用流程）
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理 / 统一家规）
+├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理 / 统一家规 / 出师表记忆固化）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
 ├── 07/   # 七月技巧（项目人设文件 / 上下文管理 / 防失忆）
@@ -41,6 +41,8 @@
 ```
 
 **最新内容**（倒序）：
+
+- 🔥 [10-16 — Agent 的「出师表」：教会一次，一辈子不忘](2026/10/2026-10-16-agent-tips.md)（白教了现场：三天后新开会话全忘 / CLAUDE.md `Compact Instructions` 区块：必须保留已定稿决策与代码约定、丢弃探索与已修复报错，每次压缩都按章办事 / Cursor `/create-rule` 趁教会当下立法存 `.cursor/rules/*.mdc`，`alwaysApply` 每次生效、`globs` 只盯某类文件 / 铁律：同一会话说两遍就是家规 / 彩蛋：Agent 扫自己聊天记录 JSONL 自动提案 rules + skills，跳过 subagents 目录、只收通用模式）
 
 - 🔥 [10-15 — Agent 的「统一家规」：AGENTS.md 从方言到普通话，一份管住全队](2026/10/2026-10-15-agent-tips.md)（AGENTS.md 已是 Linux Foundation 正式标准、30+ 工具原生认 / Claude Code v2.1.277 起认但没 CLAUDE.md 时才读 → symlink 或 @import 统一 / 三坑：@import 跨文件引用只有 Claude Code 认、长度 500~2000 token、monorepo 嵌套 AGENTS.md 就近原则 / Codex `AGENTS.override.md` + Claude Code `CLAUDE.local.md`：团队家规进 git、个人偏好走 override）
 
