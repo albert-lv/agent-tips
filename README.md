@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-17）
+### 今日更新（2026-10-18）
 
-- 🔥 [Agent 的「改装车间」：官方终于开放魔改接口，桌面版还能自己多开打工](2026/10/2026-10-17-agent-tips.md) —— 本周三连发 / Mods 系统（10/01 上线）：JS/TS 函数挂事件流，看/改/挡三选一，`claude-code-playground` 三个 sample 一键试（token-weather / blast-radius / replay-theater）/ 桌面版 10/13 定时任务 + 10/14 并行窗口，多任务自动隔离不串味 / 企业红线：mod 跑在沙箱外，限来源 + `claude plugin validate` + `allowManagedModsOnly` 三件套 / 彩蛋：让 Claude 自己写 mod，会话生成的记得搬进插件目录防失忆
+- 🔥 [Mods 早市开张：先捡官方「你应该知道」，再学验货三件套](2026/10/2026-10-18-agent-tips.md) —— 改装车间开业 17 天，社区 mod 破 1700 / 官方内置「You Should Know」（10/03）：side agent 帮你盯漏看的内容，一行命令启用 / 社区捡漏先拿 `agent-flow`（子代理实时树）+ `cctop`（btop 风仪表盘）/ 装前验货三件套：`claude plugin validate` 体检 + `claude plugin test` 实测 + 30 秒读源码 / 自写 mod 避坑三连：事件名别打错、API 写全、事件名用字符串字面量
 
 **想看今天的内容？直接点上面 👆**
 
@@ -42,6 +42,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [10-18 — Mods 早市开张：先捡官方「你应该知道」，再学验货三件套](2026/10/2026-10-18-agent-tips.md)（改装车间开业 17 天，社区 mod 破 1700 / 官方内置 You Should Know：side agent 盯漏看内容，一行启用 / 捡漏先拿 agent-flow + cctop / 验货三件套：validate + test + 读源码 / 自写避坑三连）
 - 🔥 [10-17 — Agent 的「改装车间」：官方终于开放魔改接口，桌面版还能自己多开打工](2026/10/2026-10-17-agent-tips.md)（本周三连发：Mods 系统 10/01 上线 / JS/TS 函数挂事件流，看·改·挡三选一，playground 三 sample 一键尝 / Desktop 10/13 定时任务 + 10/14 并行窗口，多任务自动隔离 / 企业红线：mod 在沙箱外跑，限来源 + validate + allowManagedModsOnly / 彩蛋：让 Claude 写 mod，会话生成的及时搬家防失忆）
 
 - 🔥 [10-16 — Agent 的「出师表」：教会一次，一辈子不忘](2026/10/2026-10-16-agent-tips.md)（白教了现场：三天后新开会话全忘 / CLAUDE.md `Compact Instructions` 区块：必须保留已定稿决策与代码约定、丢弃探索与已修复报错，每次压缩都按章办事 / Cursor `/create-rule` 趁教会当下立法存 `.cursor/rules/*.mdc`，`alwaysApply` 每次生效、`globs` 只盯某类文件 / 铁律：同一会话说两遍就是家规 / 彩蛋：Agent 扫自己聊天记录 JSONL 自动提案 rules + skills，跳过 subagents 目录、只收通用模式）
