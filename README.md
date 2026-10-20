@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-19）
+### 今日更新（2026-10-20）
 
-- 🔥 [换引擎体检：别名集体跳槽新型号，你的配置跟上了吗](2026/10/2026-10-19-agent-tips.md) —— 上周四连发 v2.1.293~296，Haiku 5.5 上线（便宜 75% 的杂活头子）/ 四个别名全部指向新一代：`fable`→Fable 5.1、`opus`→Opus 5.5、`sonnet`→Sonnet 5.5、`haiku`→Haiku 5.5 / 旧变量 `ANTHROPIC_SMALL_FAST_MODEL` 作废，清历史遗留锁定（尤其 `ANTHROPIC_DEFAULT_FABLE_MODEL=claude-fable-5`，删掉才会用 5.1）/ 子代理编队：`CLAUDE_CODE_SUBAGENT_MODEL=haiku` + `_FORCE=1`，1M 窗口但超 100K 跳档要算账 / 彩蛋：Fable 5.1 能读 Opus 5.5 思考块，反向静默丢，中途降级对比不作数
+- 🔥 [桌面登陆战：Kimi Code Desktop 1.1.0 上岸 Linux，CLI 不再是唯一入口](2026/10/2026-10-20-agent-tips.md) —— 上周四 v1.1.0：Linux 版 AppImage/deb/RPM 三件套落地 / 远程控制扫码即用，手机当方向盘 / `kimi app [目录]` 一键从 CLI 跳桌面端，会话无缝换轨 / 实验性「进展更新」让长任务不再黑箱 / `Cmd+Shift+E` 文件树秒开
 
 **想看今天的内容？直接点上面 👆**
 
@@ -42,6 +42,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [10-20 — 桌面登陆战：Kimi Code Desktop 1.1.0 上岸 Linux，CLI 不再是唯一入口](2026/10/2026-10-20-agent-tips.md)（v1.1.0 上周四发布：Linux 三件套 AppImage/deb/RPM / 远程控制手机扫码 / `kimi app [目录]` CLI↔GUI 无缝换轨 / 进展更新实验功能治长任务黑箱 / 三形态共享能力与额度，按场景切入口）
 - 🔥 [10-19 — 换引擎体检：别名集体跳槽新型号，你的配置跟上了吗](2026/10/2026-10-19-agent-tips.md)（上周四连发 Haiku 5.5 上线 / 四别名全指向新一代，GPT-5.5 也于 10/14 退出 Codex 订阅 / 清理 `ANTHROPIC_SMALL_FAST_MODEL` 与旧 `ANTHROPIC_DEFAULT_*` 锁定，gateway 会话 fable 要敲全名 / 子代理编队升级：`_FORCE=1` 全体服从，Haiku 5.5 便宜 75%+1M 窗口，超 100K 跳档 / 彩蛋：思考块单向兼容，Fable 中途降 Opus 会静默丢）
 - 🔥 [10-18 — Mods 早市开张：先捡官方「你应该知道」，再学验货三件套](2026/10/2026-10-18-agent-tips.md)（改装车间开业 17 天，社区 mod 破 1700 / 官方内置 You Should Know：side agent 盯漏看内容，一行启用 / 捡漏先拿 agent-flow + cctop / 验货三件套：validate + test + 读源码 / 自写避坑三连）
 - 🔥 [10-17 — Agent 的「改装车间」：官方终于开放魔改接口，桌面版还能自己多开打工](2026/10/2026-10-17-agent-tips.md)（本周三连发：Mods 系统 10/01 上线 / JS/TS 函数挂事件流，看·改·挡三选一，playground 三 sample 一键尝 / Desktop 10/13 定时任务 + 10/14 并行窗口，多任务自动隔离 / 企业红线：mod 在沙箱外跑，限来源 + validate + allowManagedModsOnly / 彩蛋：让 Claude 写 mod，会话生成的及时搬家防失忆）
