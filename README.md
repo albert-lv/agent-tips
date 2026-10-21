@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-20）
+### 今日更新（2026-10-21）
 
-- 🔥 [桌面登陆战：Kimi Code Desktop 1.1.0 上岸 Linux，CLI 不再是唯一入口](2026/10/2026-10-20-agent-tips.md) —— 上周四 v1.1.0：Linux 版 AppImage/deb/RPM 三件套落地 / 远程控制扫码即用，手机当方向盘 / `kimi app [目录]` 一键从 CLI 跳桌面端，会话无缝换轨 / 实验性「进展更新」让长任务不再黑箱 / `Cmd+Shift+E` 文件树秒开
+- 🔥 [改价地震 + 开眼神器：Cursor 账单大洗牌，Agent 一键长眼睛](2026/10/2026-10-21-agent-tips.md) —— 10/12 起 Cursor 新套餐 Plus $8 起，第三方模型不再包、Grok/X 共用额度池，切换前先做一道数学题 / Agent Reach 冲上 GitHub Trending 第一（9 万+ stars）：一行命令给 Agent 装上 16 平台联网能力，X / Reddit / 小红书 / B站零 API 费
 
 **想看今天的内容？直接点上面 👆**
 
@@ -42,6 +42,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [10-21 — 改价地震 + 开眼神器：Cursor 账单大洗牌，Agent 一键长眼睛](2026/10/2026-10-21-agent-tips.md)（10/12 Cursor 定价页换天：The X Subscription 四档 $8/$30/$100/$200，额度周刷新、Grok 聊天和写代码共用一个池、第三方模型按 API 原价另付；切不切先看 Other Models 用量，前 6 个月半价但不可逆 / Agent Reach 9 万+ stars 霸榜 Trending：多后端路由 + `doctor` 体检，一行命令让 Agent 读 X、Reddit、小红书、B站，零 API 费用）
 - 🔥 [10-20 — 桌面登陆战：Kimi Code Desktop 1.1.0 上岸 Linux，CLI 不再是唯一入口](2026/10/2026-10-20-agent-tips.md)（v1.1.0 上周四发布：Linux 三件套 AppImage/deb/RPM / 远程控制手机扫码 / `kimi app [目录]` CLI↔GUI 无缝换轨 / 进展更新实验功能治长任务黑箱 / 三形态共享能力与额度，按场景切入口）
 - 🔥 [10-19 — 换引擎体检：别名集体跳槽新型号，你的配置跟上了吗](2026/10/2026-10-19-agent-tips.md)（上周四连发 Haiku 5.5 上线 / 四别名全指向新一代，GPT-5.5 也于 10/14 退出 Codex 订阅 / 清理 `ANTHROPIC_SMALL_FAST_MODEL` 与旧 `ANTHROPIC_DEFAULT_*` 锁定，gateway 会话 fable 要敲全名 / 子代理编队升级：`_FORCE=1` 全体服从，Haiku 5.5 便宜 75%+1M 窗口，超 100K 跳档 / 彩蛋：思考块单向兼容，Fable 中途降 Opus 会静默丢）
 - 🔥 [10-18 — Mods 早市开张：先捡官方「你应该知道」，再学验货三件套](2026/10/2026-10-18-agent-tips.md)（改装车间开业 17 天，社区 mod 破 1700 / 官方内置 You Should Know：side agent 盯漏看内容，一行启用 / 捡漏先拿 agent-flow + cctop / 验货三件套：validate + test + 读源码 / 自写避坑三连）
