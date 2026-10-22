@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-21）
+### 今日更新（2026-10-22）
 
-- 🔥 [改价地震 + 开眼神器：Cursor 账单大洗牌，Agent 一键长眼睛](2026/10/2026-10-21-agent-tips.md) —— 10/12 起 Cursor 新套餐 Plus $8 起，第三方模型不再包、Grok/X 共用额度池，切换前先做一道数学题 / Agent Reach 冲上 GitHub Trending 第一（9 万+ stars）：一行命令给 Agent 装上 16 平台联网能力，X / Reddit / 小红书 / B站零 API 费
+- 🔥 [省钱术 + 隔离单间：Claude Code 教 Agent「省着花」，Codex 给每人发一间「单人牢房」](2026/10/2026-10-22-agent-tips.md) —— 10/09 Claude Code v2.1.296 上线「省钱两件套」：大文件 `allow_large` 一次读完、子代理 `autoCompactWindow` 自己定压缩线（纯整数坑）/ 10/08 Codex 0.162 内置 managed worktrees：三个入口 + 会话目录绑定，多开并行不再人肉搬目录 / 哈佛 700+ 公司研究：代码多写 30%、交付没变——你的角色正在变成「划格子、审格子的人」
 
 **想看今天的内容？直接点上面 👆**
 
@@ -42,6 +42,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [10-22 — 省钱术 + 隔离单间：Claude Code 教 Agent「省着花」，Codex 给每人发一间「单人牢房」](2026/10/2026-10-22-agent-tips.md)（10/08 Codex 0.162.0：managed worktrees 三入口——`--worktree` 旗标 / `/worktree` 选择器 / 模型自调 create_worktree，`~/.codex/worktrees` + `codex-thread.json` 会话目录互绑；并行铁律：开干前 commit、永远不用 stash（refs/stash 全局共享）、模型自建的 worktree 不搬会话 cwd、sandbox 下 .git 只读 / 10/09 Claude Code v2.1.296：Read `allow_large` 大文件一次读完（3000 行实测一把梭）+ 子代理 `autoCompactWindow` 独立压缩线——必须纯整数，写 200k 被当 200 静默拒绝，`CLAUDE_CODE_AUTO_COMPACT_WINDOW` 会覆盖，--agent 模式无效；彩蛋：workflow 子代理统一模型环境变量、Sonnet 5.5 缓存读降价 $0.20→$0.10 / 哈佛 700+ 公司研究：AI 团队代码 +30%、交付未变——十月风向：上下文经济 + 隔离 + 好 review）
 - 🔥 [10-21 — 改价地震 + 开眼神器：Cursor 账单大洗牌，Agent 一键长眼睛](2026/10/2026-10-21-agent-tips.md)（10/12 Cursor 定价页换天：The X Subscription 四档 $8/$30/$100/$200，额度周刷新、Grok 聊天和写代码共用一个池、第三方模型按 API 原价另付；切不切先看 Other Models 用量，前 6 个月半价但不可逆 / Agent Reach 9 万+ stars 霸榜 Trending：多后端路由 + `doctor` 体检，一行命令让 Agent 读 X、Reddit、小红书、B站，零 API 费用）
 - 🔥 [10-20 — 桌面登陆战：Kimi Code Desktop 1.1.0 上岸 Linux，CLI 不再是唯一入口](2026/10/2026-10-20-agent-tips.md)（v1.1.0 上周四发布：Linux 三件套 AppImage/deb/RPM / 远程控制手机扫码 / `kimi app [目录]` CLI↔GUI 无缝换轨 / 进展更新实验功能治长任务黑箱 / 三形态共享能力与额度，按场景切入口）
 - 🔥 [10-19 — 换引擎体检：别名集体跳槽新型号，你的配置跟上了吗](2026/10/2026-10-19-agent-tips.md)（上周四连发 Haiku 5.5 上线 / 四别名全指向新一代，GPT-5.5 也于 10/14 退出 Codex 订阅 / 清理 `ANTHROPIC_SMALL_FAST_MODEL` 与旧 `ANTHROPIC_DEFAULT_*` 锁定，gateway 会话 fable 要敲全名 / 子代理编队升级：`_FORCE=1` 全体服从，Haiku 5.5 便宜 75%+1M 窗口，超 100K 跳档 / 彩蛋：思考块单向兼容，Fable 中途降 Opus 会静默丢）
