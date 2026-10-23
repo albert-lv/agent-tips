@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-22）
+### 今日更新（2026-10-23）
 
-- 🔥 [省钱术 + 隔离单间：Claude Code 教 Agent「省着花」，Codex 给每人发一间「单人牢房」](2026/10/2026-10-22-agent-tips.md) —— 10/09 Claude Code v2.1.296 上线「省钱两件套」：大文件 `allow_large` 一次读完、子代理 `autoCompactWindow` 自己定压缩线（纯整数坑）/ 10/08 Codex 0.162 内置 managed worktrees：三个入口 + 会话目录绑定，多开并行不再人肉搬目录 / 哈佛 700+ 公司研究：代码多写 30%、交付没变——你的角色正在变成「划格子、审格子的人」
+- 🔥 [缓存保鲜 + 多Agent爆炸周：Claude Code 给长会话「自动续杯」，Agent 成群结队要靠「保险」](2026/10/2026-10-23-agent-tips.md) —— 本周 72 小时：BAND + 腾讯 Hy Memory 2.0 前后脚发布（一人管一群 Agent 成品类）、Claude Code v2.1.304/307 权限收紧 + `safety_event` 遥测 / Idle Compaction 秘籍：200K+ 会话闲置 54 分钟自动续杯，赶在 1 小时 cache 过期前压缩保 cache；`CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS` 调门槛、压缩前主动留话、v2.1.304 起技能列表压缩后自动重发 / 保命口诀：Agent 拿 shell = 拿你账号权限、API key 是 infostealer 新目标、未提交改动不交批量跑；Kimi Code 危险命令护栏默认拦 `rm -rf`，Copilot 弃用 K2.7 Code → 换 K3
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理 / 统一家规 / 出师表记忆固化 / 改装车间）
+├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理 / 统一家规 / 出师表记忆固化 / 改装车间 / 省钱隔离 / 缓存保鲜保险）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
 ├── 07/   # 七月技巧（项目人设文件 / 上下文管理 / 防失忆）
@@ -42,6 +42,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [10-23 — 缓存保鲜 + 多Agent爆炸周：Claude Code 给长会话「自动续杯」，Agent 成群结队要靠「保险」](2026/10/2026-10-23-agent-tips.md)（72 小时内：BAND for Developers + 腾讯 Hy Memory 2.0 同周发布，多 Agent 管理成品类；Claude Code v2.1.304/307 权限收紧 + `claude_code.safety_event` 遥测可审计、API 版本推进 2026-10-21 / Idle Compaction v2.1.299：200K+ 会话闲置约 54 分钟赶在 1 小时 cache 过期前自动压缩——`CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS` 调门槛、`idleCompaction: false` 关闭、压缩前主动 `/compact 保留 xxx` 留话；v2.1.304 起压缩后技能列表自动重发不再「出厂设置」；`CLAUDE_CODE_AUTO_MODE_MODEL` 自选分类器模型 / 保命三口诀：shell=账号权限、key 防 infostealer、未提交改动不批量跑；Kimi Code 危险命令护栏默认拦 shutdown/reboot/rm -rf，`dangerous_command_guard=false` 可关；Copilot 10/2 弃用 K2.7 Code→K3(1M)、Opus 4.7→Opus 5.5）
 - 🔥 [10-22 — 省钱术 + 隔离单间：Claude Code 教 Agent「省着花」，Codex 给每人发一间「单人牢房」](2026/10/2026-10-22-agent-tips.md)（10/08 Codex 0.162.0：managed worktrees 三入口——`--worktree` 旗标 / `/worktree` 选择器 / 模型自调 create_worktree，`~/.codex/worktrees` + `codex-thread.json` 会话目录互绑；并行铁律：开干前 commit、永远不用 stash（refs/stash 全局共享）、模型自建的 worktree 不搬会话 cwd、sandbox 下 .git 只读 / 10/09 Claude Code v2.1.296：Read `allow_large` 大文件一次读完（3000 行实测一把梭）+ 子代理 `autoCompactWindow` 独立压缩线——必须纯整数，写 200k 被当 200 静默拒绝，`CLAUDE_CODE_AUTO_COMPACT_WINDOW` 会覆盖，--agent 模式无效；彩蛋：workflow 子代理统一模型环境变量、Sonnet 5.5 缓存读降价 $0.20→$0.10 / 哈佛 700+ 公司研究：AI 团队代码 +30%、交付未变——十月风向：上下文经济 + 隔离 + 好 review）
 - 🔥 [10-21 — 改价地震 + 开眼神器：Cursor 账单大洗牌，Agent 一键长眼睛](2026/10/2026-10-21-agent-tips.md)（10/12 Cursor 定价页换天：The X Subscription 四档 $8/$30/$100/$200，额度周刷新、Grok 聊天和写代码共用一个池、第三方模型按 API 原价另付；切不切先看 Other Models 用量，前 6 个月半价但不可逆 / Agent Reach 9 万+ stars 霸榜 Trending：多后端路由 + `doctor` 体检，一行命令让 Agent 读 X、Reddit、小红书、B站，零 API 费用）
 - 🔥 [10-20 — 桌面登陆战：Kimi Code Desktop 1.1.0 上岸 Linux，CLI 不再是唯一入口](2026/10/2026-10-20-agent-tips.md)（v1.1.0 上周四发布：Linux 三件套 AppImage/deb/RPM / 远程控制手机扫码 / `kimi app [目录]` CLI↔GUI 无缝换轨 / 进展更新实验功能治长任务黑箱 / 三形态共享能力与额度，按场景切入口）
