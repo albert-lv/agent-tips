@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-24）
+### 今日更新（2026-10-25）
 
-- 🔥 [Review 的「自动驾驶」：Claude Code 自曝 90% 代码出自 Claude，revert 率反而降了 40%](2026/10/2026-10-24-agent-tips.md) —— 10/17 claude.dev 复盘刷爆 HN（284 分）：monorepo 日变更 2,500→3 万、PR 翻倍 revert 反降 40% / 流水线五层：机审 lint/测试 → 平台级二审 → 多 agent 并行找 bug + verifier 投票 → 独立复核 → 分类器定级 0/1/2 人审；北极星=绝大多数 PR 最多一次人类介入、护栏=revert 率事故率 / 落地：独立上下文对抗二审三连命令 + PR 自评 L0/L1/L2 写进家规 / 加餐：10/19 七模型路由 gist（fable 主攻 haiku 打杂，Codex/DeepSeek/Grok 子代理化）；Agent Teams 10/22 官方中文文档上线
+- 🔥 [备胎要常换：十月榜单背后的「多模型池」实操](2026/10/2026-10-25-agent-tips.md) —— 10/23 benchlm：Fable 5.1 在 Cursor 自家 CursorBench 4.0 领先 Composer 2.5 整整 24.1 分、Anthropic 包揽前四 / 10/16 LogRocket 十月榜：开源 OpenCode 冲至第二，理由是「75+ 模型随便接」 / 落地：OpenCode BYOK 万能转换头（`opencode models` 看池、`--model` 点名、opencode.json 按项目配默认+备胎）+ Claude Code 降级链（`fallbackModel` 挂 3 个 + `ANTHROPIC_SMALL_FAST_MODEL` 杂活派 Haiku）/ Fable 出图纸、Haiku 打杂、Opus 兜底
 
 **想看今天的内容？直接点上面 👆**
 
@@ -42,6 +42,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [10-25 — 备胎要常换：十月榜单背后的「多模型池」实操](2026/10/2026-10-25-agent-tips.md)（10/23 benchlm：Fable 5.1 在 Cursor 自家 CursorBench 4.0 拿 51.8 分、领先 Composer 2.5 整整 24.1 分，Anthropic 包揽前四 / 10/16 LogRocket 十月榜：开源 OpenCode 冲至第二，靠「75+ 模型随便接」/ 技巧一：OpenCode BYOK 万能转换头——`opencode models` 看池、`--model` 点名、opencode.json 按项目配默认+备胎，本地跑代码不出机 / 技巧二：Claude Code 自带降级链——settings.json `fallbackModel` 挂 3 个自动降级 + `ANTHROPIC_SMALL_FAST_MODEL` 杂活派 Haiku 5.5 / Fable 出图纸、Haiku 打杂、Opus 兜底；彩蛋：Cursor 第三方模型按 API 原价扣 credit，量大时对比 OpenCode BYOK）
 - 🔥 [10-24 — Review 的「自动驾驶」：Claude Code 自曝 90% 代码出自 Claude，revert 率反而降了 40%](2026/10/2026-10-24-agent-tips.md)（10/17 claude.dev 复盘 HN 284 分：日变更 2,500→3 万、PR 翻倍 revert -40% / 五层流水线：机审测试构建 lint → 平台级二审 → 多 agent 并行找 bug+verifier 投票 → 独立复核 → 分类器定级 0/1/2 人审；北极星=绝大多数 PR 最多一次人类介入、护栏=revert 率事故率 / 落地：独立上下文对抗二审三连 + PR 自评 L0/L1/L2 写进家规 / 加餐：10/19 七模型路由 gist，fable 主攻 haiku 打杂 Codex/DeepSeek/Grok 子代理化；Agent Teams 中文文档 10/22 上线）
 - 🔥 [10-23 — 缓存保鲜 + 多Agent爆炸周：Claude Code 给长会话「自动续杯」，Agent 成群结队要靠「保险」](2026/10/2026-10-23-agent-tips.md)（72 小时内：BAND for Developers + 腾讯 Hy Memory 2.0 同周发布，多 Agent 管理成品类；Claude Code v2.1.304/307 权限收紧 + `claude_code.safety_event` 遥测可审计、API 版本推进 2026-10-21 / Idle Compaction v2.1.299：200K+ 会话闲置约 54 分钟赶在 1 小时 cache 过期前自动压缩——`CLAUDE_CODE_IDLE_COMPACT_MIN_TOKENS` 调门槛、`idleCompaction: false` 关闭、压缩前主动 `/compact 保留 xxx` 留话；v2.1.304 起压缩后技能列表自动重发不再「出厂设置」；`CLAUDE_CODE_AUTO_MODE_MODEL` 自选分类器模型 / 保命三口诀：shell=账号权限、key 防 infostealer、未提交改动不批量跑；Kimi Code 危险命令护栏默认拦 shutdown/reboot/rm -rf，`dangerous_command_guard=false` 可关；Copilot 10/2 弃用 K2.7 Code→K3(1M)、Opus 4.7→Opus 5.5）
 - 🔥 [10-22 — 省钱术 + 隔离单间：Claude Code 教 Agent「省着花」，Codex 给每人发一间「单人牢房」](2026/10/2026-10-22-agent-tips.md)（10/08 Codex 0.162.0：managed worktrees 三入口——`--worktree` 旗标 / `/worktree` 选择器 / 模型自调 create_worktree，`~/.codex/worktrees` + `codex-thread.json` 会话目录互绑；并行铁律：开干前 commit、永远不用 stash（refs/stash 全局共享）、模型自建的 worktree 不搬会话 cwd、sandbox 下 .git 只读 / 10/09 Claude Code v2.1.296：Read `allow_large` 大文件一次读完（3000 行实测一把梭）+ 子代理 `autoCompactWindow` 独立压缩线——必须纯整数，写 200k 被当 200 静默拒绝，`CLAUDE_CODE_AUTO_COMPACT_WINDOW` 会覆盖，--agent 模式无效；彩蛋：workflow 子代理统一模型环境变量、Sonnet 5.5 缓存读降价 $0.20→$0.10 / 哈佛 700+ 公司研究：AI 团队代码 +30%、交付未变——十月风向：上下文经济 + 隔离 + 好 review）
