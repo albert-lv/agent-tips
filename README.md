@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-25）
+### 今日更新（2026-10-26）
 
-- 🔥 [备胎要常换：十月榜单背后的「多模型池」实操](2026/10/2026-10-25-agent-tips.md) —— 10/23 benchlm：Fable 5.1 在 Cursor 自家 CursorBench 4.0 领先 Composer 2.5 整整 24.1 分、Anthropic 包揽前四 / 10/16 LogRocket 十月榜：开源 OpenCode 冲至第二，理由是「75+ 模型随便接」 / 落地：OpenCode BYOK 万能转换头（`opencode models` 看池、`--model` 点名、opencode.json 按项目配默认+备胎）+ Claude Code 降级链（`fallbackModel` 挂 3 个 + `ANTHROPIC_SMALL_FAST_MODEL` 杂活派 Haiku）/ Fable 出图纸、Haiku 打杂、Opus 兜底
+- 🔥 [新模型三连祭：K3.1 Pro 上线了，但先别急着在老会话里切](2026/10/2026-10-26-agent-tips.md) —— 10/23 K3.1 Pro 系列上线：首个 3T-class、1M 上下文、Highspeed 2~3x 提速 / 上手三连：新开 session 再上车（老会话硬切=行为不可预期+cache 暴跌）、thinking 关了直接 400、1M 窗口要 Pro / Allegretto 档 / v1.1.1 热更新：`/reload` 改家规秒生效、`/compact` 排队不打断 / 彩蛋：切模型三连选，默认选「新开会话」准没错
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 10/   # 十月技巧（远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理 / 统一家规 / 出师表记忆固化 / 改装车间 / 省钱隔离 / 缓存保鲜保险 / review自动驾驶）
+├── 10/   # 十月技巧（新模型上手 / 远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理 / 统一家规 / 出师表记忆固化 / 改装车间 / 省钱隔离 / 缓存保鲜保险 / review自动驾驶）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
 ├── 07/   # 七月技巧（项目人设文件 / 上下文管理 / 防失忆）
@@ -41,6 +41,8 @@
 ```
 
 **最新内容**（倒序）：
+
+- 🔥 [10-26 — 新模型三连祭：K3.1 Pro 上线了，但先别急着在老会话里切](2026/10/2026-10-26-agent-tips.md)（10/23 K3.1 Pro 上线：3T-class + 1M 上下文 + Highspeed 2~3x / 技巧一：新开 session 再上车，老会话硬切行为不可预期 + cache 暴跌；thinking 关了 400；1M 要 Pro / Allegretto 档 / 技巧二：`/reload` 改家规秒生效不用重启、`/compact` 排队等 agent turn 结束自动执行 / 彩蛋：切模型三连选——新开会话、压缩继续、直接硬刚，默认第一个）
 
 - 🔥 [10-25 — 备胎要常换：十月榜单背后的「多模型池」实操](2026/10/2026-10-25-agent-tips.md)（10/23 benchlm：Fable 5.1 在 Cursor 自家 CursorBench 4.0 拿 51.8 分、领先 Composer 2.5 整整 24.1 分，Anthropic 包揽前四 / 10/16 LogRocket 十月榜：开源 OpenCode 冲至第二，靠「75+ 模型随便接」/ 技巧一：OpenCode BYOK 万能转换头——`opencode models` 看池、`--model` 点名、opencode.json 按项目配默认+备胎，本地跑代码不出机 / 技巧二：Claude Code 自带降级链——settings.json `fallbackModel` 挂 3 个自动降级 + `ANTHROPIC_SMALL_FAST_MODEL` 杂活派 Haiku 5.5 / Fable 出图纸、Haiku 打杂、Opus 兜底；彩蛋：Cursor 第三方模型按 API 原价扣 credit，量大时对比 OpenCode BYOK）
 - 🔥 [10-24 — Review 的「自动驾驶」：Claude Code 自曝 90% 代码出自 Claude，revert 率反而降了 40%](2026/10/2026-10-24-agent-tips.md)（10/17 claude.dev 复盘 HN 284 分：日变更 2,500→3 万、PR 翻倍 revert -40% / 五层流水线：机审测试构建 lint → 平台级二审 → 多 agent 并行找 bug+verifier 投票 → 独立复核 → 分类器定级 0/1/2 人审；北极星=绝大多数 PR 最多一次人类介入、护栏=revert 率事故率 / 落地：独立上下文对抗二审三连 + PR 自评 L0/L1/L2 写进家规 / 加餐：10/19 七模型路由 gist，fable 主攻 haiku 打杂 Codex/DeepSeek/Grok 子代理化；Agent Teams 中文文档 10/22 上线）
