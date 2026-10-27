@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-26）
+### 今日更新（2026-10-27）
 
-- 🔥 [新模型三连祭：K3.1 Pro 上线了，但先别急着在老会话里切](2026/10/2026-10-26-agent-tips.md) —— 10/23 K3.1 Pro 系列上线：首个 3T-class、1M 上下文、Highspeed 2~3x 提速 / 上手三连：新开 session 再上车（老会话硬切=行为不可预期+cache 暴跌）、thinking 关了直接 400、1M 窗口要 Pro / Allegretto 档 / v1.1.1 热更新：`/reload` 改家规秒生效、`/compact` 排队不打断 / 彩蛋：切模型三连选，默认选「新开会话」准没错
+- 🔥 [SKILL.md 喜提「全球驾照」+ 撞额度不再硬崩：这周 Agent 圈的两件大事](2026/10/2026-10-27-agent-tips.md) —— 10/22 Agent Skills 捐给 Agentic AI Foundation 成为开放标准，70+ 平台接入 / 可移植 skill 三军规：frontmatter 写满、description 写「何时用」、正文 <500 行 + 相对路径 / 本周 Claude Code v2.1.311：撞额度改自动压缩续跑，不再硬崩 / 自救三板斧：`/usage` 摸底、usage credits 救急、limit reset 兑换 / 预防：空闲自动压缩 + `/subtask` fork 子代理省额度
 
 **想看今天的内容？直接点上面 👆**
 
