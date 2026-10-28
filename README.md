@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-27）
+### 今日更新（2026-10-28）
 
-- 🔥 [SKILL.md 喜提「全球驾照」+ 撞额度不再硬崩：这周 Agent 圈的两件大事](2026/10/2026-10-27-agent-tips.md) —— 10/22 Agent Skills 捐给 Agentic AI Foundation 成为开放标准，70+ 平台接入 / 可移植 skill 三军规：frontmatter 写满、description 写「何时用」、正文 <500 行 + 相对路径 / 本周 Claude Code v2.1.311：撞额度改自动压缩续跑，不再硬崩 / 自救三板斧：`/usage` 摸底、usage credits 救急、limit reset 兑换 / 预防：空闲自动压缩 + `/subtask` fork 子代理省额度
+- 🔥 [一个收、一个放：Kimi 给子代理上缰绳，Claude 开始「不请自来」](2026/10/2026-10-28-agent-tips.md) —— 10/25 Kimi Code 官宣 K3.1 Pro 子代理默认自己干活：CLI 2.3.2 / 桌面 1.1.3 起委派需明说，`kimi -p` 和 Zed 等 ACP 客户端不再有蜂群 / 委派暗号三写法：消息点名、AGENTS.md 立并行规则、开 swarm / tower 模式 / 同期 10/21 Claude Duet 研究预览：主动型 agent 不请自来 / 给主动 agent 立边界家规：可逆+本地=自主，不可逆+对外=请示 / 彩蛋：Claude Efficient 模式锁 Sonnet/Haiku，Kimi 高速档别当默认
 
 **想看今天的内容？直接点上面 👆**
 
@@ -42,6 +42,8 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [10-28 — 一个收、一个放：Kimi 给子代理上缰绳，Claude 开始「不请自来」](2026/10/2026-10-28-agent-tips.md)（10/25 Kimi Code 官宣 K3.1 Pro 子代理调用调整：CLI 2.3.2 / 桌面 1.1.3 默认独立处理、委派需明确要求，AgentSwarm 只在 swarm 模式开启后运行，`kimi -p` 与 Zed 等 ACP 客户端不再提供蜂群 / 技巧一：委派暗号三写法——消息点名「拆给子代理」、AGENTS.md 写并行规则、开 swarm / tower 放权 / 技巧二：主动型 agent 边界家规——可逆+本地=自主，不可逆+对外=请示；彩蛋：Claude Efficient 模式锁 Sonnet/Haiku 省额度、Kimi 高速档消耗 2~3 倍别当默认）
+- 🔥 [10-27 — SKILL.md 喜提「全球驾照」+ 撞额度不再硬崩：这周 Agent 圈的两件大事](2026/10/2026-10-27-agent-tips.md)（10/22 Agent Skills 捐给 Agentic AI Foundation 成为开放标准，70+ 平台接入 / 可移植 skill 三军规：frontmatter 写满、description 写「何时用」、正文 <500 行 + 相对路径 / 本周 Claude Code v2.1.311：撞额度改自动压缩续跑，不再硬崩 / 自救三板斧：`/usage` 摸底、usage credits 救急、limit reset 兑换 / 预防：空闲自动压缩 + `/subtask` fork 子代理省额度）
 - 🔥 [10-26 — 新模型三连祭：K3.1 Pro 上线了，但先别急着在老会话里切](2026/10/2026-10-26-agent-tips.md)（10/23 K3.1 Pro 上线：3T-class + 1M 上下文 + Highspeed 2~3x / 技巧一：新开 session 再上车，老会话硬切行为不可预期 + cache 暴跌；thinking 关了 400；1M 要 Pro / Allegretto 档 / 技巧二：`/reload` 改家规秒生效不用重启、`/compact` 排队等 agent turn 结束自动执行 / 彩蛋：切模型三连选——新开会话、压缩继续、直接硬刚，默认第一个）
 
 - 🔥 [10-25 — 备胎要常换：十月榜单背后的「多模型池」实操](2026/10/2026-10-25-agent-tips.md)（10/23 benchlm：Fable 5.1 在 Cursor 自家 CursorBench 4.0 拿 51.8 分、领先 Composer 2.5 整整 24.1 分，Anthropic 包揽前四 / 10/16 LogRocket 十月榜：开源 OpenCode 冲至第二，靠「75+ 模型随便接」/ 技巧一：OpenCode BYOK 万能转换头——`opencode models` 看池、`--model` 点名、opencode.json 按项目配默认+备胎，本地跑代码不出机 / 技巧二：Claude Code 自带降级链——settings.json `fallbackModel` 挂 3 个自动降级 + `ANTHROPIC_SMALL_FAST_MODEL` 杂活派 Haiku 5.5 / Fable 出图纸、Haiku 打杂、Opus 兜底；彩蛋：Cursor 第三方模型按 API 原价扣 credit，量大时对比 OpenCode BYOK）
