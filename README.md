@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-10-31）
+### 今日更新（2026-11-01）
 
-- 🔥 [十月收官：K3.1 Pro 满月体检 + Claude Code 的 review 终于「转正」了](2026/10/2026-10-31-agent-tips.md) —— Kimi K3.1 Pro 上线 Kimi Code 满一周，官方 10/28 放出首周体验补丁包 / 技巧一：四个「住进去才知道」的修复——目标模式离线时间不再偷预算且取消 24h 上限、会话选择器 `Ctrl-X`+`y` 删会话、`kimi upgrade -y` 免确认进启动脚本、`KIMI_CODE_PERMISSION_MODE_REMINDER=0` 关权限提醒省 context / 技巧二：Claude Code `/review` 正式 GA（10/15，随 2.1.305）——审 PR 外包给机器，配合 fork subagent 后台跑、按模块拆并行审 / 彩蛋：K3.1 Pro 权重 11/4（下周二）前开源，API 已降 33%（$2/$10），自托管党蹲 BYOK 接入潮
+- 🔥 [十一月开张：agent 干到一半可以「插嘴」了——十月发布洪峰里漏掉的两个硬货](2026/11/2026-11-01-agent-tips.md) —— 10/12~10/20 九天五连发（OpenCode 2.0 / Codex CLI 0.163.0 / Claude Code 2.1.302 / Xojo Agentic Mode / VS Code 1.141），主题全是「agent 跑更久、人少插手」/ 技巧一：Codex live steering——agent 生成到一半直接插话纠偏，不用等也不用取消；`/agents` 指挥中心 + managed worktree 默认开 + 并行只读工具；前 30 秒盯首批动作，早期纠偏成本最低 / 技巧二：Haiku 5.5 的正式岗位说明书——成本降 75%、1M 上下文、第一个可调 effort 的 Haiku，官方定位就是当 Opus/Sonnet 5.5 的 subagent 打杂：贵的做判断、便宜的做跑腿 / 彩蛋：GPT-6.1 Terra 进 Codex（$1/$5，Sol 半价）+ AGENTS.md 成跨工具通用家规（Claude Code 无 CLAUDE.md 时自动读，一份管住全队）
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,6 +33,7 @@
 
 ```
 2026/
+├── 11/   # 十一月技巧（发布洪峰捡漏 / 实时纠偏 / 廉价打手 / 通用家规）
 ├── 10/   # 十月技巧（新模型上手 / 远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理 / 统一家规 / 出师表记忆固化 / 改装车间 / 省钱隔离 / 缓存保鲜保险 / review自动驾驶 / 分身出厂设置 / Agent工程化）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
@@ -42,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-01 — 十一月开张：agent 干到一半可以「插嘴」了——十月发布洪峰里漏掉的两个硬货](2026/11/2026-11-01-agent-tips.md)（10/12~10/20 九天五连发：OpenCode 2.0 → Codex CLI 0.163.0 → Claude Code 2.1.302 → Xojo Agentic Mode → VS Code 1.141，主题=agent 跑更久、人少插手 / 技巧一：Codex live steering 生成途中直接插话纠偏 + `/agents` 指挥中心 + managed worktree 默认开 + 并行只读工具；长任务前 30 秒盯首批动作，早期纠偏成本最低 / 技巧二：Haiku 5.5 当 Opus/Sonnet 5.5 的廉价 subagent——成本降 75%、1M 上下文、首个可调 effort，贵的做判断便宜的做跑腿 / 彩蛋：GPT-6.1 Terra 进 Codex 半价 $1/$5、AGENTS.md 跨工具通用家规一份管住全队）
 - 🔥 [10-31 — 十月收官：K3.1 Pro 满月体检 + Claude Code 的 review 终于「转正」了](2026/10/2026-10-31-agent-tips.md)（K3.1 Pro 上线 Kimi Code 满一周 + 官方 10/28 首周补丁包 / 技巧一：目标模式离线不偷预算+取消 24h 上限、会话选择器 `Ctrl-X` 删除、`kimi upgrade -y` 免确认、`KIMI_CODE_PERMISSION_MODE_REMINDER=0` 静音权限提醒，v0.43.1 修 Ctrl-C 误杀整个 CLI / 技巧二：Claude Code `/review` GA——审 PR 外包给机器，fork 子代理后台跑+按模块并行审，业务逻辑仍要人把关 / 彩蛋：11/4 权重开源前瞻，API $2/$10 已降 33%，BYOK 党蹲接入潮）
 - 🔥 [10-30 — Agent 有了自己的工位：Cursor Agent SDK 正式上岗，Claude Code 分身出厂自带](2026/10/2026-10-30-agent-tips.md)（GPT-6 全面开放 + Meta Muse Spark Open 816B（10/16）/ 技巧一：Cursor Agent SDK——`npx @cursor/agent-sdk init` 起项目，instructions.md=提示词、tools/=强类型动作、channels 接 GitHub PR、Slack、webhook、cron；`agent-sdk github replay <pr-url>` 把真实 PR 转成签名事件回放做 eval；`--template` 自带 security reviewer / PR autofixer / Linear·Jira triager / 技巧二：Claude Code 2.1.302 fork 子代理全环境默认开启，桌面端+VS Code 主会话子代理统一后台运行，`CLAUDE_CODE_FORK_SUBAGENT=0` 关闭——多 agent 编排脚本跨环境行为一致；彩蛋：Cloud Agent 环境 300 仓库 + Environments API beta）
 - 🔥 [10-28 — 一个收、一个放：Kimi 给子代理上缰绳，Claude 开始「不请自来」](2026/10/2026-10-28-agent-tips.md)（10/25 Kimi Code 官宣 K3.1 Pro 子代理调用调整：CLI 2.3.2 / 桌面 1.1.3 默认独立处理、委派需明确要求，AgentSwarm 只在 swarm 模式开启后运行，`kimi -p` 与 Zed 等 ACP 客户端不再提供蜂群 / 技巧一：委派暗号三写法——消息点名「拆给子代理」、AGENTS.md 写并行规则、开 swarm / tower 放权 / 技巧二：主动型 agent 边界家规——可逆+本地=自主，不可逆+对外=请示；彩蛋：Claude Efficient 模式锁 Sonnet/Haiku 省额度、Kimi 高速档消耗 2~3 倍别当默认）
@@ -154,7 +156,7 @@
 | Claude Code 技巧 | 标题含 "Claude" 的日报，或搜 `/claude` |
 | Cursor 技巧 | 标题含 "Cursor" 的日报，或搜 `/cursor` |
 | 上下文/防失忆 | 搜 `compact`、`summarize`、`失忆` |
-| 最新技巧 | [2026/10/](2026/10/) 目录 |
+| 最新技巧 | [2026/11/](2026/11/) 目录 |
 | 历史归档 | [2026/08/](2026/08/)、[2026/07/](2026/07/)、[2026/06/](2026/06/) |
 
 ### 方式三：本地浏览
