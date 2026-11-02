@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-01）
+### 今日更新（2026-11-02）
 
-- 🔥 [十一月开张：agent 干到一半可以「插嘴」了——十月发布洪峰里漏掉的两个硬货](2026/11/2026-11-01-agent-tips.md) —— 10/12~10/20 九天五连发（OpenCode 2.0 / Codex CLI 0.163.0 / Claude Code 2.1.302 / Xojo Agentic Mode / VS Code 1.141），主题全是「agent 跑更久、人少插手」/ 技巧一：Codex live steering——agent 生成到一半直接插话纠偏，不用等也不用取消；`/agents` 指挥中心 + managed worktree 默认开 + 并行只读工具；前 30 秒盯首批动作，早期纠偏成本最低 / 技巧二：Haiku 5.5 的正式岗位说明书——成本降 75%、1M 上下文、第一个可调 effort 的 Haiku，官方定位就是当 Opus/Sonnet 5.5 的 subagent 打杂：贵的做判断、便宜的做跑腿 / 彩蛋：GPT-6.1 Terra 进 Codex（$1/$5，Sol 半价）+ AGENTS.md 成跨工具通用家规（Claude Code 无 CLAUDE.md 时自动读，一份管住全队）
+- 🔥 [安检日：扩展市场惊现「李鬼」claude-code，给 AI 工具链做个安检](2026/11/2026-11-02-agent-tips.md) —— 10/29 Cursor 官方公告：恶意版 `Anthropic.claude-code`（伪装版本 2.1.312/2.1.313）混入扩展市场，agent 权限大于天，装它得像录用实习生一样做背调 / 技巧一：安检三件套——只认官方安装入口（官网脚本或 `@anthropic-ai/claude-code` npm scope）、`npm view` 版本号对账、每月盘查扩展目录 + `npm ls -g` + `doctor` 自检 / 技巧二：Kimi Code CLI v2.4.0（10/28）实验室——等待中 `Enter`/`Ctrl-S` 直接插话（和昨天 Codex live steering 会师）、NotifyUser 主动汇报进展、`tui_mode = "fullscreen"` 全屏模式；彩蛋：K3.1 Pro 权重 11/4 前开源明晚蹲点 + 取消 1000 步上限 + `KIMI_MODEL_*` 环境变量 CI 切模型 + GitHub URL 装 Plugin
 
 **想看今天的内容？直接点上面 👆**
 
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-02 — 安检日：扩展市场惊现「李鬼」claude-code，给 AI 工具链做个安检](2026/11/2026-11-02-agent-tips.md)（10/29 Cursor 安全公告：恶意版 `Anthropic.claude-code` 2.1.312/2.1.313 混入扩展市场，官方真身才发到 2.1.31x——agent 时代首起公开供应链投毒 / 技巧一：安检三件套——只认官方安装入口、npm view 版本号对账、每月盘查扩展目录+`npm ls -g`+doctor；把 agent 当「能接触你全部代码的实习生」录用 / 技巧二：Kimi Code v2.4.0（10/28）——等待中 Enter/Ctrl-S 插话（与 Codex live steering 会师）、NotifyUser 主动汇报、`tui_mode="fullscreen"` 全屏模式，实验功能只在新建会话生效零成本试错 / 彩蛋：K3.1 Pro 权重 11/4 前开源明晚蹲点 + 取消 1000 步上限 + `KIMI_MODEL_*` 环境变量 + GitHub URL 装 Plugin）
 - 🔥 [11-01 — 十一月开张：agent 干到一半可以「插嘴」了——十月发布洪峰里漏掉的两个硬货](2026/11/2026-11-01-agent-tips.md)（10/12~10/20 九天五连发：OpenCode 2.0 → Codex CLI 0.163.0 → Claude Code 2.1.302 → Xojo Agentic Mode → VS Code 1.141，主题=agent 跑更久、人少插手 / 技巧一：Codex live steering 生成途中直接插话纠偏 + `/agents` 指挥中心 + managed worktree 默认开 + 并行只读工具；长任务前 30 秒盯首批动作，早期纠偏成本最低 / 技巧二：Haiku 5.5 当 Opus/Sonnet 5.5 的廉价 subagent——成本降 75%、1M 上下文、首个可调 effort，贵的做判断便宜的做跑腿 / 彩蛋：GPT-6.1 Terra 进 Codex 半价 $1/$5、AGENTS.md 跨工具通用家规一份管住全队）
 - 🔥 [10-31 — 十月收官：K3.1 Pro 满月体检 + Claude Code 的 review 终于「转正」了](2026/10/2026-10-31-agent-tips.md)（K3.1 Pro 上线 Kimi Code 满一周 + 官方 10/28 首周补丁包 / 技巧一：目标模式离线不偷预算+取消 24h 上限、会话选择器 `Ctrl-X` 删除、`kimi upgrade -y` 免确认、`KIMI_CODE_PERMISSION_MODE_REMINDER=0` 静音权限提醒，v0.43.1 修 Ctrl-C 误杀整个 CLI / 技巧二：Claude Code `/review` GA——审 PR 外包给机器，fork 子代理后台跑+按模块并行审，业务逻辑仍要人把关 / 彩蛋：11/4 权重开源前瞻，API $2/$10 已降 33%，BYOK 党蹲接入潮）
 - 🔥 [10-30 — Agent 有了自己的工位：Cursor Agent SDK 正式上岗，Claude Code 分身出厂自带](2026/10/2026-10-30-agent-tips.md)（GPT-6 全面开放 + Meta Muse Spark Open 816B（10/16）/ 技巧一：Cursor Agent SDK——`npx @cursor/agent-sdk init` 起项目，instructions.md=提示词、tools/=强类型动作、channels 接 GitHub PR、Slack、webhook、cron；`agent-sdk github replay <pr-url>` 把真实 PR 转成签名事件回放做 eval；`--template` 自带 security reviewer / PR autofixer / Linear·Jira triager / 技巧二：Claude Code 2.1.302 fork 子代理全环境默认开启，桌面端+VS Code 主会话子代理统一后台运行，`CLAUDE_CODE_FORK_SUBAGENT=0` 关闭——多 agent 编排脚本跨环境行为一致；彩蛋：Cloud Agent 环境 300 仓库 + Environments API beta）
