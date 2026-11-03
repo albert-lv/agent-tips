@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-02）
+### 今日更新（2026-11-03）
 
-- 🔥 [安检日：扩展市场惊现「李鬼」claude-code，给 AI 工具链做个安检](2026/11/2026-11-02-agent-tips.md) —— 10/29 Cursor 官方公告：恶意版 `Anthropic.claude-code`（伪装版本 2.1.312/2.1.313）混入扩展市场，agent 权限大于天，装它得像录用实习生一样做背调 / 技巧一：安检三件套——只认官方安装入口（官网脚本或 `@anthropic-ai/claude-code` npm scope）、`npm view` 版本号对账、每月盘查扩展目录 + `npm ls -g` + `doctor` 自检 / 技巧二：Kimi Code CLI v2.4.0（10/28）实验室——等待中 `Enter`/`Ctrl-S` 直接插话（和昨天 Codex live steering 会师）、NotifyUser 主动汇报进展、`tui_mode = "fullscreen"` 全屏模式；彩蛋：K3.1 Pro 权重 11/4 前开源明晚蹲点 + 取消 1000 步上限 + `KIMI_MODEL_*` 环境变量 CI 切模型 + GitHub URL 装 Plugin
+- 🔥 [家规保卫战：Claude Code 终于不再「看开头就重写你的家规」+ 真·2.1.312 落地对账日](2026/11/2026-11-03-agent-tips.md) —— 真·v2.1.312 本周落地（正是昨天李鬼冒用的版本号）/ 技巧一：年度恐怖故事 closure——老版本 Claude 只看超大 CLAUDE.md 开头就 Write 整体覆盖、后半人间蒸发，新版强制先读完或原地编辑；三层防御：拆家规（主文件高频+`@` 引用专题）、CLAUDE.md 当代码 git 管理、升级后实测验证 / 技巧二：对账日实战——`npm view` + `npm ls -g` + 扩展目录盘查，「比官方还新」即危险信号；monorepo 隐藏修复：`cd` 进仓库深层后 per-directory/`paths:` skills 不再静默丢失 / 彩蛋：明晚 11/4 K3.1 Pro 权重放出 + K2 年底退役迁移三件事（ID 切换、缓存命中一折 $0.30/M、batch 六折）
 
 **想看今天的内容？直接点上面 👆**
 
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-03 — 家规保卫战：Claude Code 终于不再「看开头就重写你的家规」+ 真·2.1.312 落地对账日](2026/11/2026-11-03-agent-tips.md)（真·v2.1.312 本周落地=昨天李鬼冒用的版本号 / 技巧一：老版本只看超大 CLAUDE.md 开头就 Write 整体覆盖、后半人间蒸发，新版强制读完或原地编辑；三层防御：拆家规+`@`引用、CLAUDE.md 进 git、升级实测 / 技巧二：对账日实战——`npm view`+`npm ls -g`+扩展目录盘查，「比官方还新」即危险信号；monorepo 隐藏修复：`cd` 深层不再丢 per-directory skills / 彩蛋：明晚 11/4 K3.1 Pro 权重 + K2 退役迁移三件套：ID 切换、缓存命中一折、batch 六折）
 - 🔥 [11-02 — 安检日：扩展市场惊现「李鬼」claude-code，给 AI 工具链做个安检](2026/11/2026-11-02-agent-tips.md)（10/29 Cursor 安全公告：恶意版 `Anthropic.claude-code` 2.1.312/2.1.313 混入扩展市场，官方真身才发到 2.1.31x——agent 时代首起公开供应链投毒 / 技巧一：安检三件套——只认官方安装入口、npm view 版本号对账、每月盘查扩展目录+`npm ls -g`+doctor；把 agent 当「能接触你全部代码的实习生」录用 / 技巧二：Kimi Code v2.4.0（10/28）——等待中 Enter/Ctrl-S 插话（与 Codex live steering 会师）、NotifyUser 主动汇报、`tui_mode="fullscreen"` 全屏模式，实验功能只在新建会话生效零成本试错 / 彩蛋：K3.1 Pro 权重 11/4 前开源明晚蹲点 + 取消 1000 步上限 + `KIMI_MODEL_*` 环境变量 + GitHub URL 装 Plugin）
 - 🔥 [11-01 — 十一月开张：agent 干到一半可以「插嘴」了——十月发布洪峰里漏掉的两个硬货](2026/11/2026-11-01-agent-tips.md)（10/12~10/20 九天五连发：OpenCode 2.0 → Codex CLI 0.163.0 → Claude Code 2.1.302 → Xojo Agentic Mode → VS Code 1.141，主题=agent 跑更久、人少插手 / 技巧一：Codex live steering 生成途中直接插话纠偏 + `/agents` 指挥中心 + managed worktree 默认开 + 并行只读工具；长任务前 30 秒盯首批动作，早期纠偏成本最低 / 技巧二：Haiku 5.5 当 Opus/Sonnet 5.5 的廉价 subagent——成本降 75%、1M 上下文、首个可调 effort，贵的做判断便宜的做跑腿 / 彩蛋：GPT-6.1 Terra 进 Codex 半价 $1/$5、AGENTS.md 跨工具通用家规一份管住全队）
 - 🔥 [10-31 — 十月收官：K3.1 Pro 满月体检 + Claude Code 的 review 终于「转正」了](2026/10/2026-10-31-agent-tips.md)（K3.1 Pro 上线 Kimi Code 满一周 + 官方 10/28 首周补丁包 / 技巧一：目标模式离线不偷预算+取消 24h 上限、会话选择器 `Ctrl-X` 删除、`kimi upgrade -y` 免确认、`KIMI_CODE_PERMISSION_MODE_REMINDER=0` 静音权限提醒，v0.43.1 修 Ctrl-C 误杀整个 CLI / 技巧二：Claude Code `/review` GA——审 PR 外包给机器，fork 子代理后台跑+按模块并行审，业务逻辑仍要人把关 / 彩蛋：11/4 权重开源前瞻，API $2/$10 已降 33%，BYOK 党蹲接入潮）
