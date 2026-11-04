@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-03）
+### 今日更新（2026-11-04）
 
-- 🔥 [家规保卫战：Claude Code 终于不再「看开头就重写你的家规」+ 真·2.1.312 落地对账日](2026/11/2026-11-03-agent-tips.md) —— 真·v2.1.312 本周落地（正是昨天李鬼冒用的版本号）/ 技巧一：年度恐怖故事 closure——老版本 Claude 只看超大 CLAUDE.md 开头就 Write 整体覆盖、后半人间蒸发，新版强制先读完或原地编辑；三层防御：拆家规（主文件高频+`@` 引用专题）、CLAUDE.md 当代码 git 管理、升级后实测验证 / 技巧二：对账日实战——`npm view` + `npm ls -g` + 扩展目录盘查，「比官方还新」即危险信号；monorepo 隐藏修复：`cd` 进仓库深层后 per-directory/`paths:` skills 不再静默丢失 / 彩蛋：明晚 11/4 K3.1 Pro 权重放出 + K2 年底退役迁移三件事（ID 切换、缓存命中一折 $0.30/M、batch 六折）
+- 🔥 [权重开闸日：K3.1 Pro 完整权重今天放出，但先别急着下载那 2.8T](2026/11/2026-11-04-agent-tips.md) —— 连铺垫三天今天正日子：2.8T/104B/1M 完整权重落地，许可证今日才有答案 / 技巧一：验货三件套——许可证先读、FP8 也要 ~2.8TB 显存算硬件账、eval 先行：API 上建评估集记分数、权重到位跑同一份复现不了即回归 / 技巧二：API 党账单三旋钮——reasoning_effort 三档默认 max、中途切换炸前缀缓存；温度 1.0/top-p 0.95 锁死别写「更严谨一点」；Highspeed 贵两倍只在有人在等时开 / 彩蛋：`/import-sessions` 一键搬 Claude Code·Codex 近 15/30 天会话 + 开源版削了网安能力（xdev 90.5%→81%）安全岗以 model card 实测为准
 
 **想看今天的内容？直接点上面 👆**
 
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-04 — 权重开闸日：K3.1 Pro 完整权重今天放出，但先别急着下载那 2.8T](2026/11/2026-11-04-agent-tips.md)（验货三件套：许可证今日才有答案先读它、FP8 也要 ~2.8TB 显存算硬件账、eval 先行——API 建评估集权重到位跑同一份复现不了即回归 / API 党账单三旋钮：reasoning_effort 默认 max 中途切换炸缓存、温度 1.0 top-p 0.95 锁死、Highspeed 贵两倍只在有人在等时开 / 彩蛋：`/import-sessions` 搬 Claude Code·Codex 会话 + 开源版削网安能力 xdev 90.5%→81%）
 - 🔥 [11-03 — 家规保卫战：Claude Code 终于不再「看开头就重写你的家规」+ 真·2.1.312 落地对账日](2026/11/2026-11-03-agent-tips.md)（真·v2.1.312 本周落地=昨天李鬼冒用的版本号 / 技巧一：老版本只看超大 CLAUDE.md 开头就 Write 整体覆盖、后半人间蒸发，新版强制读完或原地编辑；三层防御：拆家规+`@`引用、CLAUDE.md 进 git、升级实测 / 技巧二：对账日实战——`npm view`+`npm ls -g`+扩展目录盘查，「比官方还新」即危险信号；monorepo 隐藏修复：`cd` 深层不再丢 per-directory skills / 彩蛋：明晚 11/4 K3.1 Pro 权重 + K2 退役迁移三件套：ID 切换、缓存命中一折、batch 六折）
 - 🔥 [11-02 — 安检日：扩展市场惊现「李鬼」claude-code，给 AI 工具链做个安检](2026/11/2026-11-02-agent-tips.md)（10/29 Cursor 安全公告：恶意版 `Anthropic.claude-code` 2.1.312/2.1.313 混入扩展市场，官方真身才发到 2.1.31x——agent 时代首起公开供应链投毒 / 技巧一：安检三件套——只认官方安装入口、npm view 版本号对账、每月盘查扩展目录+`npm ls -g`+doctor；把 agent 当「能接触你全部代码的实习生」录用 / 技巧二：Kimi Code v2.4.0（10/28）——等待中 Enter/Ctrl-S 插话（与 Codex live steering 会师）、NotifyUser 主动汇报、`tui_mode="fullscreen"` 全屏模式，实验功能只在新建会话生效零成本试错 / 彩蛋：K3.1 Pro 权重 11/4 前开源明晚蹲点 + 取消 1000 步上限 + `KIMI_MODEL_*` 环境变量 + GitHub URL 装 Plugin）
 - 🔥 [11-01 — 十一月开张：agent 干到一半可以「插嘴」了——十月发布洪峰里漏掉的两个硬货](2026/11/2026-11-01-agent-tips.md)（10/12~10/20 九天五连发：OpenCode 2.0 → Codex CLI 0.163.0 → Claude Code 2.1.302 → Xojo Agentic Mode → VS Code 1.141，主题=agent 跑更久、人少插手 / 技巧一：Codex live steering 生成途中直接插话纠偏 + `/agents` 指挥中心 + managed worktree 默认开 + 并行只读工具；长任务前 30 秒盯首批动作，早期纠偏成本最低 / 技巧二：Haiku 5.5 当 Opus/Sonnet 5.5 的廉价 subagent——成本降 75%、1M 上下文、首个可调 effort，贵的做判断便宜的做跑腿 / 彩蛋：GPT-6.1 Terra 进 Codex 半价 $1/$5、AGENTS.md 跨工具通用家规一份管住全队）
