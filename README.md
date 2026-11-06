@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-05）
+### 今日更新（2026-11-06）
 
-- 🔥 [权重第二天：Desktop 端放大招——项目模式来了，你的 AI 账单也能看明白了](2026/11/2026-11-05-agent-tips.md) —— K3.1 Pro 权重放出第二天 + Desktop 1.3.0 同步发布：多工作目录项目管理 / 技巧一：Desktop 1.3.0 项目模式——一个项目挂 N 个目录（monorepo 终结开两窗）、右侧会话信息面板集中看详情、诊断导出一键打包日志崩溃报告、任意历史轮次分叉（运行中也能分）、子智能体可控制内置浏览器 / 技巧二：Claude Code 2.1.317 账单透明化——按会话/项目/时间段拆解用量成本、fork subagent 默认开启脏活放心丢、vim `%` 括号跳转 / 彩蛋：kimi-k3-in-c 纯 C 实现 8GB RAM 跑 K3，26.5 秒/token 但证明 MoE 稀疏加载可行
+- 🔥 [Agent 也有自己的「云服务器」了：Kimi Hosted Agents 上线 + Claude 11/10 breaking change 预警](2026/11/2026-11-06-agent-tips.md) —— Kimi Hosted Agents（Harness as a Service）昨日发布：7×24 托管环境 / 技巧一：算笔账再决定——沙箱 ¥0.072/小时，跑满一个月才 ¥52，长程任务（7×24 监控、定时晨报、盯盘）用它，短平快交互编码还是本地 CLI 顺手；Kimi Inference Hook 把敏感数据拦在推理之前 / 技巧二：Claude 11/10 breaking change 预警——`desktopHome` 未设置将默认 Cowork 界面，今天检查配置防界面突变；Code sessions 新增 Monitor 工具；API Key 转加密存储（回滚 <4.29 要重输）/ 彩蛋：8 个金融 Agent 模板，「晨报生成+持仓监控」天然长程，模板可直接复制进自己项目空间
 
 **想看今天的内容？直接点上面 👆**
 
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-06 — Agent 也有自己的「云服务器」了：Kimi Hosted Agents 上线 + Claude 11/10 breaking change 预警](2026/11/2026-11-06-agent-tips.md)（Kimi Hosted Agents 昨日发布=Harness as a Service：7×24 托管+长程任务+多智能体 / 技巧一：算账——沙箱 ¥0.072/h、跑满一月 ¥52 vs 自建 VPS+数月工程量；长程任务用它、交互编码用本地；Kimi Inference Hook 推理前拦截敏感数据 / 技巧二：11/10 breaking change——desktopHome 未设将默认 Cowork 界面，今天检查配置；Code sessions 新增 Monitor；API Key 加密存储、回滚 <4.29 重输 / 彩蛋：8 金融模板，晨报生成+持仓监控天然长程，模板可抄进自己项目空间）
 - 🔥 [11-05 — 权重第二天：Desktop 端放大招——项目模式来了，你的 AI 账单也能看明白了](2026/11/2026-11-05-agent-tips.md)（Desktop 1.3.0 项目模式：一个项目挂多目录、右侧会话信息面板、诊断导出打包日志、任意轮次运行中分叉、子智能体控浏览器 / Claude Code 2.1.317：用量成本报告按会话项目时间段拆解、fork subagent 默认开、vim `%` 跳转 / 彩蛋：kimi-k3-in-c 纯 C 8GB RAM 跑 K3 26.5s/token 证明 MoE 稀疏加载可行）
 - 🔥 [11-04 — 权重开闸日：K3.1 Pro 完整权重今天放出，但先别急着下载那 2.8T](2026/11/2026-11-04-agent-tips.md)（验货三件套：许可证今日才有答案先读它、FP8 也要 ~2.8TB 显存算硬件账、eval 先行——API 建评估集权重到位跑同一份复现不了即回归 / API 党账单三旋钮：reasoning_effort 默认 max 中途切换炸缓存、温度 1.0 top-p 0.95 锁死、Highspeed 贵两倍只在有人在等时开 / 彩蛋：`/import-sessions` 搬 Claude Code·Codex 会话 + 开源版削网安能力 xdev 90.5%→81%）
 - 🔥 [11-03 — 家规保卫战：Claude Code 终于不再「看开头就重写你的家规」+ 真·2.1.312 落地对账日](2026/11/2026-11-03-agent-tips.md)（真·v2.1.312 本周落地=昨天李鬼冒用的版本号 / 技巧一：老版本只看超大 CLAUDE.md 开头就 Write 整体覆盖、后半人间蒸发，新版强制读完或原地编辑；三层防御：拆家规+`@`引用、CLAUDE.md 进 git、升级实测 / 技巧二：对账日实战——`npm view`+`npm ls -g`+扩展目录盘查，「比官方还新」即危险信号；monorepo 隐藏修复：`cd` 深层不再丢 per-directory skills / 彩蛋：明晚 11/4 K3.1 Pro 权重 + K2 退役迁移三件套：ID 切换、缓存命中一折、batch 六折）
