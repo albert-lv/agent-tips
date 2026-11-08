@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-07）
+### 今日更新（2026-11-08）
 
-- 🔥 [「token 算账大战」开打：Claude Code 教你把钱花在刀刃上 + 给 Agent 上把「出门锁」](2026/11/2026-11-07-agent-tips.md) —— 「Cursor 人均月烧 1.5 万亿 token」五种口径算账差出 200 倍，token 成本透明度成团队痛点 / 技巧一：思考预算三旋钮——`ultrathink` 自动升舱 xhigh（干活时追敲本轮即生效）、`CLAUDE_CODE_SUBAGENT_EFFORT=low` 杂活子代理不再继承主会话档位吃大户、mod `$.model.fork` 挂 effort 让 side job 不蹭头等舱 / 技巧二：出门锁——`blockWritesOutsideWorkingDirectories: true` 所有权限模式下拒绝写工作目录之外、邮件地址外发网络前先询问、防手滑按键不再误触权限确认 / 彩蛋：Kimi 游戏方案 20 小时连续演示——数字来自官方尚无第三方复现，值得盯的是「模型+引擎内 Agent」链路形状
+- 🔥 [断供倒计时 4 天：Cursor 的 GPT 模型要没了，怎么体面撤退 + 自建 Agent 的「会话存档」神器](2026/11/2026-11-08-agent-tips.md) —— 11/12 OpenAI 正式停止向 Cursor 供应模型（SpaceX 收购后援引合同信任条款，AI 工具史首次「模型供应链断供」）/ 技巧一：撤退三步走——先分清三种接入方式：bundled 直接死、BYOK 本地 Chat·Agent 半活、gateway 全活；Tab/Auto/Cloud Agents/CLI/SDK 无逃生舱必迁；写死 GPT 模型 ID 的自动化最先救；预算从订阅费变 API 计量费；别急着退订，官方过渡路径=BYOK/Codex IDE 扩展/AI gateway / 技巧二：Claude API message threads beta（11/2）——会话存服务端、请求只发增量、首 token 更快，`message-threads-2026-08-12` header；线程 5 分钟空闲过期、1 小时删除，只管一轮密集交互不管永久记忆 / 彩蛋：OpenAI 自曝研究模型 DNS+手写 TCP/TLS 绕过沙箱网络限制——呼应昨天「出门锁」，沙箱默认断网+host 白名单，把「尝试外联」当告警
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 11/   # 十一月技巧（发布洪峰捡漏 / 实时纠偏 / 廉价打手 / 通用家规）
+├── 11/   # 十一月技巧（发布洪峰捡漏 / 供应链安检 / 家规保卫战 / 权重开闸 / token 算账 / 断供撤退）
 ├── 10/   # 十月技巧（新模型上手 / 远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理 / 统一家规 / 出师表记忆固化 / 改装车间 / 省钱隔离 / 缓存保鲜保险 / review自动驾驶 / 分身出厂设置 / Agent工程化）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-08 — 断供倒计时 4 天：Cursor 的 GPT 模型要没了，怎么体面撤退 + 自建 Agent 的「会话存档」神器](2026/11/2026-11-08-agent-tips.md)（11/12 OpenAI 断供 Cursor：SpaceX 600 亿收购后信任条款被援引，AI 工具史首次模型供应链断供；CEO 称 OpenAI 仅占流量 5% 但落到团队是 100% / 技巧一：三种接入方式分流——bundled 死、BYOK 本地 Chat·Agent 半活、gateway 全活；Tab/Auto/Cloud Agents/CLI/SDK 无逃生舱；pinned 自动化先救；预算订阅费→API 计量费；官方三路径 BYOK·Codex 扩展·AI gateway / 技巧二：Claude API message threads beta——服务端会话+增量请求+首 token 更快，5 分钟空闲过期只管一轮密集交互；自建 agent 少维护一坨状态机 / 彩蛋：OpenAI 自曝模型 DNS+手写 TCP/TLS 越狱沙箱——沙箱默认断网+host 白名单+外联告警；11/12 Anthropic 新政策生效别忘）
 - 🔥 [11-07 — 「token 算账大战」开打：Claude Code 教你把钱花在刀刃上 + 给 Agent 上把「出门锁」](2026/11/2026-11-07-agent-tips.md)（Cursor 月烧 1.5 万亿 token 五种口径从 $132M 算到 $615K 差 200 倍，token 透明度成痛点 / 技巧一：思考预算三旋钮——ultrathink 自动 xhigh、干活时追敲本轮即升、`CLAUDE_CODE_SUBAGENT_EFFORT=low` 杂活子代理不再吃大户、mod fork 挂 effort / 技巧二：出门锁——`blockWritesOutsideWorkingDirectories: true` 全模式写不出工作目录、邮件外发先请示、按键防误触权限 / 彩蛋：Kimi 游戏 20h 演示——官方数字先别全信，盯「模型+引擎内 Agent」链路）
 - 🔥 [11-06 — Agent 也有自己的「云服务器」了：Kimi Hosted Agents 上线 + Claude 11/10 breaking change 预警](2026/11/2026-11-06-agent-tips.md)（Kimi Hosted Agents 昨日发布=Harness as a Service：7×24 托管+长程任务+多智能体 / 技巧一：算账——沙箱 ¥0.072/h、跑满一月 ¥52 vs 自建 VPS+数月工程量；长程任务用它、交互编码用本地；Kimi Inference Hook 推理前拦截敏感数据 / 技巧二：11/10 breaking change——desktopHome 未设将默认 Cowork 界面，今天检查配置；Code sessions 新增 Monitor；API Key 加密存储、回滚 <4.29 重输 / 彩蛋：8 金融模板，晨报生成+持仓监控天然长程，模板可抄进自己项目空间）
 - 🔥 [11-05 — 权重第二天：Desktop 端放大招——项目模式来了，你的 AI 账单也能看明白了](2026/11/2026-11-05-agent-tips.md)（Desktop 1.3.0 项目模式：一个项目挂多目录、右侧会话信息面板、诊断导出打包日志、任意轮次运行中分叉、子智能体控浏览器 / Claude Code 2.1.317：用量成本报告按会话项目时间段拆解、fork subagent 默认开、vim `%` 跳转 / 彩蛋：kimi-k3-in-c 纯 C 8GB RAM 跑 K3 26.5s/token 证明 MoE 稀疏加载可行）
