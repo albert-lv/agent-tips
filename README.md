@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-11）
+### 今日更新（2026-11-12）
 
-- 🔥 [断供前夜：Cursor 用户今晚的 15 分钟清单 + Claude Code「无人值守三件套」](2026/11/2026-11-11-agent-tips.md) —— 明天 11/12 OpenAI 断供 Cursor 正式生效（AI 工具史首起模型供应链断供），Claude Code 11/3~11/6 三连发 v2.1.317→2.1.319 主题全是自动化 / 技巧一：断供前夜 15 分钟清单——settings.json 与 .cursor/rules 搜 pin 死的 gpt-*、替代模型今晚完整跑一遍核心流、查 Other Models 额度池、改 cron/CI 自动化路由、关键 prompt 存档，今晚是主动切换最后窗口明早就是被动排障 / 技巧二：无人值守三件套——`permissions.denyInsteadOfPrompting` 权限弹窗没人答→拒绝并继续回合（`claude -p`/cron/云端救命）、`claude auth status` 新增 `loginExpiresAt` 到期前 10 天 stderr 预警（凌晨 3 点 cron 哑火真凶现形，≥2.1.317 还修 401 传染 bug）、MCP task 自动转后台不再霸屏阻塞 / 彩蛋：邮箱外发前询问 + `/tasks` Earlier in this session 找回跑完的儿子（重启可接着聊）
+- 🔥 [「不再询问」的账单：一次点击，密钥上 GitHub + 断供生效日验收三招](2026/11/2026-11-12-agent-tips.md) —— 双热点撞车：OpenAI 断供 Cursor 今天正式生效，昨晚清单做完的今早验收；Apiiro 报告刷屏——「Yes, and don't ask again」把带密码的命令原文存进 settings.local.json，10 万公开副本 1,122 个带真密钥（539/1105 个泄密 commit 还是 Claude 自己提的）/ 技巧一：10 分钟泄密体检——翻 allow 列表、git log 查历史、**先轮换后清理**、补仓库 .gitignore + pre-commit、密码进 .env 命令行只引用（gitleaks+TruffleHog 都漏了 215 份，人眼才是正经体检）/ 技巧二：断供首日验收——先查自动化日志的 model 报错、Tab 不用查 Agent 才要查、盯 Other Models 额度池，BYOK 只算半条后路（Agent/Edit 半残还干扰 Composer）/ 彩蛋：.codex/auth.json 也中招（536 仓 1,064 token）、CLAUDE.md 藏 6,155 个密钥、网关党 ANTHROPIC_BASE_URL+token 别 commit
 
 **想看今天的内容？直接点上面 👆**
 
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-12 —「不再询问」的账单：一次点击，密钥上 GitHub + 断供生效日验收三招](2026/11/2026-11-12-agent-tips.md)（断供今日正式生效+Apiiro 泄密报告刷屏：10.4 万份 settings.local.json 上 GitHub、1,122 份带真密钥，Claude co-author 的 commit 提交了近半数 / 技巧一：10 分钟泄密体检——翻 allow 列表、git log 查历史、**先轮换后清理**、补仓库 .gitignore、密码进 .env 命令行只引用；扫描器漏了 215 份，人眼才是正经体检 / 技巧二：首日验收——自动化日志先查、Tab 免疫 Agent 重灾区、盯 Other Models 池；BYOK 只算半条后路 / 彩蛋：.codex/auth.json 536 仓 1,064 token、CLAUDE.md 藏 6,155 密钥、网关 token 别 commit；Anthropic 已在原型内置 secret 扫描+auto mode 拦截，旧密钥仍需手动轮换）
 - 🔥 [11-11 — 断供前夜：Cursor 用户今晚的 15 分钟清单 + Claude Code「无人值守三件套」](2026/11/2026-11-11-agent-tips.md)（明天 11/12 OpenAI 断供 Cursor 正式生效：SpaceX 收购后信任条款被援引，CEO 称仅占流量 5% 但落到团队是 100% / 技巧一：前夜 15 分钟清单——配置搜 pin 死的 gpt-*、替代模型今晚跑通核心流、查 Other Models 额度池、cron·CI 自动化今晚改路由、prompt 资产存档；今晚主动切换，明早被动排障 / 技巧二：无人值守三件套——`denyInsteadOfPrompting` 弹窗变拒绝回合继续（headless 不再静默挂起）、`loginExpiresAt` 登录过期日上线+到期前 10 天 stderr 预警（修 401 跨会话传染 bug）、MCP task 自动转后台（`CLAUDE_CODE_DISABLE_MCP_TASK_BACKGROUND=1` 回旧行为）/ 彩蛋：邮箱外发前询问 + `/tasks` Earlier in this session 找回完成的子代理，重启可续聊；Anthropic 企业侧：IP allowlist + project tags 成本追踪 beta）
 - 🔥 [11-10 — 给 Agent 装上眼睛：Kimi 20 小时连跑背后的「视觉回环」+ Claude Code 新默认模型 Fable 5.2](2026/11/2026-11-10-agent-tips.md)（Kimi 游戏方案刷屏：K3.1 Pro 接引擎插件，协同 Codely 无人干预连跑 20h 交付 Unity 原生工程；K3.1 Pro 权重开放、K2 系 12 月底下线 / 技巧一：视觉回环——跑起来→截图→自查→改→再跑，exit code 说不了真话的任务让 agent 看图验收；缓存 ¥1.30 vs 输出 ¥68，长任务拆粒度 / 技巧二：Claude Code 11/9——Fable 5.2 新默认、remote-control --settings 统一配置、Opus 4.8 fast mode 11/30 移除；gateway auto mode 确认变多=策略收紧 / 彩蛋：Omarchy 4.5 最 agent-ready Linux 桌面，顶栏额度看板）
 - 🔥 [11-09 — 家规大考周三交卷：Claude 新政策 8 问自查 + Pro 也躲不掉的 KYC 风暴自救](2026/11/2026-11-09-agent-tips.md)（11/12 Anthropic 使用政策生效：欺骗性活动入正文、禁止未经授权转售/代理 Claude、硬件要急停、禁止长期无目的辱骂模型😂 / 技巧一：8 问自查——转售代理最先查、公众内容·追踪·高风险用途·支持地区逐条过留痕；模型访问权被商业+合规双向收紧，可移植性=保险 / 技巧二：KYC 自救——绝不反复重试、实体证件原件+Persona 现场自拍、CI 走 service account、账号分篮子 / 彩蛋：GitHub Copilot Fusion 多模型接力+Projects 跨 repo 编排，单模型绑定时代结束；Cat Wu 政策生效前四天转投 OpenAI）
