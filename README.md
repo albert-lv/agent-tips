@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-13）
+### 今日更新（2026-11-14）
 
-- 🔥 [「允许一次，终身有效」：Kimi Code 昨晚双端齐发，两个最被低估的新功能](2026/11/2026-11-13-agent-tips.md) —— CLI 2.6.0 + Desktop 1.3.4 同晚发布（11/12）/ 技巧一：持久化权限规则——用户级 `config.toml` 写 deny（`rm -rf`、`curl|sh` 终身禁）、项目级 `.kimi-code/local.toml` 写 allow（通配符覆盖参数变体），优先级 **deny > ask > allow**，`local.toml` 别 commit（昨天 `.claude/settings.local.json` 同一待遇）/ 技巧二：全屏模式自动折叠连续工具调用成摘要行，长任务刷屏终结；`Ctrl-C` 复制选中、消息摘要条跳转 / ⚠️ 顺手提醒：`@` 现在能搜到 `.gitignore` 忽略的文件——**包括你的 `.env`**，敏感文件点名进项目 deny 列表
+- 🔥 [「屠榜分不是日常分」：Fable 5.2 横扫榜单的这一周，教你把跑分翻译成自己的用法](2026/11/2026-11-14-agent-tips.md) —— Fable 5.2 发布满周屠榜：Arena WebDev 1838 登顶（11/11）、FrontierCode 2.0 49.1%（11/12）、SciCode 67.7%，但 headline 几乎全是 max/xhigh effort 跑的 / 技巧一：看榜单先翻三个脚注——effort 档（同模型差 10~20 点）、scaffold（裸 bash vs 完整 agent 差 20+ 点）、出分日期；然后自建 mini-eval：从 backlog 挑 3 个已解决任务做 fixture，双档各跑一遍，盯一次通过率 + review 时间 + revert 率——用你自己的代码库测，比任何公开榜单都贴近你的账单 / 技巧二：Fable 5.2 每周只占额度上限 50%，当狙击枪不当机关枪——架构硬仗+终审才配 Fable，日常 Sonnet 5.5（Terminal-Bench 61.8% 足够硬），杂活 Haiku 子代理；`/model` 会话中途随时切，探路用便宜的、动刀再上贵的，周三 `/usage` 盯占比 / 🥚 彩蛋：Cursor 语音对话上线（Grok Voice，11/6）口述派活可以但结论必须落盘；Kimi K3.1 Pro Startrise Frontend 82.5% 接近饱和，前端原型性价比依然能打
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 11/   # 十一月技巧（发布洪峰捡漏 / 供应链安检 / 家规保卫战 / 权重开闸 / token 算账 / 断供撤退 / 家规大考 / KYC 风暴）
+├── 11/   # 十一月技巧（发布洪峰捡漏 / 供应链安检 / 家规保卫战 / 权重开闸 / token 算账 / 断供撤退 / 家规大考 / KYC 风暴 / 屠榜翻译）
 ├── 10/   # 十月技巧（新模型上手 / 远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理 / 统一家规 / 出师表记忆固化 / 改装车间 / 省钱隔离 / 缓存保鲜保险 / review自动驾驶 / 分身出厂设置 / Agent工程化）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-14 —「屠榜分不是日常分」：Fable 5.2 横扫榜单的这一周，教你把跑分翻译成自己的用法](2026/11/2026-11-14-agent-tips.md)（Fable 5.2 满周屠榜：Arena WebDev 1838 登顶、FrontierCode 2.0 49.1%、SciCode 67.7%，但 headline 全是 max/xhigh effort / 技巧一：翻三个脚注——effort 档差 10~20 点、scaffold 差 20+ 点、出分日期；自建 mini-eval：3 个已解决 backlog 任务做 fixture 双档跑，盯一次通过率 + review 时间 + revert 率，个人榜单比公开榜更贴账单 / 技巧二：Fable 5.2 每周只占 50% 额度，狙击枪配车——架构硬仗+终审用 Fable、日常 Sonnet 5.5、杂活 Haiku 子代理；`/model` 中途切换上下文不丢，周三 `/usage` 盯占比 / 彩蛋：Cursor Grok Voice 语音派活结论必须落盘；K3.1 Pro Startrise Frontend 82.5% 接近饱和）
 - 🔥 [11-13 —「允许一次，终身有效」：Kimi Code 昨晚双端齐发，两个最被低估的新功能](2026/11/2026-11-13-agent-tips.md)（昨晚 Kimi Code 双端同更：CLI 2.6.0 + Desktop 1.3.4（均 11/12）/ 技巧一：持久化权限规则——用户级 `config.toml` 写 deny（`rm -rf`、`curl|sh` 终身禁）、项目级 `.kimi-code/local.toml` 写 allow（通配符覆盖参数变体），优先级 **deny > ask > allow**；从宽到紧反向收敛，先观察弹窗频率再捞规则；`local.toml` 别 commit（昨天 `.claude/settings.local.json` 同一待遇）/ 技巧二：全屏模式自动折叠连续工具调用成摘要行，长任务刷屏终结；`Ctrl-C` 复制选中、选中即复制开关、消息摘要条跳转；`tui.toml` 设 `"ungrouped"` 恢复旧布局 / ⚠️ 顺手提醒：`@` 现在能搜到 `.gitignore` 忽略的文件——**包括你的 `.env`**，敏感文件点名进项目 deny 列表，deny > allow 优先级就是为此刻准备的）
 - 🔥 [11-12 —「不再询问」的账单：一次点击，密钥上 GitHub + 断供生效日验收三招](2026/11/2026-11-12-agent-tips.md)（断供今日正式生效+Apiiro 泄密报告刷屏：10.4 万份 settings.local.json 上 GitHub、1,122 份带真密钥，Claude co-author 的 commit 提交了近半数 / 技巧一：10 分钟泄密体检——翻 allow 列表、git log 查历史、**先轮换后清理**、补仓库 .gitignore、密码进 .env 命令行只引用；扫描器漏了 215 份，人眼才是正经体检 / 技巧二：首日验收——自动化日志先查、Tab 免疫 Agent 重灾区、盯 Other Models 池；BYOK 只算半条后路 / 彩蛋：.codex/auth.json 536 仓 1,064 token、CLAUDE.md 藏 6,155 密钥、网关 token 别 commit；Anthropic 已在原型内置 secret 扫描+auto mode 拦截，旧密钥仍需手动轮换）
 - 🔥 [11-11 — 断供前夜：Cursor 用户今晚的 15 分钟清单 + Claude Code「无人值守三件套」](2026/11/2026-11-11-agent-tips.md)（明天 11/12 OpenAI 断供 Cursor 正式生效：SpaceX 收购后信任条款被援引，CEO 称仅占流量 5% 但落到团队是 100% / 技巧一：前夜 15 分钟清单——配置搜 pin 死的 gpt-*、替代模型今晚跑通核心流、查 Other Models 额度池、cron·CI 自动化今晚改路由、prompt 资产存档；今晚主动切换，明早被动排障 / 技巧二：无人值守三件套——`denyInsteadOfPrompting` 弹窗变拒绝回合继续（headless 不再静默挂起）、`loginExpiresAt` 登录过期日上线+到期前 10 天 stderr 预警（修 401 跨会话传染 bug）、MCP task 自动转后台（`CLAUDE_CODE_DISABLE_MCP_TASK_BACKGROUND=1` 回旧行为）/ 彩蛋：邮箱外发前询问 + `/tasks` Earlier in this session 找回完成的子代理，重启可续聊；Anthropic 企业侧：IP allowlist + project tags 成本追踪 beta）
