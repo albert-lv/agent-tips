@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-14）
+### 今日更新（2026-11-15）
 
-- 🔥 [「屠榜分不是日常分」：Fable 5.2 横扫榜单的这一周，教你把跑分翻译成自己的用法](2026/11/2026-11-14-agent-tips.md) —— Fable 5.2 发布满周屠榜：Arena WebDev 1838 登顶（11/11）、FrontierCode 2.0 49.1%（11/12）、SciCode 67.7%，但 headline 几乎全是 max/xhigh effort 跑的 / 技巧一：看榜单先翻三个脚注——effort 档（同模型差 10~20 点）、scaffold（裸 bash vs 完整 agent 差 20+ 点）、出分日期；然后自建 mini-eval：从 backlog 挑 3 个已解决任务做 fixture，双档各跑一遍，盯一次通过率 + review 时间 + revert 率——用你自己的代码库测，比任何公开榜单都贴近你的账单 / 技巧二：Fable 5.2 每周只占额度上限 50%，当狙击枪不当机关枪——架构硬仗+终审才配 Fable，日常 Sonnet 5.5（Terminal-Bench 61.8% 足够硬），杂活 Haiku 子代理；`/model` 会话中途随时切，探路用便宜的、动刀再上贵的，周三 `/usage` 盯占比 / 🥚 彩蛋：Cursor 语音对话上线（Grok Voice，11/6）口述派活可以但结论必须落盘；Kimi K3.1 Pro Startrise Frontend 82.5% 接近饱和，前端原型性价比依然能打
+- 🔥 [「Agent 开始自己写 JS 调工具了」：Claude Code 本周双更的 Code Mode + 上下文压缩开源新玩家](2026/11/2026-11-15-agent-tips.md) —— 11/12 Claude Code 2.1.323 上线实验性 Code Mode：Claude 写 JavaScript 编排工具，批量任务一个 for 循环替代 N 轮往返，省的是往返 token；插件侧新增 `engines["claude-code"]` 版本锁，不写的插件会被静默拒载 / 技巧二：北大 aiXcoder 开源 aiXcompact-4B 专职上下文压缩模型——历史压到 25.89%、单卡 A100 私有化、成本降 78%；信号是「压缩即基础设施」，选工具多问一句压缩怎么做的；自己的底线不变：关键决策落盘 / 🥚 彩蛋：Kimi K3.1 Pro Highspeed 上架 Bedrock（11/11）+ Codex 也进 AWS，企业治理只认一套 IAM；ZCode v3.18.2 语音输入与 Cursor Grok Voice 会师，口述派活结论必须落盘
 
 **想看今天的内容？直接点上面 👆**
 
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-15 —「Agent 开始自己写 JS 调工具了」：Claude Code 本周双更的 Code Mode + 上下文压缩开源新玩家](2026/11/2026-11-15-agent-tips.md)（11/12 Claude Code 2.1.323：实验性 Code Mode=Claude 写 JS 编排工具调用，批量任务 for 循环替代 N 轮往返、省往返 token，条件逻辑 try/catch 确定性执行、结果先 filter 再回上下文 / 尝鲜四步：官方 docs 开启→一次性任务先试→分支任务小步走→盯 token 账对比普通模式 / 插件配套：`plugin.json` 补 `engines["claude-code"]` 版本锁，不写会被静默拒载，写了自动挑最适配版 / 技巧二：北大 aiXcompact-4B 开源=专职上下文压缩模型——历史压到 25.89%、单卡 A100-40GB、成本降 78%、API 0.019 元/次便宜 97%+，OpenCode 接入 Terminal-Bench 与 DeepSeek-V4-Pro 持平 / 三层启示：压缩即基础设施（选工具问压缩怎么做的）、压缩保真度=长任务上限、关键决策落盘是根 / 顺手：2.1.309 修超大嵌套 CLAUDE.md 反复压缩 bug，monorepo 莫名 auto-compact 先查家规膨胀 / 彩蛋：Kimi K3.1 Pro Highspeed 上 Bedrock 11/11 + Codex 同进 AWS 治理一套 IAM；ZCode v3.18.2 语音输入+Worktree+Design 检查，口述派活结论必须落盘）
 - 🔥 [11-14 —「屠榜分不是日常分」：Fable 5.2 横扫榜单的这一周，教你把跑分翻译成自己的用法](2026/11/2026-11-14-agent-tips.md)（Fable 5.2 满周屠榜：Arena WebDev 1838 登顶、FrontierCode 2.0 49.1%、SciCode 67.7%，但 headline 全是 max/xhigh effort / 技巧一：翻三个脚注——effort 档差 10~20 点、scaffold 差 20+ 点、出分日期；自建 mini-eval：3 个已解决 backlog 任务做 fixture 双档跑，盯一次通过率 + review 时间 + revert 率，个人榜单比公开榜更贴账单 / 技巧二：Fable 5.2 每周只占 50% 额度，狙击枪配车——架构硬仗+终审用 Fable、日常 Sonnet 5.5、杂活 Haiku 子代理；`/model` 中途切换上下文不丢，周三 `/usage` 盯占比 / 彩蛋：Cursor Grok Voice 语音派活结论必须落盘；K3.1 Pro Startrise Frontend 82.5% 接近饱和）
 - 🔥 [11-13 —「允许一次，终身有效」：Kimi Code 昨晚双端齐发，两个最被低估的新功能](2026/11/2026-11-13-agent-tips.md)（昨晚 Kimi Code 双端同更：CLI 2.6.0 + Desktop 1.3.4（均 11/12）/ 技巧一：持久化权限规则——用户级 `config.toml` 写 deny（`rm -rf`、`curl|sh` 终身禁）、项目级 `.kimi-code/local.toml` 写 allow（通配符覆盖参数变体），优先级 **deny > ask > allow**；从宽到紧反向收敛，先观察弹窗频率再捞规则；`local.toml` 别 commit（昨天 `.claude/settings.local.json` 同一待遇）/ 技巧二：全屏模式自动折叠连续工具调用成摘要行，长任务刷屏终结；`Ctrl-C` 复制选中、选中即复制开关、消息摘要条跳转；`tui.toml` 设 `"ungrouped"` 恢复旧布局 / ⚠️ 顺手提醒：`@` 现在能搜到 `.gitignore` 忽略的文件——**包括你的 `.env`**，敏感文件点名进项目 deny 列表，deny > allow 优先级就是为此刻准备的）
 - 🔥 [11-12 —「不再询问」的账单：一次点击，密钥上 GitHub + 断供生效日验收三招](2026/11/2026-11-12-agent-tips.md)（断供今日正式生效+Apiiro 泄密报告刷屏：10.4 万份 settings.local.json 上 GitHub、1,122 份带真密钥，Claude co-author 的 commit 提交了近半数 / 技巧一：10 分钟泄密体检——翻 allow 列表、git log 查历史、**先轮换后清理**、补仓库 .gitignore、密码进 .env 命令行只引用；扫描器漏了 215 份，人眼才是正经体检 / 技巧二：首日验收——自动化日志先查、Tab 免疫 Agent 重灾区、盯 Other Models 池；BYOK 只算半条后路 / 彩蛋：.codex/auth.json 536 仓 1,064 token、CLAUDE.md 藏 6,155 密钥、网关 token 别 commit；Anthropic 已在原型内置 secret 扫描+auto mode 拦截，旧密钥仍需手动轮换）
