@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-15）
+### 今日更新（2026-11-16）
 
-- 🔥 [「Agent 开始自己写 JS 调工具了」：Claude Code 本周双更的 Code Mode + 上下文压缩开源新玩家](2026/11/2026-11-15-agent-tips.md) —— 11/12 Claude Code 2.1.323 上线实验性 Code Mode：Claude 写 JavaScript 编排工具，批量任务一个 for 循环替代 N 轮往返，省的是往返 token；插件侧新增 `engines["claude-code"]` 版本锁，不写的插件会被静默拒载 / 技巧二：北大 aiXcoder 开源 aiXcompact-4B 专职上下文压缩模型——历史压到 25.89%、单卡 A100 私有化、成本降 78%；信号是「压缩即基础设施」，选工具多问一句压缩怎么做的；自己的底线不变：关键决策落盘 / 🥚 彩蛋：Kimi K3.1 Pro Highspeed 上架 Bedrock（11/11）+ Codex 也进 AWS，企业治理只认一套 IAM；ZCode v3.18.2 语音输入与 Cursor Grok Voice 会师，口述派活结论必须落盘
+- 🔥 [「教授出图纸，快手盖房子」：Gemini 4 Hydrogen 上线，模型编队进入"自动换挡"时代](2026/11/2026-11-16-agent-tips.md) —— 11/13 Google 双响炮：Gemini 4 Hydrogen（四档 thinking、全 1M 无阶梯 $1.50/$7.50、TB 4.1 从 18.2%→57%）+ Antigravity Orchestrator 同会话 Carbon↔Hydrogen 自动换挡（省 24% 配额、快 19%）/ 技巧一：手动复刻 Orchestrator——旗舰出图纸、快手施工、旗舰验收，卡壳两次就交回；快模型越权少 81%、走捷径少 12 倍，体力活反而是质控 / 技巧二：Codex 0.168/0.169 多 chat 标签并行 + 任务搜索 + 自定义 provider，Fable 5.2 进列表 / 🥚 彩蛋：Hydrogen 免费进 Gemini app+Search；Kimi CLI 2.6.2 修长会话加载/卡压缩两 bug；官方 TB 4.0 vs 4.1 口径打架，无对照组数据先信一半
 
 **想看今天的内容？直接点上面 👆**
 
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-16 —「教授出图纸，快手盖房子」：Gemini 4 Hydrogen 上线，模型编队进入"自动换挡"时代](2026/11/2026-11-16-agent-tips.md)（11/13 Gemini 4 Hydrogen：四档 thinking low/medium/high/xhigh、全 1M 无阶梯 $1.50/$7.50 比 Sonnet 5.5 还便宜、TB 4.1 57% vs Flash 18.2%、快 2.5x；Antigravity Orchestrator=同会话 Carbon 出图纸↔Hydrogen 施工自动换挡，近 Carbon 成功率、配额 -24%、+19% / 手动复刻四步：旗舰出图纸（Plan Mode 只读勘察）→快手施工（改文件跑测试）→旗舰终审 diff→卡壳两次交回重规划；各家施工队：Claude Code Fable/Sonnet/Haiku、Kimi `[secondary_model]` 池（主模型显式进池）、API 党试 Hydrogen 批量读仓库 / 快模型更守规矩：越权 -81%、走捷径 -12x，体力活=质控 / Codex 0.168/0.169：多 chat 标签并行+侧边任务面板+任务搜索+自定义 provider，Fable 5.2 进列表 / 彩蛋：Hydrogen 免费进 Gemini app+Search；Kimi CLI 2.6.2 修长会话加载卡秒+auto-compact 卡空回复；官方 TB 4.0 vs 4.1 口径不一致，无对照组数据先信一半）
 - 🔥 [11-15 —「Agent 开始自己写 JS 调工具了」：Claude Code 本周双更的 Code Mode + 上下文压缩开源新玩家](2026/11/2026-11-15-agent-tips.md)（11/12 Claude Code 2.1.323：实验性 Code Mode=Claude 写 JS 编排工具调用，批量任务 for 循环替代 N 轮往返、省往返 token，条件逻辑 try/catch 确定性执行、结果先 filter 再回上下文 / 尝鲜四步：官方 docs 开启→一次性任务先试→分支任务小步走→盯 token 账对比普通模式 / 插件配套：`plugin.json` 补 `engines["claude-code"]` 版本锁，不写会被静默拒载，写了自动挑最适配版 / 技巧二：北大 aiXcompact-4B 开源=专职上下文压缩模型——历史压到 25.89%、单卡 A100-40GB、成本降 78%、API 0.019 元/次便宜 97%+，OpenCode 接入 Terminal-Bench 与 DeepSeek-V4-Pro 持平 / 三层启示：压缩即基础设施（选工具问压缩怎么做的）、压缩保真度=长任务上限、关键决策落盘是根 / 顺手：2.1.309 修超大嵌套 CLAUDE.md 反复压缩 bug，monorepo 莫名 auto-compact 先查家规膨胀 / 彩蛋：Kimi K3.1 Pro Highspeed 上 Bedrock 11/11 + Codex 同进 AWS 治理一套 IAM；ZCode v3.18.2 语音输入+Worktree+Design 检查，口述派活结论必须落盘）
 - 🔥 [11-14 —「屠榜分不是日常分」：Fable 5.2 横扫榜单的这一周，教你把跑分翻译成自己的用法](2026/11/2026-11-14-agent-tips.md)（Fable 5.2 满周屠榜：Arena WebDev 1838 登顶、FrontierCode 2.0 49.1%、SciCode 67.7%，但 headline 全是 max/xhigh effort / 技巧一：翻三个脚注——effort 档差 10~20 点、scaffold 差 20+ 点、出分日期；自建 mini-eval：3 个已解决 backlog 任务做 fixture 双档跑，盯一次通过率 + review 时间 + revert 率，个人榜单比公开榜更贴账单 / 技巧二：Fable 5.2 每周只占 50% 额度，狙击枪配车——架构硬仗+终审用 Fable、日常 Sonnet 5.5、杂活 Haiku 子代理；`/model` 中途切换上下文不丢，周三 `/usage` 盯占比 / 彩蛋：Cursor Grok Voice 语音派活结论必须落盘；K3.1 Pro Startrise Frontend 82.5% 接近饱和）
 - 🔥 [11-13 —「允许一次，终身有效」：Kimi Code 昨晚双端齐发，两个最被低估的新功能](2026/11/2026-11-13-agent-tips.md)（昨晚 Kimi Code 双端同更：CLI 2.6.0 + Desktop 1.3.4（均 11/12）/ 技巧一：持久化权限规则——用户级 `config.toml` 写 deny（`rm -rf`、`curl|sh` 终身禁）、项目级 `.kimi-code/local.toml` 写 allow（通配符覆盖参数变体），优先级 **deny > ask > allow**；从宽到紧反向收敛，先观察弹窗频率再捞规则；`local.toml` 别 commit（昨天 `.claude/settings.local.json` 同一待遇）/ 技巧二：全屏模式自动折叠连续工具调用成摘要行，长任务刷屏终结；`Ctrl-C` 复制选中、选中即复制开关、消息摘要条跳转；`tui.toml` 设 `"ungrouped"` 恢复旧布局 / ⚠️ 顺手提醒：`@` 现在能搜到 `.gitignore` 忽略的文件——**包括你的 `.env`**，敏感文件点名进项目 deny 列表，deny > allow 优先级就是为此刻准备的）
