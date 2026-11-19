@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-18）
+### 今日更新（2026-11-19）
 
-- 🔥 [「12 天倒计时 + 连夜打补丁」：Opus 4.8 Fast 月底退役，Claude Code 2.1.325 堵上一批权限洞](2026/11/2026-11-18-agent-tips.md) —— Opus 4.8 Fast mode 11/30 移除、只剩 12 天：排查→换 Opus 5.5→验证三步换车，fast 换标准档体感没差就省一半钱 / 技巧二：2.1.325 安全大补——`claude update` 之后审计 allow 规则：复合命令曾绕过确认、allow 可能放行别的程序、local 文件别 commit；组织策略拦截报错现在直接教你怎么 `/rewind` / 🥚 彩蛋：Linked Billing 客户替你付 API 账单；OpenCode 210K star vs Claude Code 占公开 commit 10%+；DeepSeek 联网 Search/Fetch 11/1 起 ¥5/千次
+- 🔥 [「Claude 开始写 JavaScript 上班了」：Code Mode 把工具调用从「单发」升级成「脚本」，外加一个 token 不进 shell history 的 MCP 小技巧](2026/11/2026-11-19-agent-tips.md) —— Claude Code 2.1.323（11/12）实验功能 Code Mode：`CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 claude` 开启，Claude 自己写 JS 把「搜→改→测」串成一次执行、中间输出不占上下文；`Ctrl+O` 可查看/薅走生成的脚本；限制：仅终端交互、代码 10 分钟（后台 2h）、resume 必须保持变量 =1 / 技巧二：带凭证的 MCP 配置用 `cat cfg.json | claude mcp add-json name -` 走 stdin，token 不进 shell history / 🥚 彩蛋：Claude Desktop 上线 Stable/Latest release channel（11/17）；Claude Meetings 把 AI 拉进 Google Meet；plugin.json 新增 `engines["claude-code"]` 版本约束
 
 **想看今天的内容？直接点上面 👆**
 
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-19 —「Claude 开始写 JavaScript 上班了」：Code Mode 把工具调用从「单发」升级成「脚本」，外加一个 token 不进 shell history 的 MCP 小技巧](2026/11/2026-11-19-agent-tips.md)（2.1.323/11/12 实验功能：环境变量 `CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1` 开启，Claude 生成 JS 一次执行「rg→edit→test」，中间输出自行消化不占上下文，最后只带回需要的结果；适合跨多文件批量修改/结果先过滤再读/多命令并行；`Ctrl+O` 展开 Code 行看脚本、好片段薅进 toolkit；限制：仅终端交互（-p/SDK/VS Code 面板/Desktop/cloud 都不行）、代码 10 分钟超时（auto/bypass 后台 2h）、resume 必须保持变量 =1、模型要 5.5 系 / 技巧二：`cat cfg.json | claude mcp add-json name -` 从 stdin 读配置，带 token 的 JSON 不进 shell history 和 ps，且不能在 CC 会话内调用 / 彩蛋：Claude Desktop 上线 Stable/Latest 双 channel（11/17）；Claude Meetings beta 把 Claude 拉进 Google Meet 记笔记做白板；plugin.json `engines["claude-code"]` 像 npm engines 一样挡版本不匹配的插件）
 - 🔥 [11-18 —「12 天倒计时 + 连夜打补丁」：Opus 4.8 Fast 月底退役，Claude Code 2.1.325 堵上一批权限洞](2026/11/2026-11-18-agent-tips.md)（11/30 起 `claude-opus-4-8` + fast 请求直接报错：交互用户 `/model` 自查、脚本党全局搜 `opus-4-8`，换 Opus 5.5 保留 fast 但 ×2 价——日常任务试标准档，体感没差省一半 / 2.1.325（11/13）安全大补：复合 Bash 命令曾绕过确认、allow 规则可能放行别的程序、部分 deny/ask 不生效；升级后审计通配符过宽的 allow、`settings.local.json` 别 commit；组织策略拦截报错下方直接教 `/rewind` 换说法重发 / 彩蛋：Linked Billing（11/17）客户组织替你付 API 账+设上限；OpenCode 210K star vs CC 占公开 GitHub commit 10%+（峰值 32.6 万/天）；DeepSeek 联网 Search/Fetch 11/1 起 ¥5/千次要算进账单）
 - 🔥 [11-17 —「后悔药正式上架」：Kimi Code 桌面端官宣上桌，会话分叉 + 远程环境双杀](2026/11/2026-11-17-agent-tips.md)（11/16 官网《认识 Kimi Code 桌面端》上线：项目多工作目录 + 会话分叉（历史轮次/运行中均可，完整克隆附件/plan/后台任务）+ 右侧分支 PR 面板 / 技巧一：分叉三场景——方案 A/B 对照实验、第 N 轮分叉调 prompt 家规、出错前轮次分叉+导出诊断 ZIP 报 bug / 技巧二：`--environment` 声明 SSH/Docker/自定义远程环境——文件和 Shell 工具远端执行、模型请求和凭据留本机；服务器排查不送 key、Docker 当 YOLO 沙箱删容器即复原 / 对照 Claude 11/12 自托管 Managed Agents：执行路由出去 vs 服务整体搬回家，路由权之争 / 彩蛋：高速版 5-6x 配分叉试错更便宜；Fable 5.2 子代理额度 -5%；文心 5.5 Flash 11/25 开源、1M 上下文每百万 token 1 元）
 - 🔥 [11-16 —「教授出图纸，快手盖房子」：Gemini 4 Hydrogen 上线，模型编队进入"自动换挡"时代](2026/11/2026-11-16-agent-tips.md)（11/13 Gemini 4 Hydrogen：四档 thinking low/medium/high/xhigh、全 1M 无阶梯 $1.50/$7.50 比 Sonnet 5.5 还便宜、TB 4.1 57% vs Flash 18.2%、快 2.5x；Antigravity Orchestrator=同会话 Carbon 出图纸↔Hydrogen 施工自动换挡，近 Carbon 成功率、配额 -24%、+19% / 手动复刻四步：旗舰出图纸（Plan Mode 只读勘察）→快手施工（改文件跑测试）→旗舰终审 diff→卡壳两次交回重规划；各家施工队：Claude Code Fable/Sonnet/Haiku、Kimi `[secondary_model]` 池（主模型显式进池）、API 党试 Hydrogen 批量读仓库 / 快模型更守规矩：越权 -81%、走捷径 -12x，体力活=质控 / Codex 0.168/0.169：多 chat 标签并行+侧边任务面板+任务搜索+自定义 provider，Fable 5.2 进列表 / 彩蛋：Hydrogen 免费进 Gemini app+Search；Kimi CLI 2.6.2 修长会话加载卡秒+auto-compact 卡空回复；官方 TB 4.0 vs 4.1 口径不一致，无对照组数据先信一半）
