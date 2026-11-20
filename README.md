@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-19）
+### 今日更新（2026-11-20）
 
-- 🔥 [「Claude 开始写 JavaScript 上班了」：Code Mode 把工具调用从「单发」升级成「脚本」，外加一个 token 不进 shell history 的 MCP 小技巧](2026/11/2026-11-19-agent-tips.md) —— Claude Code 2.1.323（11/12）实验功能 Code Mode：`CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1 claude` 开启，Claude 自己写 JS 把「搜→改→测」串成一次执行、中间输出不占上下文；`Ctrl+O` 可查看/薅走生成的脚本；限制：仅终端交互、代码 10 分钟（后台 2h）、resume 必须保持变量 =1 / 技巧二：带凭证的 MCP 配置用 `cat cfg.json | claude mcp add-json name -` 走 stdin，token 不进 shell history / 🥚 彩蛋：Claude Desktop 上线 Stable/Latest release channel（11/17）；Claude Meetings 把 AI 拉进 Google Meet；plugin.json 新增 `engines["claude-code"]` 版本约束
+- 🔥 [「榜上第一，不如库里第一」：新模型三连发上架周，30 分钟验货 SOP + Kimi Code 2.7.0 给长任务装上「舷窗 + 对讲机」](2026/11/2026-11-20-agent-tips.md) —— Gemini 4 Neon 上架自称 coding agent 榜第一（$3/$15、1M，注意是引用榜单不是自己重跑）、GPT-6.2 Astra/Sol 11/18 端出首个「自我改进 High 阈值」模型、Anthropic 11/19 纳斯达克 IPO 代码 ANT / 技巧一：Kimi Code CLI 2.7.0（11/19）长任务双件套——`/tasks` 看前台运行 Agent 活动 + `/settings` Follow-up 行为选 Steer 后 Enter 即时送入当前回合；顺手修 `kimi -p` 子代理 `timeout_ms = 0` 被误杀 bug / 技巧二：新模型验货 SOP——3 个有标准答案的真实 fixture（解过的 bug、跨文件重构、读日志排障）同题双跑，盯一次通过率、插手次数、revert 率，成本×月用量才是换不换的分母 / 🥚 彩蛋：`KIMI_CODE_EXPERIMENTAL_PROMPT_PREDICTION=1` 下一提示词预测；Kimi Code 2.7.0 支持 Amazon Bedrock；IPO 后每季度翻一眼订阅条款
 
 **想看今天的内容？直接点上面 👆**
 
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-20 —「榜上第一，不如库里第一」：新模型三连发上架周，30 分钟验货 SOP + Kimi Code 2.7.0 长任务驾驶舱](2026/11/2026-11-20-agent-tips.md)（Gemini 4 Neon 上架自称 coding agent 榜第一（$3/$15、1M，引用榜单口径）、GPT-6.2 Astra/Sol 11/18 首个「自我改进 High 阈值」模型、Anthropic 11/19 纳斯达克 IPO 代码 ANT / 技巧一：Kimi Code CLI 2.7.0（11/19）`/tasks` 看前台 Agent 活动 + `/settings` Follow-up 行为 Steer 插话 Enter 即时送达；修 `kimi -p` 子代理 `timeout_ms=0` 秒挂 bug / 技巧二：新模型验货三 fixture——解过的 bug、跨文件重构、读日志排障同题双跑，盯一次通过率、插手次数、revert 率，fixture 复用边际成本归零 / 彩蛋：`KIMI_CODE_EXPERIMENTAL_PROMPT_PREDICTION=1` 下一提示词预测；Kimi Code 2.7.0 接 Amazon Bedrock；IPO 后每季度翻一眼订阅条款）
 - 🔥 [11-19 —「Claude 开始写 JavaScript 上班了」：Code Mode 把工具调用从「单发」升级成「脚本」，外加一个 token 不进 shell history 的 MCP 小技巧](2026/11/2026-11-19-agent-tips.md)（2.1.323/11/12 实验功能：环境变量 `CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1` 开启，Claude 生成 JS 一次执行「rg→edit→test」，中间输出自行消化不占上下文，最后只带回需要的结果；适合跨多文件批量修改/结果先过滤再读/多命令并行；`Ctrl+O` 展开 Code 行看脚本、好片段薅进 toolkit；限制：仅终端交互（-p/SDK/VS Code 面板/Desktop/cloud 都不行）、代码 10 分钟超时（auto/bypass 后台 2h）、resume 必须保持变量 =1、模型要 5.5 系 / 技巧二：`cat cfg.json | claude mcp add-json name -` 从 stdin 读配置，带 token 的 JSON 不进 shell history 和 ps，且不能在 CC 会话内调用 / 彩蛋：Claude Desktop 上线 Stable/Latest 双 channel（11/17）；Claude Meetings beta 把 Claude 拉进 Google Meet 记笔记做白板；plugin.json `engines["claude-code"]` 像 npm engines 一样挡版本不匹配的插件）
 - 🔥 [11-18 —「12 天倒计时 + 连夜打补丁」：Opus 4.8 Fast 月底退役，Claude Code 2.1.325 堵上一批权限洞](2026/11/2026-11-18-agent-tips.md)（11/30 起 `claude-opus-4-8` + fast 请求直接报错：交互用户 `/model` 自查、脚本党全局搜 `opus-4-8`，换 Opus 5.5 保留 fast 但 ×2 价——日常任务试标准档，体感没差省一半 / 2.1.325（11/13）安全大补：复合 Bash 命令曾绕过确认、allow 规则可能放行别的程序、部分 deny/ask 不生效；升级后审计通配符过宽的 allow、`settings.local.json` 别 commit；组织策略拦截报错下方直接教 `/rewind` 换说法重发 / 彩蛋：Linked Billing（11/17）客户组织替你付 API 账+设上限；OpenCode 210K star vs CC 占公开 GitHub commit 10%+（峰值 32.6 万/天）；DeepSeek 联网 Search/Fetch 11/1 起 ¥5/千次要算进账单）
 - 🔥 [11-17 —「后悔药正式上架」：Kimi Code 桌面端官宣上桌，会话分叉 + 远程环境双杀](2026/11/2026-11-17-agent-tips.md)（11/16 官网《认识 Kimi Code 桌面端》上线：项目多工作目录 + 会话分叉（历史轮次/运行中均可，完整克隆附件/plan/后台任务）+ 右侧分支 PR 面板 / 技巧一：分叉三场景——方案 A/B 对照实验、第 N 轮分叉调 prompt 家规、出错前轮次分叉+导出诊断 ZIP 报 bug / 技巧二：`--environment` 声明 SSH/Docker/自定义远程环境——文件和 Shell 工具远端执行、模型请求和凭据留本机；服务器排查不送 key、Docker 当 YOLO 沙箱删容器即复原 / 对照 Claude 11/12 自托管 Managed Agents：执行路由出去 vs 服务整体搬回家，路由权之争 / 彩蛋：高速版 5-6x 配分叉试错更便宜；Fable 5.2 子代理额度 -5%；文心 5.5 Flash 11/25 开源、1M 上下文每百万 token 1 元）
