@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-21）
+### 今日更新（2026-11-22）
 
-- 🔥 [「任务面板收编全家桶 + 会话挂上服务器」：Claude Code /tasks 一眼看全定时任务，Codex --remote 断线不丢活](2026/11/2026-11-21-agent-tips.md) —— Codex 0.171.0 上架把 GPT-6.2 Sol 设为默认、Claude Code 两天三版（2.1.328→330）、Anthropic 宣布 Claude agents 解出两个黑洞开放问题 / 技巧一：Claude Code 2.1.329 `/tasks` 收编定时任务、/loop 唤醒、fork 会话一屏看全 + hooks 信任弹窗明说声明路径（进陌生仓库先看弹窗）；顺手修 `~/.claude.json` 偶发重置 bug，升完 diff 配置 / 技巧二：Codex `codex exec --remote <ADDR>` 会话跑在 app server 上，断线重连续跑——CI 常驻、合盖续命、多人接力三场景；叠加 TUI workspace 默认开（子代理 transcript 并排） / 🥚 彩蛋：Claude agents 解两个黑洞开放问题（长任务「耐力」比单次 benchmark 更值钱）；2.1.330 修 MCP `anyOf` schema 工具隐身坑；Crush v0.102 可整体替换系统 prompt（含子代理/planning/compaction）
+- 🔥 [「榜一是个话痨 + 官方补丁还没来」：Gemini 4 Neon 的账单藏在思考档位里，Claude Code 泄密进入"有回应、没补丁"阶段](2026/11/2026-11-22-agent-tips.md) —— Neon 第一波独立测评出炉（AA Coding Agent Index 58.6 登顶但 xhigh 档吐 283M token 是 Astra 4 倍多）、Claude Code 泄密事件 Boris Cherny HN 亲答（建议切 auto mode 但被社区当场抓住同样存敏感命令，"good catch"）/ 技巧一：Neon 默认 high 档别动（$3.74/task），xhigh 多花 72% 钱只换 +1.8 分；cached input 95% 折扣吃满；Carbon 促销 $2/$10 11/30 截止，12/1 起 $4/$20；安全代码"像开发者一样测试不像攻击者"，必须人审 / 技巧二：官方补丁未至先上双保险——`git ls-files | grep claude` 验证 ignore 生效（全局 excludes 不随仓库走）、`gh search code` 查暴露面、allow 列表定期人眼 grep（扫描器漏了 215/1122 份，全绿≠干净） / 🥚 彩蛋：CrowdStrike 4.95 亿连收两家 agent 安全公司、Palo Alto 5 亿谈 Clutch——巨头给 agent 买"身份证"；ADE Index 收录 975 个 agentic coding 工具；12 月起 ChatGPT 与 Codex 配额共用
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 11/   # 十一月技巧（发布洪峰捡漏 / 供应链安检 / 家规保卫战 / 权重开闸 / token 算账 / 断供撤退 / 家规大考 / KYC 风暴 / 屠榜翻译）
+├── 11/   # 十一月技巧（发布洪峰捡漏 / 供应链安检 / 家规保卫战 / 权重开闸 / token 算账 / 断供撤退 / 家规大考 / KYC 风暴 / 屠榜翻译 / 话痨账单 / 泄密双保险）
 ├── 10/   # 十月技巧（新模型上手 / 远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理 / 统一家规 / 出师表记忆固化 / 改装车间 / 省钱隔离 / 缓存保鲜保险 / review自动驾驶 / 分身出厂设置 / Agent工程化）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-22 —「榜一是个话痨 + 官方补丁还没来」：Gemini 4 Neon 的账单藏在思考档位里，Claude Code 泄密进入"有回应、没补丁"阶段](2026/11/2026-11-22-agent-tips.md)（Neon 独立测评出炉：Coding Agent Index 58.6 登顶但 xhigh 档 283M token 是 Astra 4 倍多 / 技巧一：默认 high 档 $3.74/task 别动，xhigh +72% 钱只换 +1.8 分；cached input 95% 折扣吃满；Carbon 促销 11/30 截止（$2/$10→$4/$20）；安全代码必须人审"像开发者测试不像攻击者" / 技巧二：Cherny HN 回应补丁未至先上双保险——`git ls-files` 验 ignore、全局 excludes 不随仓库走；`gh search code` 查暴露面；扫描器漏 215/1122 份，allow 列表人眼 grep 兜底 / 彩蛋：CrowdStrike 4.95 亿+Palo Alto 5 亿收购 agent 安全公司；ADE Index 975 工具；12 月 ChatGPT/Codex 配额共用）
 - 🔥 [11-21 —「任务面板收编全家桶 + 会话挂上服务器」：Claude Code /tasks 一屏收拢定时任务，Codex --remote 断线不丢活](2026/11/2026-11-21-agent-tips.md)（Codex 0.171.0 把 GPT-6.2 Sol 设为默认、TUI workspace 默认开；Claude Code 两天三版 2.1.328→330 / 技巧一：2.1.329 `/tasks` 收编定时任务、/loop 唤醒、fork 会话 + hooks 信任弹窗明说声明路径（进陌生仓库先看弹窗）；修 `~/.claude.json` 偶发重置 bug，settings 建议进 git / 技巧二：`codex exec --remote <ADDR>` 会话长在 app server 上，断线重连续跑——CI 常驻、合盖续命、多人接力三场景，叠 TUI 子代理 transcript 并排视图 / 彩蛋：Claude agents 解两个黑洞开放问题，长任务「耐力」成新评估维度；2.1.330 修 MCP `anyOf` schema 工具隐身；Crush v0.102 整体替换系统 prompt）
 - 🔥 [11-20 —「榜上第一，不如库里第一」：新模型三连发上架周，30 分钟验货 SOP + Kimi Code 2.7.0 给长任务装上「舷窗 + 对讲机」](2026/11/2026-11-20-agent-tips.md)（Gemini 4 Neon 上架自称 coding agent 榜第一（$3/$15、1M，引用榜单口径）、GPT-6.2 Astra/Sol 11/18 首个「自我改进 High 阈值」模型、Anthropic 11/19 纳斯达克 IPO 代码 ANT / 技巧一：Kimi Code CLI 2.7.0（11/19）`/tasks` 看前台 Agent 活动 + `/settings` Follow-up 行为 Steer 插话 Enter 即时送达；修 `kimi -p` 子代理 `timeout_ms=0` 秒挂 bug / 技巧二：新模型验货三 fixture——解过的 bug、跨文件重构、读日志排障同题双跑，盯一次通过率、插手次数、revert 率，fixture 复用边际成本归零 / 彩蛋：`KIMI_CODE_EXPERIMENTAL_PROMPT_PREDICTION=1` 下一提示词预测；Kimi Code 2.7.0 接 Amazon Bedrock；IPO 后每季度翻一眼订阅条款）
 - 🔥 [11-19 —「Claude 开始写 JavaScript 上班了」：Code Mode 把工具调用从「单发」升级成「脚本」，外加一个 token 不进 shell history 的 MCP 小技巧](2026/11/2026-11-19-agent-tips.md)（2.1.323/11/12 实验功能：环境变量 `CLAUDE_CODE_EXPERIMENTAL_CODE_MODE=1` 开启，Claude 生成 JS 一次执行「rg→edit→test」，中间输出自行消化不占上下文，最后只带回需要的结果；适合跨多文件批量修改/结果先过滤再读/多命令并行；`Ctrl+O` 展开 Code 行看脚本、好片段薅进 toolkit；限制：仅终端交互（-p/SDK/VS Code 面板/Desktop/cloud 都不行）、代码 10 分钟超时（auto/bypass 后台 2h）、resume 必须保持变量 =1、模型要 5.5 系 / 技巧二：`cat cfg.json | claude mcp add-json name -` 从 stdin 读配置，带 token 的 JSON 不进 shell history 和 ps，且不能在 CC 会话内调用 / 彩蛋：Claude Desktop 上线 Stable/Latest 双 channel（11/17）；Claude Meetings beta 把 Claude 拉进 Google Meet 记笔记做白板；plugin.json `engines["claude-code"]` 像 npm engines 一样挡版本不匹配的插件）
