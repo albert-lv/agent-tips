@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-22）
+### 今日更新（2026-11-23）
 
-- 🔥 [「榜一是个话痨 + 官方补丁还没来」：Gemini 4 Neon 的账单藏在思考档位里，Claude Code 泄密进入"有回应、没补丁"阶段](2026/11/2026-11-22-agent-tips.md) —— Neon 第一波独立测评出炉（AA Coding Agent Index 58.6 登顶但 xhigh 档吐 283M token 是 Astra 4 倍多）、Claude Code 泄密事件 Boris Cherny HN 亲答（建议切 auto mode 但被社区当场抓住同样存敏感命令，"good catch"）/ 技巧一：Neon 默认 high 档别动（$3.74/task），xhigh 多花 72% 钱只换 +1.8 分；cached input 95% 折扣吃满；Carbon 促销 $2/$10 11/30 截止，12/1 起 $4/$20；安全代码"像开发者一样测试不像攻击者"，必须人审 / 技巧二：官方补丁未至先上双保险——`git ls-files | grep claude` 验证 ignore 生效（全局 excludes 不随仓库走）、`gh search code` 查暴露面、allow 列表定期人眼 grep（扫描器漏了 215/1122 份，全绿≠干净） / 🥚 彩蛋：CrowdStrike 4.95 亿连收两家 agent 安全公司、Palo Alto 5 亿谈 Clutch——巨头给 agent 买"身份证"；ADE Index 收录 975 个 agentic coding 工具；12 月起 ChatGPT 与 Codex 配额共用
+- 🔥 [「1M 油箱也会见底 + 合盖不等于下班」：Fable 5.2 长任务得配"记账员"，Kimi Code 桌面端 1.4.0 让活留在服务器上跑](2026/11/2026-11-23-agent-tips.md) —— Fable 5.2 测评拆出扎心数据：不提示剩余上下文时 68% 任务烧穿 1M 烂尾，每步报油表后 ProgramBench 91.6%（AA 均价 $26.54/任务 vs Opus 5.5 max $10.04）/ 技巧一：CLAUDE.md 加"60% 落盘"纪律——每阶段估算消耗、超 60% 把结论/改过的文件/待办写 .claude/progress.md；日常通勤车选 Opus 5.5，Fable 留给狙击题；CC 需 2.1.321+ 才能选 Fable / 技巧二：Kimi Code 桌面端 1.4.0 SSH 远程项目，任务跑在远程主机本机离线照跑，叠 1.1.0 远程控制=挂服务器+手机看进度；CLI 2.7.2（11/20）修思考强度被重置 bug / 🥚 彩蛋：CC `/status` 点名损坏的 agent/skill/command 配置文件+Marketplace 自动更新行；`/mcp` "Server message" 行显示 server 端 JSON-RPC 报错；Fable 5.2 带网安/生物防护，拦截后按需配 fallback
 
 **想看今天的内容？直接点上面 👆**
 
@@ -33,7 +33,7 @@
 
 ```
 2026/
-├── 11/   # 十一月技巧（发布洪峰捡漏 / 供应链安检 / 家规保卫战 / 权重开闸 / token 算账 / 断供撤退 / 家规大考 / KYC 风暴 / 屠榜翻译 / 话痨账单 / 泄密双保险）
+├── 11/   # 十一月技巧（发布洪峰捡漏 / 供应链安检 / 家规保卫战 / 权重开闸 / token 算账 / 断供撤退 / 家规大考 / KYC 风暴 / 屠榜翻译 / 话痨账单 / 泄密双保险 / 油箱见底）
 ├── 10/   # 十月技巧（新模型上手 / 远程控制 / 安全审查 / 搬家排障 / 配置体检 / 可视化透视 / 排班门铃 / 上下文保鲜 / 多Agent指挥部 / 图纸会审 / 车库整理 / 统一家规 / 出师表记忆固化 / 改装车间 / 省钱隔离 / 缓存保鲜保险 / review自动驾驶 / 分身出厂设置 / Agent工程化）
 ├── 09/   # 九月技巧（MCP 外挂 / 重构提案 / Hooks 自动化 / Skills 肌肉记忆 / 长任务管理）
 ├── 08/   # 八月技巧（Claude Code !命令 / Cursor Yolo / MVCC映射）
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-23 —「1M 油箱也会见底 + 合盖不等于下班」：Fable 5.2 长任务得配"记账员"，Kimi Code 桌面端 1.4.0 让活留在服务器上跑](2026/11/2026-11-23-agent-tips.md)（Fable 5.2 不提示剩余上下文时 68% 任务烧穿 1M、报油表后 ProgramBench 91.6%；AA 账单 $26.54 vs Opus 5.5 max $10.04 / 技巧一：CLAUDE.md "60% 落盘"纪律——阶段估算+写 progress.md；日常 Opus 5.5、狙击题 Fable；CC 2.1.321+ 可选 / 技巧二：桌面端 1.4.0 SSH 远程项目本机离线照跑，叠远程控制手机看进度；CLI 2.7.2 修思考强度重置 / 彩蛋：`/status` 点名损坏配置文件+插件自动更新行；`/mcp` "Server message" 显示 JSON-RPC 报错；Fable 网安/生物防护拦截后配 fallback）
 - 🔥 [11-22 —「榜一是个话痨 + 官方补丁还没来」：Gemini 4 Neon 的账单藏在思考档位里，Claude Code 泄密进入"有回应、没补丁"阶段](2026/11/2026-11-22-agent-tips.md)（Neon 独立测评出炉：Coding Agent Index 58.6 登顶但 xhigh 档 283M token 是 Astra 4 倍多 / 技巧一：默认 high 档 $3.74/task 别动，xhigh +72% 钱只换 +1.8 分；cached input 95% 折扣吃满；Carbon 促销 11/30 截止（$2/$10→$4/$20）；安全代码必须人审"像开发者测试不像攻击者" / 技巧二：Cherny HN 回应补丁未至先上双保险——`git ls-files` 验 ignore、全局 excludes 不随仓库走；`gh search code` 查暴露面；扫描器漏 215/1122 份，allow 列表人眼 grep 兜底 / 彩蛋：CrowdStrike 4.95 亿+Palo Alto 5 亿收购 agent 安全公司；ADE Index 975 工具；12 月 ChatGPT/Codex 配额共用）
 - 🔥 [11-21 —「任务面板收编全家桶 + 会话挂上服务器」：Claude Code /tasks 一屏收拢定时任务，Codex --remote 断线不丢活](2026/11/2026-11-21-agent-tips.md)（Codex 0.171.0 把 GPT-6.2 Sol 设为默认、TUI workspace 默认开；Claude Code 两天三版 2.1.328→330 / 技巧一：2.1.329 `/tasks` 收编定时任务、/loop 唤醒、fork 会话 + hooks 信任弹窗明说声明路径（进陌生仓库先看弹窗）；修 `~/.claude.json` 偶发重置 bug，settings 建议进 git / 技巧二：`codex exec --remote <ADDR>` 会话长在 app server 上，断线重连续跑——CI 常驻、合盖续命、多人接力三场景，叠 TUI 子代理 transcript 并排视图 / 彩蛋：Claude agents 解两个黑洞开放问题，长任务「耐力」成新评估维度；2.1.330 修 MCP `anyOf` schema 工具隐身；Crush v0.102 整体替换系统 prompt）
 - 🔥 [11-20 —「榜上第一，不如库里第一」：新模型三连发上架周，30 分钟验货 SOP + Kimi Code 2.7.0 给长任务装上「舷窗 + 对讲机」](2026/11/2026-11-20-agent-tips.md)（Gemini 4 Neon 上架自称 coding agent 榜第一（$3/$15、1M，引用榜单口径）、GPT-6.2 Astra/Sol 11/18 首个「自我改进 High 阈值」模型、Anthropic 11/19 纳斯达克 IPO 代码 ANT / 技巧一：Kimi Code CLI 2.7.0（11/19）`/tasks` 看前台 Agent 活动 + `/settings` Follow-up 行为 Steer 插话 Enter 即时送达；修 `kimi -p` 子代理 `timeout_ms=0` 秒挂 bug / 技巧二：新模型验货三 fixture——解过的 bug、跨文件重构、读日志排障同题双跑，盯一次通过率、插手次数、revert 率，fixture 复用边际成本归零 / 彩蛋：`KIMI_CODE_EXPERIMENTAL_PROMPT_PREDICTION=1` 下一提示词预测；Kimi Code 2.7.0 接 Amazon Bedrock；IPO 后每季度翻一眼订阅条款）
