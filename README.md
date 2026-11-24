@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-23）
+### 今日更新（2026-11-24）
 
-- 🔥 [「1M 油箱也会见底 + 合盖不等于下班」：Fable 5.2 长任务得配"记账员"，Kimi Code 桌面端 1.4.0 让活留在服务器上跑](2026/11/2026-11-23-agent-tips.md) —— Fable 5.2 测评拆出扎心数据：不提示剩余上下文时 68% 任务烧穿 1M 烂尾，每步报油表后 ProgramBench 91.6%（AA 均价 $26.54/任务 vs Opus 5.5 max $10.04）/ 技巧一：CLAUDE.md 加"60% 落盘"纪律——每阶段估算消耗、超 60% 把结论/改过的文件/待办写 .claude/progress.md；日常通勤车选 Opus 5.5，Fable 留给狙击题；CC 需 2.1.321+ 才能选 Fable / 技巧二：Kimi Code 桌面端 1.4.0 SSH 远程项目，任务跑在远程主机本机离线照跑，叠 1.1.0 远程控制=挂服务器+手机看进度；CLI 2.7.2（11/20）修思考强度被重置 bug / 🥚 彩蛋：CC `/status` 点名损坏的 agent/skill/command 配置文件+Marketplace 自动更新行；`/mcp` "Server message" 行显示 server 端 JSON-RPC 报错；Fable 5.2 带网安/生物防护，拦截后按需配 fallback
+- 🔥 [「旗舰对轰周：同价不同命」：GPT-6.2 正面刚 Fable 5.2，算「每个任务多少钱」才是正经事](2026/11/2026-11-24-agent-tips.md) —— 11/17 OpenAI 甩出 GPT-6.2（Astra+Sol）硬刚 11/9 的 Claude Fable 5.2，两家旗舰同价 $8/$40 贴脸开打 / 技巧一：别看榜单看账单——Astra 每任务约 $4 vs Fable $26.54（差 6.6 倍），日常编码路由到 Sol（$2/$10，FrontierCode 2.0 只差 Astra 0.5 分），硬骨头再上旗舰 / 技巧二：Astra 长上下文隐藏附加费——输入超 272K 整个请求按 2x 计费（$16/$60），Fable 1M 全程平价；快摸到线就 compact 或开新会话 / 快讯：Kimi K2 系 12 月底全部退役，钉着 kimi-k2 的赶紧迁 K3；Claude Code 2.1.321 已默认 Fable 5.2；Cursor 三连发（Live Apps/语音/多人 Projects）
 
 **想看今天的内容？直接点上面 👆**
 
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-24 —「旗舰对轰周：同价不同命」：GPT-6.2 正面刚 Fable 5.2，算「每个任务多少钱」才是正经事](2026/11/2026-11-24-agent-tips.md)（11/17 OpenAI 发 GPT-6.2（Astra $8/$40 + Sol $2/$10）硬刚 11/9 的 Fable 5.2，同价对轰 / 技巧一：榜单互有胜负但账单差 6.6 倍——AA 估算 Astra $4/任务 vs Fable $26.54；日常路由 Sol（便宜 4 倍、FrontierCode 只差 0.5 分），硬骨头再上旗舰 / 技巧二：Astra 输入超 272K 整个请求 2x 计费（$16/$60），Fable 1M 全程平价；快摸线就 compact / 快讯：K2 系 12 月底退役迁 K3；CC 2.1.321 默认 Fable；Cursor 三连发）
 - 🔥 [11-23 —「1M 油箱也会见底 + 合盖不等于下班」：Fable 5.2 长任务得配"记账员"，Kimi Code 桌面端 1.4.0 让活留在服务器上跑](2026/11/2026-11-23-agent-tips.md)（Fable 5.2 不提示剩余上下文时 68% 任务烧穿 1M、报油表后 ProgramBench 91.6%；AA 账单 $26.54 vs Opus 5.5 max $10.04 / 技巧一：CLAUDE.md "60% 落盘"纪律——阶段估算+写 progress.md；日常 Opus 5.5、狙击题 Fable；CC 2.1.321+ 可选 / 技巧二：桌面端 1.4.0 SSH 远程项目本机离线照跑，叠远程控制手机看进度；CLI 2.7.2 修思考强度重置 / 彩蛋：`/status` 点名损坏配置文件+插件自动更新行；`/mcp` "Server message" 显示 JSON-RPC 报错；Fable 网安/生物防护拦截后配 fallback）
 - 🔥 [11-22 —「榜一是个话痨 + 官方补丁还没来」：Gemini 4 Neon 的账单藏在思考档位里，Claude Code 泄密进入"有回应、没补丁"阶段](2026/11/2026-11-22-agent-tips.md)（Neon 独立测评出炉：Coding Agent Index 58.6 登顶但 xhigh 档 283M token 是 Astra 4 倍多 / 技巧一：默认 high 档 $3.74/task 别动，xhigh +72% 钱只换 +1.8 分；cached input 95% 折扣吃满；Carbon 促销 11/30 截止（$2/$10→$4/$20）；安全代码必须人审"像开发者测试不像攻击者" / 技巧二：Cherny HN 回应补丁未至先上双保险——`git ls-files` 验 ignore、全局 excludes 不随仓库走；`gh search code` 查暴露面；扫描器漏 215/1122 份，allow 列表人眼 grep 兜底 / 彩蛋：CrowdStrike 4.95 亿+Palo Alto 5 亿收购 agent 安全公司；ADE Index 975 工具；12 月 ChatGPT/Codex 配额共用）
 - 🔥 [11-21 —「任务面板收编全家桶 + 会话挂上服务器」：Claude Code /tasks 一屏收拢定时任务，Codex --remote 断线不丢活](2026/11/2026-11-21-agent-tips.md)（Codex 0.171.0 把 GPT-6.2 Sol 设为默认、TUI workspace 默认开；Claude Code 两天三版 2.1.328→330 / 技巧一：2.1.329 `/tasks` 收编定时任务、/loop 唤醒、fork 会话 + hooks 信任弹窗明说声明路径（进陌生仓库先看弹窗）；修 `~/.claude.json` 偶发重置 bug，settings 建议进 git / 技巧二：`codex exec --remote <ADDR>` 会话长在 app server 上，断线重连续跑——CI 常驻、合盖续命、多人接力三场景，叠 TUI 子代理 transcript 并排视图 / 彩蛋：Claude agents 解两个黑洞开放问题，长任务「耐力」成新评估维度；2.1.330 修 MCP `anyOf` schema 工具隐身；Crush v0.102 整体替换系统 prompt）
