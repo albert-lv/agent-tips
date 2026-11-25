@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-24）
+### 今日更新（2026-11-25）
 
-- 🔥 [「旗舰对轰周：同价不同命」：GPT-6.2 正面刚 Fable 5.2，算「每个任务多少钱」才是正经事](2026/11/2026-11-24-agent-tips.md) —— 11/17 OpenAI 甩出 GPT-6.2（Astra+Sol）硬刚 11/9 的 Claude Fable 5.2，两家旗舰同价 $8/$40 贴脸开打 / 技巧一：别看榜单看账单——Astra 每任务约 $4 vs Fable $26.54（差 6.6 倍），日常编码路由到 Sol（$2/$10，FrontierCode 2.0 只差 Astra 0.5 分），硬骨头再上旗舰 / 技巧二：Astra 长上下文隐藏附加费——输入超 272K 整个请求按 2x 计费（$16/$60），Fable 1M 全程平价；快摸到线就 compact 或开新会话 / 快讯：Kimi K2 系 12 月底全部退役，钉着 kimi-k2 的赶紧迁 K3；Claude Code 2.1.321 已默认 Fable 5.2；Cursor 三连发（Live Apps/语音/多人 Projects）
+- 🔥 [「Black October 收官启示」：agent 聊天记录，可能比你的密码库还危险](2026/11/2026-11-25-agent-tips.md) —— 11/13 Cursor 公布投毒事件根因：Fireworks AI 泄 key → agent traces 里翻出没脱敏的明文凭证 → 带后门 Claude Code 扩展挂上市场缓存 11 小时 / Wiz「Black October」：10 月 9+ 家 AI 开发平台被攻破，目标全是环境变量里的 AI key（LLMjacking 转售，两天刷掉 $100k+）/ 技巧一：聊天记录当机密文件——贴 key 改用环境变量引用、贴过就轮换、spend cap + scoped key 戴紧箍 / 技巧二：Claude Monthly Recap（Reflect）11/24 转正，能读 Claude Code 会话生成月度回顾，可删已存 recap；artifacts 可安装成桌面 app
 
 **想看今天的内容？直接点上面 👆**
 
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-25 —「Black October 收官启示」：agent 聊天记录，可能比你的密码库还危险](2026/11/2026-11-25-agent-tips.md)（11/13 Cursor 根因报告：Fireworks AI 泄 key → 共享桶 agent traces 里没脱敏的明文凭证 → 投毒扩展上市场缓存 11 小时、最多 5000 用户 / Wiz「Black October」10 月 9+ 平台被攻破，专猎环境变量 AI key 转售 LLMjacking，两案例两天 $100k+ / 技巧一：聊天记录当机密——贴 key 用环境变量引用或短期 token、贴过即轮换、spend cap+scoped key+OIDC / 技巧二：Claude Reflect 11/24 转正读 Claude Code 会话生成月度回顾、可删已存 recap；artifacts 装成桌面 app / 快讯：Kimi Code 2.7.3+Desktop 1.4.3 修会话打不开与 MCP 授权入口；LiteLLM 干净版停在 1.106.2；Zeabur 被打到关停）
 - 🔥 [11-24 —「旗舰对轰周：同价不同命」：GPT-6.2 正面刚 Fable 5.2，算「每个任务多少钱」才是正经事](2026/11/2026-11-24-agent-tips.md)（11/17 OpenAI 发 GPT-6.2（Astra $8/$40 + Sol $2/$10）硬刚 11/9 的 Fable 5.2，同价对轰 / 技巧一：榜单互有胜负但账单差 6.6 倍——AA 估算 Astra $4/任务 vs Fable $26.54；日常路由 Sol（便宜 4 倍、FrontierCode 只差 0.5 分），硬骨头再上旗舰 / 技巧二：Astra 输入超 272K 整个请求 2x 计费（$16/$60），Fable 1M 全程平价；快摸线就 compact / 快讯：K2 系 12 月底退役迁 K3；CC 2.1.321 默认 Fable；Cursor 三连发）
 - 🔥 [11-23 —「1M 油箱也会见底 + 合盖不等于下班」：Fable 5.2 长任务得配"记账员"，Kimi Code 桌面端 1.4.0 让活留在服务器上跑](2026/11/2026-11-23-agent-tips.md)（Fable 5.2 不提示剩余上下文时 68% 任务烧穿 1M、报油表后 ProgramBench 91.6%；AA 账单 $26.54 vs Opus 5.5 max $10.04 / 技巧一：CLAUDE.md "60% 落盘"纪律——阶段估算+写 progress.md；日常 Opus 5.5、狙击题 Fable；CC 2.1.321+ 可选 / 技巧二：桌面端 1.4.0 SSH 远程项目本机离线照跑，叠远程控制手机看进度；CLI 2.7.2 修思考强度重置 / 彩蛋：`/status` 点名损坏配置文件+插件自动更新行；`/mcp` "Server message" 显示 JSON-RPC 报错；Fable 网安/生物防护拦截后配 fallback）
 - 🔥 [11-22 —「榜一是个话痨 + 官方补丁还没来」：Gemini 4 Neon 的账单藏在思考档位里，Claude Code 泄密进入"有回应、没补丁"阶段](2026/11/2026-11-22-agent-tips.md)（Neon 独立测评出炉：Coding Agent Index 58.6 登顶但 xhigh 档 283M token 是 Astra 4 倍多 / 技巧一：默认 high 档 $3.74/task 别动，xhigh +72% 钱只换 +1.8 分；cached input 95% 折扣吃满；Carbon 促销 11/30 截止（$2/$10→$4/$20）；安全代码必须人审"像开发者测试不像攻击者" / 技巧二：Cherny HN 回应补丁未至先上双保险——`git ls-files` 验 ignore、全局 excludes 不随仓库走；`gh search code` 查暴露面；扫描器漏 215/1122 份，allow 列表人眼 grep 兜底 / 彩蛋：CrowdStrike 4.95 亿+Palo Alto 5 亿收购 agent 安全公司；ADE Index 975 工具；12 月 ChatGPT/Codex 配额共用）
