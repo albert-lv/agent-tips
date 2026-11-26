@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-25）
+### 今日更新（2026-11-26）
 
-- 🔥 [「Black October 收官启示」：agent 聊天记录，可能比你的密码库还危险](2026/11/2026-11-25-agent-tips.md) —— 11/13 Cursor 公布投毒事件根因：Fireworks AI 泄 key → agent traces 里翻出没脱敏的明文凭证 → 带后门 Claude Code 扩展挂上市场缓存 11 小时 / Wiz「Black October」：10 月 9+ 家 AI 开发平台被攻破，目标全是环境变量里的 AI key（LLMjacking 转售，两天刷掉 $100k+）/ 技巧一：聊天记录当机密文件——贴 key 改用环境变量引用、贴过就轮换、spend cap + scoped key 戴紧箍 / 技巧二：Claude Monthly Recap（Reflect）11/24 转正，能读 Claude Code 会话生成月度回顾，可删已存 recap；artifacts 可安装成桌面 app
+- 🔥 [「OpenAI 11·30 大限」倒计时 4 天：低代码 Agent 画布正在退潮](2026/11/2026-11-26-agent-tips.md) —— 11/30 OpenAI 三连关：Agent Builder + Evals API + v1/prompts API，迁移路线 Agents SDK / Workspace Agent，导出≠行为一致要回归测试，ChatKit 还在但托管后端没了 / GitHub Trending 16 席 13 个是 Agent Skill：npx 一行装「去 AI 味」设计三件套（Impeccable 62 条规则不调模型）/ 快讯：ZCode v4.0 上线 GLM-5.4、Claude Meetings 进 Google Meet 记笔记、no-slop 宣言走红
 
 **想看今天的内容？直接点上面 👆**
 
