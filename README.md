@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-26）
+### 今日更新（2026-11-27）
 
-- 🔥 [「OpenAI 11·30 大限」倒计时 4 天：低代码 Agent 画布正在退潮](2026/11/2026-11-26-agent-tips.md) —— 11/30 OpenAI 三连关：Agent Builder + Evals API + v1/prompts API，迁移路线 Agents SDK / Workspace Agent，导出≠行为一致要回归测试，ChatKit 还在但托管后端没了 / GitHub Trending 16 席 13 个是 Agent Skill：npx 一行装「去 AI 味」设计三件套（Impeccable 62 条规则不调模型）/ 快讯：ZCode v4.0 上线 GLM-5.4、Claude Meetings 进 Google Meet 记笔记、no-slop 宣言走红
+- 🔥 [「Claude 写剧本自己跑」Code Mode 上线](2026/11/2026-11-27-agent-tips.md) —— 2.1.323 实验性 Code Mode：Claude 生成 JS 编排工具调用，多步任务不再一步步问；Fable 5.2 默认上线（1M 上下文 $8/$40，适合整库分析别滥用）；⚠️ Opus 4.8 fast mode 11/30 停用剩 3 天；Claude Mythos 三天写完 AMD GPU 内核迁移
 
 **想看今天的内容？直接点上面 👆**
 
