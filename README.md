@@ -21,9 +21,9 @@
 | 💡 **实用导向** | 不是功能说明书，是「省掉 50 次点击」的实战技巧 |
 | 🎯 **一句话记住** | 每篇结尾都有「今天记住这个」速查表 |
 
-### 今日更新（2026-11-27）
+### 今日更新（2026-11-28）
 
-- 🔥 [「Claude 写剧本自己跑」Code Mode 上线](2026/11/2026-11-27-agent-tips.md) —— 2.1.323 实验性 Code Mode：Claude 生成 JS 编排工具调用，多步任务不再一步步问；Fable 5.2 默认上线（1M 上下文 $8/$40，适合整库分析别滥用）；⚠️ Opus 4.8 fast mode 11/30 停用剩 3 天；Claude Mythos 三天写完 AMD GPU 内核迁移
+- 🔥 [「供应链惊魂 + 模型自由切换」：Cursor 扩展市场被投毒 11 小时的教训，Claude Code 换模型不换工具](2026/11/2026-11-28-agent-tips.md) —— 10/29 篡改版 Claude Code 扩展（2.1.312/2.1.313）混入 Cursor 市场、约 5000 名开发者受影响 / 技巧一：工具链安检三件套——只认官方安装入口、锁版本手动升级、定期检查 authorized_keys 和 crontab / 技巧二：settings.json 写 env 接 Kimi/DeepSeek/GLM 兼容接口，注意 ANTHROPIC_API_KEY 残留会抢扣费、Key 明文别进 Git
 
 **想看今天的内容？直接点上面 👆**
 
@@ -43,6 +43,7 @@
 
 **最新内容**（倒序）：
 
+- 🔥 [11-28 —「供应链惊魂 + 模型自由切换」：Cursor 扩展市场被投毒 11 小时，给 agent 工具链做次安检](2026/11/2026-11-28-agent-tips.md)（10/29 篡改版 Claude Code 扩展混入 Cursor 市场：JS 加载器一启动就塞 SSH key + 开反向隧道，攻击者自己代码写崩才没大面积中招，约 5000 开发者受影响 / 技巧一：安检三件套——只认官方安装入口（curl 官方脚本/npm 官方包）、锁版本关自动升级+升级前看 changelog、定期盘查 authorized_keys 和 crontab / 技巧二：Claude Code 换模型不换工具——`~/.claude/settings.json` 写 env 接 Kimi K3.1 Pro / DeepSeek / GLM 兼容接口，`/status` 验 Base URL；⚠️ shell 里残留的 ANTHROPIC_API_KEY 优先级更高会把请求送去 Anthropic 扣美元，echo 查一下 unset 掉；Key 明文进 .gitignore / 今日一句话：工具可以混搭来源必须官方，模型可以平替密钥必须看紧）
 - 🔥 [11-25 —「Black October 收官启示」：agent 聊天记录，可能比你的密码库还危险](2026/11/2026-11-25-agent-tips.md)（11/13 Cursor 根因报告：Fireworks AI 泄 key → 共享桶 agent traces 里没脱敏的明文凭证 → 投毒扩展上市场缓存 11 小时、最多 5000 用户 / Wiz「Black October」10 月 9+ 平台被攻破，专猎环境变量 AI key 转售 LLMjacking，两案例两天 $100k+ / 技巧一：聊天记录当机密——贴 key 用环境变量引用或短期 token、贴过即轮换、spend cap+scoped key+OIDC / 技巧二：Claude Reflect 11/24 转正读 Claude Code 会话生成月度回顾、可删已存 recap；artifacts 装成桌面 app / 快讯：Kimi Code 2.7.3+Desktop 1.4.3 修会话打不开与 MCP 授权入口；LiteLLM 干净版停在 1.106.2；Zeabur 被打到关停）
 - 🔥 [11-24 —「旗舰对轰周：同价不同命」：GPT-6.2 正面刚 Fable 5.2，算「每个任务多少钱」才是正经事](2026/11/2026-11-24-agent-tips.md)（11/17 OpenAI 发 GPT-6.2（Astra $8/$40 + Sol $2/$10）硬刚 11/9 的 Fable 5.2，同价对轰 / 技巧一：榜单互有胜负但账单差 6.6 倍——AA 估算 Astra $4/任务 vs Fable $26.54；日常路由 Sol（便宜 4 倍、FrontierCode 只差 0.5 分），硬骨头再上旗舰 / 技巧二：Astra 输入超 272K 整个请求 2x 计费（$16/$60），Fable 1M 全程平价；快摸线就 compact / 快讯：K2 系 12 月底退役迁 K3；CC 2.1.321 默认 Fable；Cursor 三连发）
 - 🔥 [11-23 —「1M 油箱也会见底 + 合盖不等于下班」：Fable 5.2 长任务得配"记账员"，Kimi Code 桌面端 1.4.0 让活留在服务器上跑](2026/11/2026-11-23-agent-tips.md)（Fable 5.2 不提示剩余上下文时 68% 任务烧穿 1M、报油表后 ProgramBench 91.6%；AA 账单 $26.54 vs Opus 5.5 max $10.04 / 技巧一：CLAUDE.md "60% 落盘"纪律——阶段估算+写 progress.md；日常 Opus 5.5、狙击题 Fable；CC 2.1.321+ 可选 / 技巧二：桌面端 1.4.0 SSH 远程项目本机离线照跑，叠远程控制手机看进度；CLI 2.7.2 修思考强度重置 / 彩蛋：`/status` 点名损坏配置文件+插件自动更新行；`/mcp` "Server message" 显示 JSON-RPC 报错；Fable 网安/生物防护拦截后配 fallback）
